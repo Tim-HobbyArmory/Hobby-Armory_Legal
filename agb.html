@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby Armory AGB - Terms and Conditions</title>
+    <title>Hobby Armory Impressum - Legal Notice</title>
     <style>
         * {
             margin: 0;
@@ -82,8 +82,6 @@
         
         .section {
             display: none;
-            max-width: 800px;
-            margin: 0 auto;
         }
         
         .section.active {
@@ -112,7 +110,7 @@
         
         .section p {
             margin-bottom: 15px;
-            text-align: left;
+            text-align: justify;
         }
         
         .section ul {
@@ -122,6 +120,20 @@
         
         .section li {
             margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            background: #e8f5f0;
+            border-left: 4px solid #0d9488;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+        
+        .contact-info strong {
+            color: #0f766e;
+            font-style: normal;
         }
         
         .important {
@@ -136,37 +148,19 @@
             color: #856404;
         }
         
-        .info-box {
-            background: #e8f5f0;
-            border-left: 4px solid #0d9488;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 4px;
+        a {
+            color: #0d9488;
+            text-decoration: none;
         }
         
-        .info-box strong {
-            color: #0f766e;
+        a:hover {
+            text-decoration: underline;
         }
         
         @media (max-width: 1024px) {
             .content {
                 grid-template-columns: 1fr;
                 gap: 30px;
-                padding: 20px;
-            }
-        }
-        
-        @media (max-width: 600px) {
-            .content {
-                padding: 15px;
-            }
-            
-            .header {
-                padding: 20px;
-            }
-            
-            .header h1 {
-                font-size: 2em;
             }
         }
         
@@ -184,7 +178,7 @@
     <div class="container">
         <div class="header">
             <h1>Hobby Armory</h1>
-            <p>Terms and Conditions / Allgemeine Geschäftsbedingungen</p>
+            <p>Legal Notice / Impressum</p>
             <div class="language-toggle">
                 <button class="toggle-btn active" onclick="showLanguage('english')">📄 English</button>
                 <button class="toggle-btn" onclick="showLanguage('german')">📋 Deutsch</button>
@@ -194,122 +188,50 @@
         <div class="content">
             <!-- ENGLISH VERSION -->
             <div id="english" class="section active">
-                <h2>Terms and Conditions</h2>
+                <h2>Legal Notice</h2>
                 <p><strong>Status:</strong> January 2026</p>
                 
-                <p>These Terms and Conditions (hereinafter &quot;Terms&quot;) apply to the use of the mobile application &quot;Hobby Armory&quot; (hereinafter &quot;App&quot;) provided by [Your Name] (hereinafter &quot;Provider&quot;).</p>
-                
-                <p>By installing and using the App, you agree to these Terms.</p>
-                
-                <h3>1. Application Description</h3>
-                <p>Hobby Armory is an app designed to manage your Warhammer miniature collections. The app provides the following features:</p>
-                <ul>
-                    <li>Collection organization and management</li>
-                    <li>Inventory tracking</li>
-                    <li>Collection statistics and analytics</li>
-                </ul>
-                <p>The scope of functionality may change during the beta phase.</p>
-                
-                <h3>2. Registration and Account</h3>
-                <p>Free registration is required to use the App. You can register via email, Google, or Apple.</p>
-                
-                <p>You are obligated to provide truthful information during registration and keep it current. The username you choose must not violate the rights of third parties.</p>
-                
-                <p>You are solely responsible for keeping your access credentials confidential.</p>
-                
-                <h3>3. Beta Phase</h3>
-                <p>The App is currently in the beta testing phase. This means:</p>
-                <ul>
-                    <li>Features may change or be removed</li>
-                    <li>The app may contain bugs or errors</li>
-                    <li>Data loss is possible</li>
-                    <li>Service interruptions may occur</li>
-                </ul>
-                
-                <h3>4. License Grant</h3>
-                <p>You receive a non-exclusive, non-transferable, revocable right to use the App for private, non-commercial purposes.</p>
-                
-                <h3>5. User Obligations</h3>
-                <p>You agree to:</p>
-                <ul>
-                    <li>Not use the App for commercial purposes</li>
-                    <li>Not reverse-engineer or attempt to extract the source code</li>
-                    <li>Not use the App to violate any laws or third-party rights</li>
-                    <li>Not share your account credentials with others</li>
-                </ul>
-                
-                <h3>5.1 Camera and Photo Upload</h3>
-                <p>The app requests access to your device camera to:</p>
-                <ul>
-                    <li>Allow you to take photos of your miniatures for collection documentation</li>
-                    <li>Enable barcode scanning for product identification</li>
-                </ul>
-                <p><strong>Important:</strong> Camera access is only used when you actively initiate photo capture or barcode scanning. Photos are only uploaded when you explicitly choose to save them to your collection. You maintain full control over what is photographed and uploaded.</p>
-                
-                <h3>5.2 Barcode Scanning</h3>
-                <p>The barcode scanning feature:</p>
-                <ul>
-                    <li>Scans product barcodes locally on your device</li>
-                    <li>Uses the data to identify Warhammer products and retrieve product information</li>
-                    <li>Does not send raw barcode data to external servers unless you explicitly save the scanned item to your collection</li>
-                </ul>
-                
-                <h3>5.3 Media Upload and Ownership</h3>
-                <p>When you upload photos or media to the App:</p>
-                <ul>
-                    <li>You retain full ownership and copyright of your uploaded content</li>
-                    <li>You grant the App provider a license to store, display, and synchronize your content across your devices</li>
-                    <li>Your media files are stored on Cloudflare R2 with encryption</li>
-                    <li>Your media is accessible only through your authenticated session</li>
-                </ul>
-                
-                <h3>6. Technical Infrastructure</h3>
-                <p>The App uses the following cloud services for functionality:</p>
-                
-                <div class="info-box">
-                    <strong>Google Firebase:</strong> Your account data, collection information, and user preferences are stored in Firebase, which is GDPR-compliant with EU server locations.
-                    <br><br>
-                    <strong>Cloudflare R2:</strong> Photos and media files you upload are stored in Cloudflare R2 object storage, which is GDPR-compliant with EU data centers.
+                <h3>1. Information Provider</h3>
+                <div class="contact-info">
+                    [Your Full Name]<br>
+                    [Street and House Number]<br>
+                    [Postal Code] [City], Germany<br>
+                    <br>
+                    <strong>Email:</strong> [your-email]@[domain].com
                 </div>
                 
-                <h3>7. User Data Responsibility</h3>
-                <p>You are responsible for creating and maintaining backups of your collection data. Deleting your account results in permanent and irreversible data loss. The Provider is not responsible for data loss that could have been prevented through appropriate backup measures.</p>
+                <h3>2. Liability for Content</h3>
+                <p>As a service provider, we are responsible for our own content on these pages in accordance with general law (§ 7 para. 1 TMG). However, as service providers, we are not obligated to monitor transmitted or stored third-party information or investigate circumstances that indicate illegal activity (§§ 8–10 TMG).</p>
                 
-                <h3>8. Availability and Maintenance</h3>
-                <p>The Provider endeavors to maintain high app availability but cannot guarantee it. Particularly during the beta phase, service interruptions may occur.</p>
+                <p>Our obligations to remove or block the use of information remain unaffected by the above provisions in accordance with general laws. Liability is only possible from the time of knowledge about a specific violation.</p>
                 
-                <p>Maintenance work will be announced when possible.</p>
+                <h3>3. Liability for Links</h3>
+                <p>Our website contains links to external third-party websites. We are not responsible for the content of linked websites. We have not checked the linked pages for legal compliance and do not monitor them on an ongoing basis. We only accept liability for our own content on our pages in accordance with general law.</p>
                 
-                <h3>9. Data Protection</h3>
-                <p>Information regarding the processing of your personal data can be found in our Privacy Policy.</p>
+                <p>The operators of linked pages are solely responsible for their content.</p>
                 
-                <h3>10. Liability</h3>
-                <p>The Provider is liable according to statutory law for intent and gross negligence only.</p>
+                <h3>4. Copyright and Intellectual Property</h3>
+                <p>The content and works on these pages created by the site operators are subject to German copyright law. Reproduction, processing, distribution, and any other use outside the limits of copyright require written consent from the author or creator.</p>
                 
-                <p>During the beta phase, the App is provided &quot;as-is.&quot; The Provider assumes no warranty for error-free operation or uninterrupted availability.</p>
+                <p>Downloads and copies of this page are only permitted for private, non-commercial use.</p>
                 
-                <p>Liability for data loss exists only to the extent that such loss could not have been avoided through appropriate data backup measures by the user.</p>
+                <h3>5. Dispute Resolution</h3>
+                <p>The European Commission provides a platform for online dispute resolution (ODR):</p>
+                <p><a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a></p>
                 
-                <h3>11. Intellectual Property and User Content</h3>
-                <p>All collection data, notes, and photos you create within the App remain your intellectual property. The App provider has only a license to store and display this content. You may request export of your data at any time.</p>
+                <p>Our email address can be found above in the Legal Notice.</p>
                 
+                <p>We are not obligated to participate in dispute resolution procedures before consumer arbitration bodies.</p>
+                
+                <h3>6. Trademarks and Intellectual Property</h3>
                 <div class="important">
-                    <strong>Important Notice:</strong> Hobby Armory is an unofficial fan project and is not affiliated with Games Workshop Ltd. Warhammer®, Warhammer 40,000®, and Age of Sigmar® are registered trademarks of Games Workshop Ltd.
+                    <strong>Important Notice:</strong> Hobby Armory is an unofficial fan project and is not affiliated with Games Workshop Ltd. Warhammer, Warhammer 40,000, Age of Sigmar, and all associated trademarks are the property of Games Workshop Ltd.
                 </div>
                 
-                <h3>12. Modification of Terms</h3>
-                <p>The Provider reserves the right to modify these Terms at any time. Changes will be announced in the App. Continued use of the App after changes constitutes acceptance of the new Terms.</p>
+                <p>All rights to Warhammer intellectual property are exclusively held by Games Workshop Ltd. Our app is developed independently as a fan project to assist in hobby collection management.</p>
                 
-                <h3>13. Account Deletion</h3>
-                <p>You may delete your account at any time through the App settings. After deletion, all your data is permanently removed. After 6 months of inactivity, accounts may be automatically deleted.</p>
-                
-                <p>The Provider may suspend or delete accounts in violation of these Terms.</p>
-                
-                <h3>14. Governing Law</h3>
-                <p>The laws of the Federal Republic of Germany apply, excluding the UN Convention on Contracts for the International Sale of Goods.</p>
-                
-                <h3>15. Contact</h3>
-                <p>For questions about these Terms, please contact:</p>
+                <h3>7. Contact</h3>
+                <p>If you have any questions regarding this Legal Notice, please contact:</p>
                 <p><strong>Email:</strong> [your-email]@[domain].com</p>
                 
                 <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
@@ -320,122 +242,50 @@
             
             <!-- GERMAN VERSION -->
             <div id="german" class="section">
-                <h2>Allgemeine Geschäftsbedingungen</h2>
+                <h2>Impressum</h2>
                 <p><strong>Stand:</strong> Januar 2026</p>
                 
-                <p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für die Nutzung der mobilen Anwendung &quot;Hobby Armory&quot; (nachfolgend &quot;App&quot; genannt), die von [Dein Name] (nachfolgend &quot;Anbieter&quot; genannt) bereitgestellt wird.</p>
-                
-                <p>Mit der Installation und Nutzung der App erklären Sie sich mit diesen AGB einverstanden.</p>
-                
-                <h3>1. Beschreibung der Anwendung</h3>
-                <p>Hobby Armory ist eine App zur Verwaltung von Warhammer-Miniaturen-Sammlungen. Die App bietet folgende Funktionen:</p>
-                <ul>
-                    <li>Verwaltung und Organisation der Sammlung</li>
-                    <li>Bestandsverfolgung</li>
-                    <li>Sammlungsstatistiken und Analysen</li>
-                </ul>
-                <p>Der Funktionsumfang kann sich während der Beta-Phase ändern.</p>
-                
-                <h3>2. Registrierung und Konto</h3>
-                <p>Zur Nutzung der App ist eine kostenlose Registrierung erforderlich. Sie können sich mit E-Mail, Google oder Apple registrieren.</p>
-                
-                <p>Sie sind verpflichtet, bei der Registrierung wahrheitsgemäße Angaben zu machen und diese aktuell zu halten. Der gewählte Nutzername darf keine Rechte Dritter verletzen.</p>
-                
-                <p>Sie sind für die Geheimhaltung Ihrer Zugangsdaten selbst verantwortlich.</p>
-                
-                <h3>3. Beta-Testphase</h3>
-                <p>Die App befindet sich aktuell in der Beta-Testphase. Dies bedeutet:</p>
-                <ul>
-                    <li>Funktionen können sich ändern oder entfernt werden</li>
-                    <li>Die App kann Fehler enthalten</li>
-                    <li>Datenverluste sind möglich</li>
-                    <li>Ausfallzeiten können auftreten</li>
-                </ul>
-                
-                <h3>4. Lizenzgewährung</h3>
-                <p>Sie erhalten ein nicht-exklusives, nicht-übertragbares, widerrufliches Recht zur Nutzung der App für private, nicht-kommerzielle Zwecke.</p>
-                
-                <h3>5. Nutzerpflichten</h3>
-                <p>Sie verpflichten sich:</p>
-                <ul>
-                    <li>Die App nicht für kommerzielle Zwecke zu nutzen</li>
-                    <li>Die App nicht zu dekompilieren oder den Quellcode zu extrahieren</li>
-                    <li>Die App nicht zur Verletzung von Gesetzen oder Rechten Dritter zu nutzen</li>
-                    <li>Ihre Anmeldedaten nicht mit anderen zu teilen</li>
-                </ul>
-                
-                <h3>5.1 Kamera und Fotofreigabe</h3>
-                <p>Die App fordert Zugriff auf Ihre Gerätekamera an, um:</p>
-                <ul>
-                    <li>Sie Fotos Ihrer Miniaturen zur Dokumentation Ihrer Sammlung aufnehmen zu lassen</li>
-                    <li>Barcode-Scans zur Produktidentifikation zu ermöglichen</li>
-                </ul>
-                <p><strong>Wichtig:</strong> Der Kamerazugriff wird nur verwendet, wenn Sie aktiv einen Fotoaufnahme- oder Barcode-Scan initiieren. Fotos werden nur hochgeladen, wenn Sie sie explizit in Ihrer Sammlung speichern. Sie haben volle Kontrolle darüber, was fotografiert und hochgeladen wird.</p>
-                
-                <h3>5.2 Barcode-Scanning</h3>
-                <p>Die Barcode-Scanning-Funktion:</p>
-                <ul>
-                    <li>Scannt Produktbarcodes lokal auf Ihrem Gerät</li>
-                    <li>Verwendet die Daten zur Identifikation von Warhammer-Produkten und zum Abrufen von Produktinformationen</li>
-                    <li>Sendet Barcode-Rohdaten nicht an externe Server, es sei denn, Sie speichern das gescannte Artikel explizit in Ihrer Sammlung</li>
-                </ul>
-                
-                <h3>5.3 Medienhochladen und Eigentümerschaft</h3>
-                <p>Wenn Sie Fotos oder Medien in die App hochladen:</p>
-                <ul>
-                    <li>Sie behalten vollständiges Eigentum und Urheberrecht an Ihrem hochgeladenen Inhalt</li>
-                    <li>Sie gewähren dem App-Anbieter eine Lizenz zum Speichern, Anzeigen und Synchronisieren Ihres Inhalts auf Ihren Geräten</li>
-                    <li>Ihre Mediendateien werden auf Cloudflare R2 mit Verschlüsselung gespeichert</li>
-                    <li>Ihre Medien sind nur über Ihre authentifizierte Sitzung zugänglich</li>
-                </ul>
-                
-                <h3>6. Technische Infrastruktur</h3>
-                <p>Die App nutzt folgende Cloud-Services für Funktionalität:</p>
-                
-                <div class="info-box">
-                    <strong>Google Firebase:</strong> Ihre Kontodaten, Sammlungsinformationen und Benutzereinstellungen werden in Firebase gespeichert, das DSGVO-konform mit EU-Serverstandorten ist.
-                    <br><br>
-                    <strong>Cloudflare R2:</strong> Fotos und Mediendateien, die Sie hochladen, werden im Cloudflare R2 Objektspeicher gespeichert, der DSGVO-konform mit EU-Rechenzentren ist.
+                <h3>1. Angaben gemäß § 5 TMG</h3>
+                <div class="contact-info">
+                    [Dein vollständiger Name]<br>
+                    [Deine Straße und Hausnummer]<br>
+                    [PLZ] [Ort], Deutschland<br>
+                    <br>
+                    <strong>E-Mail:</strong> [deine-email]@[domain].com
                 </div>
                 
-                <h3>7. Verantwortung für Benutzerdaten</h3>
-                <p>Sie sind verantwortlich für die Erstellung und Verwaltung von Sicherungen Ihrer Sammlungsdaten. Das Löschen Ihres Kontos führt zu permanentem und unwiderruflichem Datenverlust. Der Anbieter ist nicht verantwortlich für Datenverluste, die durch angemessene Sicherungsmaßnahmen hätten vermieden werden können.</p>
+                <h3>2. Haftung für Inhalte</h3>
+                <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8–10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
                 
-                <h3>8. Verfügbarkeit und Wartung</h3>
-                <p>Der Anbieter bemüht sich um eine hohe Verfügbarkeit der App, kann diese jedoch nicht garantieren. Insbesondere während der Beta-Phase kann es zu Serviceausfällen kommen.</p>
+                <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen bleiben hiervon unberührt und richten sich nach den allgemeinen Gesetzen. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt einer konkreten Kenntnis einer Rechtsverletzung möglich.</p>
                 
-                <p>Wartungsarbeiten werden nach Möglichkeit angekündigt.</p>
+                <h3>3. Haftung für Links</h3>
+                <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.</p>
                 
-                <h3>9. Datenschutz</h3>
-                <p>Informationen zur Verarbeitung Ihrer personenbezogenen Daten finden Sie in unserer Datenschutzerklärung.</p>
+                <p>Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
                 
-                <h3>10. Haftung</h3>
-                <p>Der Anbieter haftet nach den gesetzlichen Vorschriften für Vorsatz und grobe Fahrlässigkeit.</p>
+                <h3>4. Urheberrecht</h3>
+                <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des Autors oder Erstellers.</p>
                 
-                <p>Im Rahmen der Beta-Phase wird die App &quot;wie besehen&quot; (as-is) bereitgestellt. Der Anbieter übernimmt keine Gewährleistung für die Fehlerfreiheit oder ununterbrochene Verfügbarkeit.</p>
+                <p>Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
                 
-                <p>Eine Haftung für den Verlust von Daten besteht nur, soweit dieser durch angemessene Datensicherungsmaßnahmen durch den Nutzer nicht vermeidbar gewesen wäre.</p>
+                <h3>5. Streitbeilegung</h3>
+                <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:</p>
+                <p><a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a></p>
                 
-                <h3>11. Geistiges Eigentum und Benutzerinhalte</h3>
-                <p>Alle Sammlungsdaten, Notizen und Fotos, die Sie in der App erstellen, bleiben Ihr Geistiges Eigentum. Der App-Anbieter hat nur eine Lizenz zum Speichern und Anzeigen dieses Inhalts. Sie können jederzeit einen Export Ihrer Daten anfordern.</p>
+                <p>Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
                 
+                <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+                
+                <h3>6. Markenzeichen und Geistiges Eigentum</h3>
                 <div class="important">
-                    <strong>Wichtiger Hinweis:</strong> Hobby Armory ist ein inoffizielles Fan-Projekt und steht in keiner Verbindung zu Games Workshop Ltd. Warhammer®, Warhammer 40.000® und Age of Sigmar® sind eingetragene Marken von Games Workshop Ltd.
+                    <strong>Wichtiger Hinweis:</strong> Hobby Armory ist ein inoffizielles Fan-Projekt und steht in keiner Verbindung zu Games Workshop Ltd. Warhammer, Warhammer 40.000, Age of Sigmar und alle zugehörigen Marken sind Eigentum von Games Workshop Ltd.
                 </div>
                 
-                <h3>12. Änderung der AGB</h3>
-                <p>Der Anbieter behält sich vor, diese AGB jederzeit zu ändern. Änderungen werden in der App angekündigt. Die weitere Nutzung nach Änderung gilt als Zustimmung.</p>
+                <p>Alle Rechte am Warhammer-Geistigen Eigentum sind ausschließlich bei Games Workshop Ltd. Our app wird unabhängig als Fan-Projekt zur Unterstützung der Hobby-Sammlungsverwaltung entwickelt.</p>
                 
-                <h3>13. Kontolöschung</h3>
-                <p>Sie können Ihr Konto jederzeit über die App-Einstellungen löschen. Nach der Löschung werden alle Ihre Daten dauerhaft entfernt. Nach 6 Monaten Inaktivität können Konten automatisch gelöscht werden.</p>
-                
-                <p>Der Anbieter kann Accounts bei Verstoß gegen diese AGB sperren oder löschen.</p>
-                
-                <h3>14. Anwendbares Recht</h3>
-                <p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.</p>
-                
-                <h3>15. Kontakt</h3>
-                <p>Bei Fragen zu diesen AGB wenden Sie sich bitte an:</p>
+                <h3>7. Kontakt</h3>
+                <p>Bei Fragen zu diesem Impressum kontaktieren Sie uns bitte unter:</p>
                 <p><strong>E-Mail:</strong> [deine-email]@[domain].com</p>
                 
                 <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
