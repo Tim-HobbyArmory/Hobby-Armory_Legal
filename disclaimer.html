@@ -1,135 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disclaimer - Hobby Armory</title>
+    <title>Hobby Armory Disclaimer - Trademark Notice</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #0F172A;
-            color: #E2E8F0;
-            line-height: 1.6;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1 {
-            color: #00E5FF;
-            border-bottom: 2px solid #00E5FF;
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #000000 0%, #0d9488 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #000000 0%, #0d9488 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .language-toggle {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .toggle-btn {
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border: 2px solid white;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .toggle-btn.active {
+            background: white;
+            color: #0d9488;
+        }
+        
+        .toggle-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 40px;
+        }
+        
+        .section {
+            display: none;
+        }
+        
+        .section.active {
+            display: block;
+        }
+        
+        .section h2 {
+            color: #0d9488;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 3px solid #0d9488;
             padding-bottom: 10px;
         }
-        h2 {
-            color: #00E5FF;
-            margin-top: 30px;
+        
+        .section h2:first-child {
+            margin-top: 0;
         }
-        .highlight {
-            background: rgba(0, 229, 255, 0.1);
-            padding: 15px;
-            border-left: 3px solid #00E5FF;
-            margin: 20px 0;
+        
+        .section h3 {
+            color: #0f766e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
         }
-        .trademark {
-            background: rgba(255, 165, 0, 0.1);
+        
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .section ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+        }
+        
+        .important {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
             padding: 15px;
-            border-left: 3px solid orange;
             margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .important strong {
+            color: #856404;
+        }
+        
+        .info-box {
+            background: #e8f5f0;
+            border-left: 4px solid #0d9488;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        .info-box strong {
+            color: #0f766e;
+        }
+        
+        @media (max-width: 1024px) {
+            .content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
-    <h1>Disclaimer & Trademark Notice</h1>
-
-    <div class="highlight">
-        <strong>⚠️ UNOFFICIAL FAN-MADE APPLICATION</strong><br>
-        Hobby Armory is an independent, unofficial tool created by fans for fans. 
-        This application is NOT affiliated with, endorsed by, sponsored by, or approved 
-        by Games Workshop Ltd.
+    <div class="container">
+        <div class="header">
+            <h1>Hobby Armory</h1>
+            <p>Disclaimer / Haftungsausschluss</p>
+            <div class="language-toggle">
+                <button class="toggle-btn active" onclick="showLanguage('english')">📄 English</button>
+                <button class="toggle-btn" onclick="showLanguage('german')">📋 Deutsch</button>
+            </div>
+        </div>
+        
+        <div class="content">
+            <!-- ENGLISH VERSION -->
+            <div id="english" class="section active">
+                <h2>Disclaimer</h2>
+                <p><strong>Status:</strong> January 2026</p>
+                
+                <h3>1. Trademark and Intellectual Property Notice</h3>
+                <div class="important">
+                    <strong>Warhammer®</strong>, <strong>Warhammer 40,000®</strong>, <strong>Age of Sigmar®</strong>, <strong>Citadel®</strong>, <strong>Games Workshop®</strong>, and all associated product names, company names, logos, images, illustrations, and symbols are registered trademarks or trademarks of <strong>Games Workshop Limited</strong>, a company registered in England and Wales (Company No. 01467092).
+                </div>
+                
+                <p>All rights to these trademarks are exclusively owned by Games Workshop Limited and its subsidiaries. No ownership, claim, or endorsement is implied or stated by the creators of Hobby Armory.</p>
+                
+                <h3>2. Fair Use of Trademarks</h3>
+                <p>Hobby Armory uses Games Workshop trademarks solely for the following purposes:</p>
+                <ul>
+                    <li>Product identification and organization</li>
+                    <li>Providing reference information to users</li>
+                    <li>Assisting hobby enthusiasts in collection management</li>
+                </ul>
+                
+                <p>This usage falls under fair use guidelines for organizational and reference purposes. Hobby Armory does not claim any ownership of these trademarks and respects the intellectual property rights of Games Workshop Limited.</p>
+                
+                <h3>3. Non-Commercial Nature</h3>
+                <p>Hobby Armory is provided <strong>free of charge</strong> to the community. No financial profit is derived from the use of Games Workshop trademarks. The application is a passion project created by a Warhammer enthusiast for fellow hobbyists.</p>
+                
+                <h3>4. Source of Information</h3>
+                <p>Product information, set contents, and miniature details used in this app are publicly available information compiled from:</p>
+                <ul>
+                    <li>Official Games Workshop product listings and catalogs</li>
+                    <li>Public community databases and wikis</li>
+                    <li>Published tabletop rules and codices</li>
+                </ul>
+                
+                <p>No proprietary Games Workshop content (such as internal documents, artwork files, or confidential information) is used in this application.</p>
+                
+                <h3>5. User-Generated Content</h3>
+                <p>Users of Hobby Armory may create custom entries and add their own content. Games Workshop is not responsible for any user-generated content within this application. Users retain all rights to their own content.</p>
+                
+                <h3>6. No Warranty or Endorsement</h3>
+                <p>Hobby Armory is provided &quot;as-is&quot; without warranty of any kind. This application is not endorsed by, affiliated with, or officially supported by Games Workshop Limited. Any issues, bugs, or inaccuracies in product information are the responsibility of the application creators, not Games Workshop.</p>
+                
+                <h3>7. Limitation of Liability</h3>
+                <p>Games Workshop Limited shall not be liable for any damages, claims, or losses arising from the use of Hobby Armory. The application creators assume full responsibility for the application's functionality and accuracy.</p>
+                
+                <h3>8. Updates and Modifications</h3>
+                <p>This disclaimer may be updated periodically to reflect changes in trademark law or at the request of Games Workshop Ltd. Users will be notified of significant changes.</p>
+                
+                <h3>9. Legal Contact</h3>
+                <p>For legal inquiries or trademark concerns:</p>
+                <p><strong>Email:</strong> [your-email]@[domain].com</p>
+                
+                <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
+                    <em>Hobby Armory - Beta Version 1.0</em><br>
+                    <em>This disclaimer was created in good faith to respect the intellectual property of Games Workshop Limited.</em><br>
+                    <em>Last updated: January 2026</em>
+                </p>
+            </div>
+            
+            <!-- GERMAN VERSION -->
+            <div id="german" class="section">
+                <h2>Haftungsausschluss</h2>
+                <p><strong>Stand:</strong> Januar 2026</p>
+                
+                <h3>1. Markenzeichen und Hinweis auf Geistiges Eigentum</h3>
+                <div class="important">
+                    <strong>Warhammer®</strong>, <strong>Warhammer 40.000®</strong>, <strong>Age of Sigmar®</strong>, <strong>Citadel®</strong>, <strong>Games Workshop®</strong> und alle zugehörigen Produktnamen, Unternehmensbezeichnungen, Logos, Bilder, Illustrationen und Symbole sind eingetragene Marken oder Marken von <strong>Games Workshop Limited</strong>, einem Unternehmen mit eingetragenem Sitz in England und Wales (Company No. 01467092).
+                </div>
+                
+                <p>Alle Rechte an diesen Markenzeichen sind ausschließlich im Besitz von Games Workshop Limited und seinen Tochtergesellschaften. Die Schöpfer von Hobby Armory beanspruchen keine Eigentumsrechte, keine Ansprüche oder Billigung.</p>
+                
+                <h3>2. Fair Use der Markenzeichen</h3>
+                <p>Hobby Armory nutzt Games Workshop-Markenzeichen ausschließlich für folgende Zwecke:</p>
+                <ul>
+                    <li>Produktidentifikation und -organisation</li>
+                    <li>Bereitstellung von Referenzinformationen für Benutzer</li>
+                    <li>Unterstützung von Hobby-Enthusiasten bei der Sammlungsverwaltung</li>
+                </ul>
+                
+                <p>Diese Nutzung fällt unter Fair-Use-Richtlinien für Organisations- und Referenzzwecke. Hobby Armory erhebt keine Ansprüche auf Eigentum dieser Markenzeichen und respektiert die Geistigenrechte von Games Workshop Limited.</p>
+                
+                <h3>3. Gemeinnütziger Charakter</h3>
+                <p>Hobby Armory wird <strong>kostenlos</strong> für die Community bereitgestellt. Es wird kein finanzieller Gewinn aus der Nutzung von Games Workshop-Markenzeichen erzielt. Die Anwendung ist ein Leidenschaftsprojekt, das von einem Warhammer-Enthusiasten für Mithobbyspieler erstellt wurde.</p>
+                
+                <h3>4. Quellen der Informationen</h3>
+                <p>Die in dieser App verwendeten Produktinformationen, Setinhalte und Miniaturdetails sind öffentlich verfügbare Informationen, die aus folgenden Quellen zusammengestellt wurden:</p>
+                <ul>
+                    <li>Offizielle Games Workshop-Produktlistings und Kataloge</li>
+                    <li>Öffentliche Community-Datenbanken und Wikis</li>
+                    <li>Veröffentlichte Tabletop-Regeln und Kodizes</li>
+                </ul>
+                
+                <p>Es werden keine proprietären Games Workshop-Inhalte (wie interne Dokumente, Kunstdateien oder vertrauliche Informationen) in dieser Anwendung verwendet.</p>
+                
+                <h3>5. Benutzergenerierte Inhalte</h3>
+                <p>Benutzer von Hobby Armory können benutzerdefinierte Einträge erstellen und ihre eigenen Inhalte hinzufügen. Games Workshop ist nicht verantwortlich für Benutzerinhalte in dieser Anwendung. Benutzer behalten alle Rechte an ihren eigenen Inhalten.</p>
+                
+                <h3>6. Keine Gewährleistung oder Billigung</h3>
+                <p>Hobby Armory wird &quot;wie vorhanden&quot; ohne jegliche Gewährleistung bereitgestellt. Diese Anwendung wird nicht von Games Workshop Limited gebilligt, ist nicht mit ihr verbunden oder wird nicht offiziell unterstützt. Alle Probleme, Fehler oder Ungenauigkeiten in Produktinformationen sind Verantwortung der Anwendungsersteller, nicht von Games Workshop.</p>
+                
+                <h3>7. Haftungsbeschränkung</h3>
+                <p>Games Workshop Limited haftet nicht für Schäden, Ansprüche oder Verluste, die sich aus der Nutzung von Hobby Armory ergeben. Die Schöpfer der Anwendung übernehmen volle Verantwortung für Funktionalität und Genauigkeit der Anwendung.</p>
+                
+                <h3>8. Aktualisierungen und Änderungen</h3>
+                <p>Dieser Haftungsausschluss kann regelmäßig aktualisiert werden, um Änderungen im Markenrecht oder auf Anfrage von Games Workshop Ltd. widerzuspiegeln. Benutzer werden über wesentliche Änderungen benachrichtigt.</p>
+                
+                <h3>9. Rechtlicher Kontakt</h3>
+                <p>Für rechtliche Anfragen oder Markenbedenken:</p>
+                <p><strong>E-Mail:</strong> [deine-email]@[domain].com</p>
+                
+                <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
+                    <em>Hobby Armory - Beta Version 1.0</em><br>
+                    <em>Dieser Haftungsausschluss wurde in gutem Glauben erstellt, um die Geistigenrechte von Games Workshop Limited zu respektieren.</em><br>
+                    <em>Zuletzt aktualisiert: Januar 2026</em>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 Hobby Armory. Warhammer is a registered trademark of Games Workshop Ltd. | Last updated: January 2026</p>
+        </div>
     </div>
-
-    <h2>Trademark Ownership</h2>
-    <p>
-        <strong>Warhammer®</strong>, <strong>Warhammer 40,000®</strong>, 
-        <strong>Age of Sigmar®</strong>, <strong>Citadel®</strong>, 
-        <strong>Games Workshop®</strong>, and all associated product names, company names, 
-        logos, images, illustrations, and symbols are registered trademarks or trademarks 
-        of <strong>Games Workshop Limited</strong>, a company registered in England and Wales 
-        (Company No. 01467092).
-    </p>
-    <p>
-        All rights to these trademarks are exclusively owned by Games Workshop Limited and 
-        its subsidiaries. No ownership, claim, or endorsement is implied or stated by the 
-        creators of Hobby Armory.
-    </p>
-
-    <h2>Fair Use Statement</h2>
-    <p>
-        Hobby Armory uses Games Workshop trademarks solely for the following purposes:
-    </p>
-    <ul>
-        <li><strong>Identification:</strong> To accurately identify official Games Workshop products</li>
-        <li><strong>Organization:</strong> To help users track and manage their miniatures collections</li>
-        <li><strong>Reference:</strong> To provide searchable database functionality</li>
-    </ul>
-    <p>
-        This usage falls under fair use guidelines for organizational and reference purposes. 
-        Hobby Armory does not claim any ownership of these trademarks and respects the 
-        intellectual property rights of Games Workshop Limited.
-    </p>
-
-    <div class="trademark">
-        <strong>📢 Important Notice</strong><br>
-        If you are a representative of Games Workshop Ltd. and have concerns about this 
-        application, please contact us at <a href="mailto:legal@hobbyarmory.de">legal@hobbyarmory.de</a>. 
-        We are committed to respecting your intellectual property rights and will address 
-        any concerns promptly.
-    </div>
-
-    <h2>No Commercial Use</h2>
-    <p>
-        Hobby Armory is provided <strong>free of charge</strong> to the community. 
-        No financial profit is derived from the use of Games Workshop trademarks. 
-        The application is a passion project created by a Warhammer enthusiast for 
-        fellow hobbyists.
-    </p>
-
-    <h2>Content Sources</h2>
-    <p>
-        Product information, set contents, and miniature details used in this app are 
-        publicly available information compiled from:
-    </p>
-    <ul>
-        <li>Official Games Workshop product listings</li>
-        <li>Public product packaging information</li>
-        <li>Community-contributed data</li>
-    </ul>
-    <p>
-        No proprietary Games Workshop content (such as internal documents, artwork files, 
-        or confidential information) is used in this application.
-    </p>
-
-    <h2>User-Generated Content</h2>
-    <p>
-        Users of Hobby Armory may create custom entries and add their own content. 
-        Games Workshop is not responsible for any user-generated content within this application.
-    </p>
-
-    <h2>Changes to This Disclaimer</h2>
-    <p>
-        This disclaimer may be updated periodically to reflect changes in trademark law 
-        or at the request of Games Workshop Ltd. Users will be notified of significant changes.
-    </p>
-
-    <h2>Contact</h2>
-    <p>
-        For legal inquiries or trademark concerns:<br>
-        Email: <a href="mailto:legal@hobbyarmory.de">legal@hobbyarmory.de</a>
-    </p>
-
-    <p style="margin-top: 60px; font-size: 12px; color: #94A3B8;">
-        Last Updated: January 2026<br>
-        This disclaimer was created in good faith to respect the intellectual property 
-        of Games Workshop Limited.
-    </p>
+    
+    <script>
+        function showLanguage(lang) {
+            // Hide all sections
+            document.getElementById('english').classList.remove('active');
+            document.getElementById('german').classList.remove('active');
+            
+            // Remove active state from all buttons
+            document.querySelectorAll('.toggle-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected language
+            document.getElementById(lang).classList.add('active');
+            
+            // Activate corresponding button
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 </html>
