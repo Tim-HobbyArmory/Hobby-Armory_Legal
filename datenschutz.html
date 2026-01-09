@@ -3,148 +3,442 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung - Hobby Armory</title>
+    <title>Hobby Armory Datenschutz - Privacy Policy</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #0F172A;
-            color: #E2E8F0;
-            line-height: 1.6;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1 {
-            color: #00E5FF;
-            border-bottom: 2px solid #00E5FF;
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #000000 0%, #0d9488 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #000000 0%, #0d9488 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .language-toggle {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .toggle-btn {
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border: 2px solid white;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .toggle-btn.active {
+            background: white;
+            color: #0d9488;
+        }
+        
+        .toggle-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 40px;
+        }
+        
+        .section {
+            display: none;
+        }
+        
+        .section.active {
+            display: block;
+        }
+        
+        .section h2 {
+            color: #0d9488;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 3px solid #0d9488;
             padding-bottom: 10px;
         }
-        h2 {
-            color: #00E5FF;
-            margin-top: 30px;
+        
+        .section h2:first-child {
+            margin-top: 0;
+        }
+        
+        .section h3 {
+            color: #0f766e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .section ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+        }
+        
+        .important {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .important strong {
+            color: #856404;
+        }
+        
+        .info-box {
+            background: #e8f5f0;
+            border-left: 4px solid #0d9488;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        .info-box strong {
+            color: #0f766e;
+        }
+        
+        @media (max-width: 1024px) {
+            .content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
-    <h1>Datenschutzerklärung</h1>
-    <p><strong>Stand:</strong> Januar 2026</p>
-
-    <h2>1. Verantwortlicher</h2>
-    <p>
-        Verantwortlich für die Datenverarbeitung ist:<br><br>
-        [Dein vollständiger Name]<br>
-        [Straße und Hausnummer]<br>
-        [PLZ][ORT], Deutschland<br>
-        E-Mail: <a href="mailto:[deine-email]@[domain].com">[deine-email]@[domain].com</a>
-    </p>
-
-    <h2>2. Welche Daten werden erfasst?</h2>
-    <p>Bei der Nutzung von Hobby Armory werden folgende Daten verarbeitet:</p>
+    <div class="container">
+        <div class="header">
+            <h1>Hobby Armory</h1>
+            <p>Privacy Policy / Datenschutzerklärung</p>
+            <div class="language-toggle">
+                <button class="toggle-btn active" onclick="showLanguage('english')">📄 English</button>
+                <button class="toggle-btn" onclick="showLanguage('german')">📋 Deutsch</button>
+            </div>
+        </div>
+        
+        <div class="content">
+            <!-- ENGLISH VERSION -->
+            <div id="english" class="section active">
+                <h2>Privacy Policy</h2>
+                <p><strong>Status:</strong> January 2026</p>
+                
+                <h3>1. Data Controller</h3>
+                <p>Responsible for data processing:</p>
+                <p>
+                    [Your Full Name]<br>
+                    [Street and House Number]<br>
+                    [Postal Code] [City], Germany<br>
+                    Email: [your-email]@[domain].com
+                </p>
+                
+                <h3>2. Types of Data Processed</h3>
+                <p>When using Hobby Armory, the following data is processed:</p>
+                <ul>
+                    <li><strong>Account Data:</strong> Email address, username, registration date</li>
+                    <li><strong>Authentication Data:</strong> Login credentials (via Email, Google, or Apple)</li>
+                    <li><strong>Collection Data:</strong> Your Warhammer miniature collection information, inventory details, notes</li>
+                    <li><strong>Media Files:</strong> Photos of miniatures you upload to document your collection</li>
+                    <li><strong>Barcode Data:</strong> Data from barcode scans used for product identification</li>
+                    <li><strong>Usage Data:</strong> App usage patterns, feature access logs (anonymized)</li>
+                    <li><strong>Device Data:</strong> Device identifier, app version, operating system (for crash reporting)</li>
+                </ul>
+                
+                <h3>3. Legal Basis for Data Processing</h3>
+                <p>Data processing is based on:</p>
+                <ul>
+                    <li>Your explicit consent (Article 6(1)(a) GDPR)</li>
+                    <li>Fulfillment of the user agreement (Article 6(1)(b) GDPR)</li>
+                    <li>Our legitimate interests in app improvement and security (Article 6(1)(f) GDPR)</li>
+                </ul>
+                
+                <h3>4. Data Storage Locations and Processors</h3>
+                
+                <div class="info-box">
+                    <strong>Google Firebase (Google Cloud Platform):</strong> Your account data, collection information, and user preferences are stored in Google Firebase. Firebase complies with GDPR requirements and offers EU server locations. Data is encrypted in transit and at rest.
+                    <br><br>
+                    <strong>Cloudflare R2:</strong> Photos and media files you upload are stored in Cloudflare R2 object storage. Cloudflare offers GDPR-compliant storage with data centers in the EU. Files are encrypted and accessible only through your authenticated session.
+                </div>
+                
+                <h3>5. Camera and Photo Upload</h3>
+                <p>The app requests access to your device camera to:</p>
+                <ul>
+                    <li>Allow you to take photos of your miniatures for collection documentation</li>
+                    <li>Enable barcode scanning for product identification</li>
+                </ul>
+                <p><strong>Important:</strong> Camera access is only used when you actively initiate photo capture or barcode scanning. Photos are only uploaded when you explicitly choose to save them to your collection. You maintain full control over what is photographed and uploaded.</p>
+                
+                <h3>6. Barcode Scanning</h3>
+                <p>The barcode scanning feature:</p>
+                <ul>
+                    <li>Scans product barcodes locally on your device</li>
+                    <li>Uses the data to identify Warhammer products and retrieve product information</li>
+                    <li>Does not send raw barcode data to external servers unless you explicitly save the scanned item to your collection</li>
+                </ul>
+                
+                <h3>7. Data Sharing and Third Parties</h3>
+                <p>Your personal data is <strong>not sold or shared with third parties</strong>, except:</p>
+                <ul>
+                    <li><strong>Google:</strong> Authentication data (email) is shared with Google when you use Google Sign-In</li>
+                    <li><strong>Apple:</strong> Authentication data is shared with Apple when you use Apple Sign-In</li>
+                    <li><strong>Legal Requirements:</strong> Data may be disclosed if required by law or court order</li>
+                </ul>
+                <p>Your collection data and photos are stored with our cloud providers (Google Firebase and Cloudflare R2) to enable app functionality and synchronization across devices.</p>
+                
+                <h3>8. Data Retention</h3>
+                <p>Your data is retained as long as you actively use the app. Account deletion:</p>
+                <ul>
+                    <li>You can delete your account at any time in the app settings</li>
+                    <li>After deletion, all your data is permanently and irreversibly removed from our systems</li>
+                    <li>After 6 months of inactivity, accounts may be automatically deleted (you will receive an email notification before this happens)</li>
+                </ul>
+                
+                <h3>9. Your GDPR Rights</h3>
+                <p>You have the following rights under GDPR:</p>
+                <ul>
+                    <li><strong>Right of Access:</strong> Request a copy of your personal data</li>
+                    <li><strong>Right to Rectification:</strong> Correct inaccurate personal data</li>
+                    <li><strong>Right to Erasure:</strong> Request deletion of your data (&quot;right to be forgotten&quot;)</li>
+                    <li><strong>Right to Restrict Processing:</strong> Limit how your data is used</li>
+                    <li><strong>Right to Portability:</strong> Receive your data in a machine-readable format</li>
+                    <li><strong>Right to Object:</strong> Object to certain types of data processing</li>
+                </ul>
+                <p>To exercise these rights, contact us at: [your-email]@[domain].com</p>
+                
+                <h3>10. Data Security</h3>
+                <p>We implement industry-standard security measures:</p>
+                <ul>
+                    <li>End-to-end encryption for sensitive data in transit</li>
+                    <li>Encryption at rest for data stored in Firebase and R2</li>
+                    <li>Secure authentication via OAuth 2.0 (Google, Apple, Email)</li>
+                    <li>Regular security updates and maintenance</li>
+                    <li>No storage of passwords in plain text</li>
+                </ul>
+                
+                <h3>11. Data Protection Authority</h3>
+                <p>If you have concerns about our data protection practices, you have the right to lodge a complaint with a data protection authority:</p>
+                <p>
+                    <strong>Independent Data Protection Center of Saarland (Unabhängiges Datenschutzzentrum Saarland):</strong><br>
+                    Fritz-Dobisch-Straße 12<br>
+                    66111 Saarbrücken, Germany<br>
+                    Phone: +49 681 94781-0<br>
+                    Email: poststelle@datenschutz.saarland.de<br>
+                    Web: datenschutz.saarland.de
+                </p>
+                
+                <h3>12. Updates to This Policy</h3>
+                <p>We reserve the right to modify this privacy policy as needed. Significant changes will be communicated to you via the app and/or email.</p>
+                
+                <h3>13. Contact</h3>
+                <p>For questions about data protection and this privacy policy, please contact:</p>
+                <p><strong>Email:</strong> [your-email]@[domain].com</p>
+                
+                <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
+                    <em>Hobby Armory - Beta Version 1.0</em><br>
+                    <em>Last updated: January 2026</em>
+                </p>
+            </div>
+            
+            <!-- GERMAN VERSION -->
+            <div id="german" class="section">
+                <h2>Datenschutzerklärung</h2>
+                <p><strong>Stand:</strong> Januar 2026</p>
+                
+                <h3>1. Verantwortlicher für die Datenverarbeitung</h3>
+                <p>
+                    [Dein vollständiger Name]<br>
+                    [Straße und Hausnummer]<br>
+                    [PLZ] [Ort], Deutschland<br>
+                    E-Mail: [deine-email]@[domain].com
+                </p>
+                
+                <h3>2. Arten der verarbeiteten Daten</h3>
+                <p>Bei der Nutzung von Hobby Armory werden folgende Daten verarbeitet:</p>
+                <ul>
+                    <li><strong>Kontodaten:</strong> E-Mail-Adresse, Benutzername, Registrierungsdatum</li>
+                    <li><strong>Authentifizierungsdaten:</strong> Anmeldedaten (via E-Mail, Google oder Apple)</li>
+                    <li><strong>Sammlungsdaten:</strong> Informationen zu Ihrer Warhammer-Miniaturen-Sammlung, Bestandsdetails, Notizen</li>
+                    <li><strong>Mediendateien:</strong> Fotos von Miniaturen, die Sie hochladen, um Ihre Sammlung zu dokumentieren</li>
+                    <li><strong>Barcode-Daten:</strong> Daten von Barcode-Scans zur Produktidentifikation</li>
+                    <li><strong>Nutzungsdaten:</strong> Nutzungsmuster der App, Funktionszugriffsprotokolle (anonymisiert)</li>
+                    <li><strong>Gerätedaten:</strong> Gerätekennung, App-Version, Betriebssystem (für Absturzberichte)</li>
+                </ul>
+                
+                <h3>3. Rechtsgrundlage für die Datenverarbeitung</h3>
+                <p>Die Datenverarbeitung basiert auf:</p>
+                <ul>
+                    <li>Ihrer ausdrücklichen Zustimmung (Artikel 6 Abs. 1 lit. a DSGVO)</li>
+                    <li>Erfüllung des Nutzungsvertrags (Artikel 6 Abs. 1 lit. b DSGVO)</li>
+                    <li>Unseren berechtigten Interessen an App-Verbesserung und Sicherheit (Artikel 6 Abs. 1 lit. f DSGVO)</li>
+                </ul>
+                
+                <h3>4. Speicherorte und Datenverarbeiter</h3>
+                
+                <div class="info-box">
+                    <strong>Google Firebase (Google Cloud Platform):</strong> Ihre Kontodaten, Sammlungsinformationen und Benutzereinstellungen werden in Google Firebase gespeichert. Firebase erfüllt die DSGVO-Anforderungen und bietet EU-Serverstandorte. Daten sind bei Transport und Speicherung verschlüsselt.
+                    <br><br>
+                    <strong>Cloudflare R2:</strong> Fotos und Mediendateien, die Sie hochladen, werden im Cloudflare R2 Objektspeicher gespeichert. Cloudflare bietet DSGVO-konformen Speicher mit Rechenzentren in der EU. Dateien sind verschlüsselt und nur über Ihre authentifizierte Sitzung zugänglich.
+                </div>
+                
+                <h3>5. Kamera und Fotofreigabe</h3>
+                <p>Die App fordert Zugriff auf Ihre Gerätekamera an, um:</p>
+                <ul>
+                    <li>Sie Fotos Ihrer Miniaturen zur Dokumentation Ihrer Sammlung aufnehmen zu lassen</li>
+                    <li>Barcode-Scans zur Produktidentifikation zu ermöglichen</li>
+                </ul>
+                <p><strong>Wichtig:</strong> Der Kamerazugriff wird nur verwendet, wenn Sie aktiv einen Fotoaufnahme- oder Barcode-Scan initiieren. Fotos werden nur hochgeladen, wenn Sie sie explizit in Ihrer Sammlung speichern. Sie haben volle Kontrolle darüber, was fotografiert und hochgeladen wird.</p>
+                
+                <h3>6. Barcode-Scanning</h3>
+                <p>Die Barcode-Scanning-Funktion:</p>
+                <ul>
+                    <li>Scannt Produktbarcodes lokal auf Ihrem Gerät</li>
+                    <li>Verwendet die Daten zur Identifikation von Warhammer-Produkten und zum Abrufen von Produktinformationen</li>
+                    <li>Sendet Barcode-Rohdaten nicht an externe Server, es sei denn, Sie speichern das gescannte Artikel explizit in Ihrer Sammlung</li>
+                </ul>
+                
+                <h3>7. Datenweitergabe und Dritte</h3>
+                <p>Ihre personenbezogenen Daten werden <strong>nicht an Dritte verkauft oder weitergegeben</strong>, außer:</p>
+                <ul>
+                    <li><strong>Google:</strong> Authentifizierungsdaten (E-Mail) werden bei Google Sign-In an Google weitergegeben</li>
+                    <li><strong>Apple:</strong> Authentifizierungsdaten werden bei Apple Sign-In an Apple weitergegeben</li>
+                    <li><strong>Gesetzliche Anforderungen:</strong> Daten können offengelegt werden, wenn dies gesetzlich vorgeschrieben oder per Gerichtsbeschluss angefordert wird</li>
+                </ul>
+                <p>Ihre Sammlungsdaten und Fotos werden bei unseren Cloud-Anbietern (Google Firebase und Cloudflare R2) gespeichert, um die App-Funktionalität und Synchronisierung zwischen Geräten zu ermöglichen.</p>
+                
+                <h3>8. Datenspeicherung</h3>
+                <p>Ihre Daten werden solange gespeichert, wie Sie die App aktiv nutzen. Kontolöschung:</p>
+                <ul>
+                    <li>Sie können Ihr Konto jederzeit in den App-Einstellungen löschen</li>
+                    <li>Nach der Löschung werden alle Ihre Daten dauerhaft und unwiderruflich aus unseren Systemen entfernt</li>
+                    <li>Nach 6 Monaten Inaktivität können Konten automatisch gelöscht werden (Sie erhalten vorher eine E-Mail-Benachrichtigung)</li>
+                </ul>
+                
+                <h3>9. Ihre DSGVO-Rechte</h3>
+                <p>Sie haben folgende Rechte gemäß DSGVO:</p>
+                <ul>
+                    <li><strong>Auskunftsrecht:</strong> Fordern Sie eine Kopie Ihrer personenbezogenen Daten an</li>
+                    <li><strong>Recht auf Berichtigung:</strong> Korrigieren Sie ungenaue personenbezogene Daten</li>
+                    <li><strong>Recht auf Löschung:</strong> Fordern Sie die Löschung Ihrer Daten an (&quot;Recht auf Vergessenwerden&quot;)</li>
+                    <li><strong>Recht auf Einschränkung der Verarbeitung:</strong> Beschränken Sie, wie Ihre Daten verwendet werden</li>
+                    <li><strong>Recht auf Datenportabilität:</strong> Erhalten Sie Ihre Daten in einem maschinenlesbaren Format</li>
+                    <li><strong>Widerspruchsrecht:</strong> Widersprechen Sie bestimmten Arten der Datenverarbeitung</li>
+                </ul>
+                <p>Um diese Rechte geltend zu machen, kontaktieren Sie uns unter: [deine-email]@[domain].com</p>
+                
+                <h3>10. Datensicherheit</h3>
+                <p>Wir implementieren branchenübliche Sicherheitsmaßnahmen:</p>
+                <ul>
+                    <li>Ende-zu-Ende-Verschlüsselung für sensible Daten während des Transports</li>
+                    <li>Verschlüsselung im Ruhezustand für Daten, die in Firebase und R2 gespeichert werden</li>
+                    <li>Sichere Authentifizierung über OAuth 2.0 (Google, Apple, E-Mail)</li>
+                    <li>Regelmäßige Sicherheitsupdates und Wartung</li>
+                    <li>Keine Speicherung von Passwörtern im Klartext</li>
+                </ul>
+                
+                <h3>11. Datenschutz-Aufsichtsbehörde</h3>
+                <p>Wenn Sie Bedenken bezüglich unserer Datenschutzpraktiken haben, haben Sie das Recht, eine Beschwerde bei einer Datenschutz-Aufsichtsbehörde einzureichen:</p>
+                <p>
+                    <strong>Unabhängiges Datenschutzzentrum Saarland:</strong><br>
+                    Fritz-Dobisch-Straße 12<br>
+                    66111 Saarbrücken, Deutschland<br>
+                    Telefon: 0681 94781-0<br>
+                    E-Mail: poststelle@datenschutz.saarland.de<br>
+                    Web: datenschutz.saarland.de
+                </p>
+                
+                <h3>12. Aktualisierungen dieser Richtlinie</h3>
+                <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu ändern. Wesentliche Änderungen werden Ihnen über die App und/oder E-Mail mitgeteilt.</p>
+                
+                <h3>13. Kontakt</h3>
+                <p>Bei Fragen zum Datenschutz und dieser Datenschutzerklärung kontaktieren Sie uns bitte unter:</p>
+                <p><strong>E-Mail:</strong> [deine-email]@[domain].com</p>
+                
+                <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
+                    <em>Hobby Armory - Beta Version 1.0</em><br>
+                    <em>Zuletzt aktualisiert: Januar 2026</em>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 Hobby Armory. Warhammer is a registered trademark of Games Workshop Ltd. | Last updated: January 2026</p>
+        </div>
+    </div>
     
-    <h3>2.1 Registrierungsdaten</h3>
-    <ul>
-        <li>E-Mail-Adresse</li>
-        <li>Benutzername</li>
-        <li>Passwort (verschlüsselt gespeichert)</li>
-        <li>Registrierungsdatum</li>
-        <li>Bei Social Login (Google/Apple): Name und Profil-URL</li>
-    </ul>
-
-    <h3>2.2 Nutzungsdaten</h3>
-    <ul>
-        <li>Ihre gespeicherten Miniatur-Sets und deren Fortschritt</li>
-        <li>Custom Sets und eigene Inhalte</li>
-        <li>Statistiken und Verlaufsdaten</li>
-        <li>App-Nutzungsstatistiken (z.B. letzte Aktivität)</li>
-    </ul>
-
-    <h3>2.3 Technische Daten</h3>
-    <ul>
-        <li>IP-Adresse (temporär, für Authentifizierung)</li>
-        <li>Gerätetyp und Betriebssystem</li>
-        <li>App-Version</li>
-    </ul>
-
-    <h2>3. Rechtsgrundlage der Verarbeitung</h2>
-    <p>
-        Die Verarbeitung erfolgt auf Grundlage von:
-    </p>
-    <ul>
-        <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> (Vertragserfüllung): Zur Bereitstellung der App-Funktionen</li>
-        <li><strong>Art. 6 Abs. 1 lit. f DSGVO</strong> (Berechtigtes Interesse): Zur Verbesserung der App</li>
-        <li><strong>Art. 6 Abs. 1 lit. a DSGVO</strong> (Einwilligung): Wenn Sie zusätzlichen Features zustimmen</li>
-    </ul>
-
-    <h2>4. Wo werden die Daten gespeichert?</h2>
-    <p>
-        Ihre Daten werden bei <strong>Google Firebase</strong> (Google Cloud Platform) gespeichert. 
-        Firebase erfüllt die Anforderungen der DSGVO und bietet EU-Server-Standorte.
-    </p>
-    <p>
-        Mehr Informationen: 
-        <a href="https://firebase.google.com/support/privacy" target="_blank">
-            Firebase Datenschutz
-        </a>
-    </p>
-
-    <h2>5. Weitergabe von Daten</h2>
-    <p>
-        Ihre Daten werden <strong>nicht an Dritte verkauft oder weitergegeben</strong>, außer:
-    </p>
-    <ul>
-        <li>An Firebase/Google Cloud (als Hosting-Dienstleister)</li>
-        <li>Wenn gesetzlich vorgeschrieben</li>
-    </ul>
-
-    <h2>6. Speicherdauer</h2>
-    <p>
-        Ihre Daten werden gespeichert, solange Sie die App nutzen. Bei Inaktivität von über 6 Monaten 
-        kann Ihr Account automatisch gelöscht werden (Sie erhalten vorher eine Benachrichtigung per E-Mail).
-    </p>
-
-    <h2>7. Ihre Rechte</h2>
-    <p>Sie haben folgende Rechte gemäß DSGVO:</p>
-    <ul>
-        <li><strong>Auskunft</strong> (Art. 15 DSGVO): Welche Daten wir über Sie speichern</li>
-        <li><strong>Berichtigung</strong> (Art. 16 DSGVO): Korrektur falscher Daten</li>
-        <li><strong>Löschung</strong> (Art. 17 DSGVO): "Recht auf Vergessenwerden"</li>
-        <li><strong>Einschränkung</strong> (Art. 18 DSGVO): Einschränkung der Verarbeitung</li>
-        <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO): Export Ihrer Daten</li>
-        <li><strong>Widerspruch</strong> (Art. 21 DSGVO): Widerspruch gegen Verarbeitung</li>
-    </ul>
-    <p>
-        Sie können Ihren Account jederzeit in den App-Einstellungen löschen. Alle Ihre Daten 
-        werden dabei unwiderruflich gelöscht.
-    </p>
-
-    <h2>8. Beschwerde bei Aufsichtsbehörde</h2>
-    <p>
-        Sie haben das Recht, Beschwerde bei einer Datenschutz-Aufsichtsbehörde einzulegen:
-    </p>
-    <p>
-        <strong>Unabhängiges Datenschutzzentrum Saarland</strong><br>
-        Fritz-Dobisch-Straße 12<br>
-        66111 Saarbrücken<br>
-        Telefon: 0681 94781-0<br>
-        E-Mail: poststelle@datenschutz.saarland.de<br>
-        Web: <a href="https://www.datenschutz.saarland.de" target="_blank">datenschutz.saarland.de</a>
-    </p>
-
-    <h2>9. Änderungen dieser Datenschutzerklärung</h2>
-    <p>
-        Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen. 
-        Über wesentliche Änderungen werden Sie in der App informiert.
-    </p>
-
-    <h2>10. Kontakt</h2>
-    <p>
-        Bei Fragen zum Datenschutz kontaktieren Sie uns unter:<br>
-        E-Mail: <a href="mailto:[deine-email]@[domain].com">[deine-email]@[domain].com</a>
-    </p>
-
-    <p style="margin-top: 60px; font-size: 12px; color: #94A3B8;">
-        Hinweis: Diese Datenschutzerklärung wurde mit größter Sorgfalt erstellt. 
-        Sie stellt jedoch keine Rechtsberatung dar.
-    </p>
+    <script>
+        function showLanguage(lang) {
+            // Hide all sections
+            document.getElementById('english').classList.remove('active');
+            document.getElementById('german').classList.remove('active');
+            
+            // Remove active state from all buttons
+            document.querySelectorAll('.toggle-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected language
+            document.getElementById(lang).classList.add('active');
+            
+            // Activate corresponding button
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 </html>
