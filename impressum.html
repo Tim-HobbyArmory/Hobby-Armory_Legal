@@ -3,102 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impressum - Hobby Armory</title>
+    <title>Hobby Armory Impressum - Legal Notice</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #0F172A;
-            color: #E2E8F0;
-            line-height: 1.6;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1 {
-            color: #00E5FF;
-            border-bottom: 2px solid #00E5FF;
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #000000 0%, #0d9488 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #000000 0%, #0d9488 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .language-toggle {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .toggle-btn {
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border: 2px solid white;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .toggle-btn.active {
+            background: white;
+            color: #0d9488;
+        }
+        
+        .toggle-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 40px;
+        }
+        
+        .section {
+            display: none;
+        }
+        
+        .section.active {
+            display: block;
+        }
+        
+        .section h2 {
+            color: #0d9488;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 3px solid #0d9488;
             padding-bottom: 10px;
         }
-        h2 {
-            color: #00E5FF;
-            margin-top: 30px;
+        
+        .section h2:first-child {
+            margin-top: 0;
         }
+        
+        .section h3 {
+            color: #0f766e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .section ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            background: #e8f5f0;
+            border-left: 4px solid #0d9488;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+        
+        .contact-info strong {
+            color: #0f766e;
+            font-style: normal;
+        }
+        
+        .important {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .important strong {
+            color: #856404;
+        }
+        
         a {
-            color: #00E5FF;
+            color: #0d9488;
             text-decoration: none;
         }
+        
         a:hover {
             text-decoration: underline;
         }
-        .section {
-            margin-bottom: 30px;
+        
+        @media (max-width: 1024px) {
+            .content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
-    <h1>Impressum</h1>
+    <div class="container">
+        <div class="header">
+            <h1>Hobby Armory</h1>
+            <p>Legal Notice / Impressum</p>
+            <div class="language-toggle">
+                <button class="toggle-btn active" onclick="showLanguage('english')">📄 English</button>
+                <button class="toggle-btn" onclick="showLanguage('german')">📋 Deutsch</button>
+            </div>
+        </div>
+        
+        <div class="content">
+            <!-- ENGLISH VERSION -->
+            <div id="english" class="section active">
+                <h2>Legal Notice</h2>
+                <p><strong>Status:</strong> January 2026</p>
+                
+                <h3>1. Information Provider</h3>
+                <div class="contact-info">
+                    [Your Full Name]<br>
+                    [Street and House Number]<br>
+                    [Postal Code] [City], Germany<br>
+                    <br>
+                    <strong>Email:</strong> [your-email]@[domain].com
+                </div>
+                
+                <h3>2. Liability for Content</h3>
+                <p>As a service provider, we are responsible for our own content on these pages in accordance with general law (§ 7 para. 1 TMG). However, as service providers, we are not obligated to monitor transmitted or stored third-party information or investigate circumstances that indicate illegal activity (§§ 8–10 TMG).</p>
+                
+                <p>Our obligations to remove or block the use of information remain unaffected by the above provisions in accordance with general laws. Liability is only possible from the time of knowledge about a specific violation.</p>
+                
+                <h3>3. Liability for Links</h3>
+                <p>Our website contains links to external third-party websites. We are not responsible for the content of linked websites. We have not checked the linked pages for legal compliance and do not monitor them on an ongoing basis. We only accept liability for our own content on our pages in accordance with general law.</p>
+                
+                <p>The operators of linked pages are solely responsible for their content.</p>
+                
+                <h3>4. Copyright and Intellectual Property</h3>
+                <p>The content and works on these pages created by the site operators are subject to German copyright law. Reproduction, processing, distribution, and any other use outside the limits of copyright require written consent from the author or creator.</p>
+                
+                <p>Downloads and copies of this page are only permitted for private, non-commercial use.</p>
+                
+                <h3>5. Dispute Resolution</h3>
+                <p>The European Commission provides a platform for online dispute resolution (ODR):</p>
+                <p><a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a></p>
+                
+                <p>Our email address can be found above in the Legal Notice.</p>
+                
+                <p>We are not obligated to participate in dispute resolution procedures before consumer arbitration bodies.</p>
+                
+                <h3>6. Trademarks and Intellectual Property</h3>
+                <div class="important">
+                    <strong>Important Notice:</strong> Hobby Armory is an unofficial fan project and is not affiliated with Games Workshop Ltd. Warhammer, Warhammer 40,000, Age of Sigmar, and all associated trademarks are the property of Games Workshop Ltd.
+                </div>
+                
+                <p>All rights to Warhammer intellectual property are exclusively held by Games Workshop Ltd. Our app is developed independently as a fan project to assist in hobby collection management.</p>
+                
+                <h3>7. Contact</h3>
+                <p>If you have any questions regarding this Legal Notice, please contact:</p>
+                <p><strong>Email:</strong> [your-email]@[domain].com</p>
+                
+                <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
+                    <em>Hobby Armory - Beta Version 1.0</em><br>
+                    <em>Last updated: January 2026</em>
+                </p>
+            </div>
+            
+            <!-- GERMAN VERSION -->
+            <div id="german" class="section">
+                <h2>Impressum</h2>
+                <p><strong>Stand:</strong> Januar 2026</p>
+                
+                <h3>1. Angaben gemäß § 5 TMG</h3>
+                <div class="contact-info">
+                    [Dein vollständiger Name]<br>
+                    [Deine Straße und Hausnummer]<br>
+                    [PLZ] [Ort], Deutschland<br>
+                    <br>
+                    <strong>E-Mail:</strong> [deine-email]@[domain].com
+                </div>
+                
+                <h3>2. Haftung für Inhalte</h3>
+                <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8–10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+                
+                <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen bleiben hiervon unberührt und richten sich nach den allgemeinen Gesetzen. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt einer konkreten Kenntnis einer Rechtsverletzung möglich.</p>
+                
+                <h3>3. Haftung für Links</h3>
+                <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.</p>
+                
+                <p>Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+                
+                <h3>4. Urheberrecht</h3>
+                <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des Autors oder Erstellers.</p>
+                
+                <p>Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
+                
+                <h3>5. Streitbeilegung</h3>
+                <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:</p>
+                <p><a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a></p>
+                
+                <p>Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+                
+                <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+                
+                <h3>6. Markenzeichen und Geistiges Eigentum</h3>
+                <div class="important">
+                    <strong>Wichtiger Hinweis:</strong> Hobby Armory ist ein inoffizielles Fan-Projekt und steht in keiner Verbindung zu Games Workshop Ltd. Warhammer, Warhammer 40.000, Age of Sigmar und alle zugehörigen Marken sind Eigentum von Games Workshop Ltd.
+                </div>
+                
+                <p>Alle Rechte am Warhammer-Geistigen Eigentum sind ausschließlich bei Games Workshop Ltd. Our app wird unabhängig als Fan-Projekt zur Unterstützung der Hobby-Sammlungsverwaltung entwickelt.</p>
+                
+                <h3>7. Kontakt</h3>
+                <p>Bei Fragen zu diesem Impressum kontaktieren Sie uns bitte unter:</p>
+                <p><strong>E-Mail:</strong> [deine-email]@[domain].com</p>
+                
+                <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
+                    <em>Hobby Armory - Beta Version 1.0</em><br>
+                    <em>Zuletzt aktualisiert: Januar 2026</em>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 Hobby Armory. Warhammer is a registered trademark of Games Workshop Ltd. | Last updated: January 2026</p>
+        </div>
+    </div>
     
-    <div class="section">
-        <h2>Angaben gemäß § 5 TMG</h2>
-        <p>
-            [Dein vollständiger Name]<br>
-            [Deine Straße und Hausnummer]<br>
-            [PLZ][ORT], Deutschland
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Kontakt</h2>
-        <p>
-            E-Mail: <a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a><br>
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>EU-Streitschlichtung</h2>
-        <p>
-            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
-            <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a>.<br>
-            Unsere E-Mail-Adresse finden Sie oben im Impressum.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Verbraucher­streit­beilegung/Universal­schlichtungs­stelle</h2>
-        <p>
-            Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer 
-            Verbraucherschlichtungsstelle teilzunehmen.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Haftung für Inhalte</h2>
-        <p>
-            Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten 
-            nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als 
-            Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde 
-            Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige 
-            Tätigkeit hinweisen.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Urheberrecht</h2>
-        <p>
-            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen 
-            dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art 
-            der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen 
-            Zustimmung des jeweiligen Autors bzw. Erstellers.
-        </p>
-        <p>
-            <strong>Hinweis:</strong> Hobby Armory ist ein inoffizielles Fan-Tool und steht in 
-            keiner Verbindung zu Games Workshop Ltd. Warhammer, Warhammer 40,000, Age of Sigmar 
-            und alle zugehörigen Marken sind Eigentum von Games Workshop Ltd.
-        </p>
-    </div>
-
-    <p style="margin-top: 40px; font-size: 12px; color: #94A3B8;">
-        Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a>
-    </p>
+    <script>
+        function showLanguage(lang) {
+            // Hide all sections
+            document.getElementById('english').classList.remove('active');
+            document.getElementById('german').classList.remove('active');
+            
+            // Remove active state from all buttons
+            document.querySelectorAll('.toggle-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected language
+            document.getElementById(lang).classList.add('active');
+            
+            // Activate corresponding button
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 </html>
