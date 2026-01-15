@@ -181,99 +181,106 @@
                 <p><strong>Status:</strong> January 2026</p>
                 
                 <h3>1. Data Controller</h3>
-                <p>Responsible for data processing:</p>
+                <p>Responsible for data processing (Controller):</p>
                 <p>
-                    [Your Full Name]<br>
-                    [Street and House Number]<br>
-                    [Postal Code] [City], Germany<br>
-                    Email: [your-email]@[domain].com
+                    Tim Paulus<br>
+                    c/o Postflex #10266<br>
+                    Emsdettener Str. 10<br>
+                    48268 Greven, Germany<br>
+                    Email: support@hobbyarmory.de
                 </p>
+                <p><strong>Note:</strong> No packages or parcels - acceptance will be refused!</p>
                 
                 <h3>2. Types of Data Processed</h3>
-                <p>When using Hobby Armory, the following data is processed:</p>
+                <p>When using Hobby Armory, the following data may be processed:</p>
                 <ul>
-                    <li><strong>Account Data:</strong> Email address, username, registration date</li>
-                    <li><strong>Authentication Data:</strong> Login credentials (via Email, Google, or Apple)</li>
-                    <li><strong>Collection Data:</strong> Your Warhammer miniature collection information, inventory details, notes</li>
-                    <li><strong>Media Files:</strong> Photos of miniatures you upload to document your collection</li>
-                    <li><strong>Barcode Data:</strong> Data from barcode scans used for product identification</li>
-                    <li><strong>Usage Data:</strong> App usage patterns, feature access logs (anonymized)</li>
-                    <li><strong>Device Data:</strong> Device identifier, app version, operating system (for crash reporting)</li>
+                    <li><strong>Authentication data:</strong> Email address (via Google Sign-In) and a unique user identifier (Firebase UID)</li>
+                    <li><strong>Collection data:</strong> Miniature sets owned, purchase dates, painting progress status, notes</li>
+                    <li><strong>Activity history:</strong> Hobby activity dates for streak tracking</li>
+                    <li><strong>Achievements / milestones:</strong> Progress data for achievements and goals</li>
+                    <li><strong>Goals & preferences:</strong> Monthly goals and user preferences</li>
+                    <li><strong>Images (user uploads):</strong> Photos of painted miniatures uploaded by you</li>
+                    <li><strong>Technical / usage data:</strong> App version, device/OS information and diagnostic data for stability and crash reporting</li>
                 </ul>
                 
                 <h3>3. Legal Basis for Data Processing</h3>
-                <p>Data processing is based on:</p>
+                <p>Data processing is based on the following legal bases (GDPR Article 6):</p>
                 <ul>
-                    <li>Your explicit consent (Article 6(1)(a) GDPR)</li>
-                    <li>Fulfillment of the user agreement (Article 6(1)(b) GDPR)</li>
-                    <li>Our legitimate interests in app improvement and security (Article 6(1)(f) GDPR)</li>
+                    <li><strong>Contract performance</strong> (Article 6(1)(b) GDPR): to provide core app functionality (account, collections, progress tracking)</li>
+                    <li><strong>Consent</strong> (Article 6(1)(a) GDPR): for submitting images to the public community catalog and receiving decision emails</li>
+                    <li><strong>Legitimate interests</strong> (Article 6(1)(f) GDPR): fraud prevention, security, service improvement, and crash reporting (where applicable)</li>
                 </ul>
                 
                 <h3>4. Data Storage Locations and Processors</h3>
                 
                 <div class="info-box">
-                    <strong>Google Firebase (Google Cloud Platform):</strong> Your account data, collection information, and user preferences are stored in Google Firebase. Firebase complies with GDPR requirements and offers EU server locations. Data is encrypted in transit and at rest.
+                    <strong>Google Firebase (Google Cloud Platform):</strong> Authentication (Google Sign-In), user profiles, collection data, activity history, achievements, and preferences are stored using Firebase services (EU region). Data is encrypted in transit and at rest.
                     <br><br>
-                    <strong>Cloudflare R2:</strong> Photos and media files you upload are stored in Cloudflare R2 object storage. Cloudflare offers GDPR-compliant storage with data centers in the EU. Files are encrypted and accessible only through your authenticated session.
+                    <strong>Cloudflare R2 (EU):</strong> Image files you upload are stored in Cloudflare R2 object storage (EU). Images may be delivered via CDN for performance.
+                    <br><br>
+                    <strong>Cloudflare Workers:</strong> Used to process image uploads/deletions (e.g., resizing/optimization workflows).
+                    <br><br>
+                    <strong>Transactional email:</strong> We send transactional emails (e.g., approval/rejection notifications) via Firebase/Google email infrastructure (extensions). No marketing emails are sent unless you explicitly opt in.
                 </div>
                 
-                <h3>5. Camera and Photo Upload</h3>
-                <p>The app requests access to your device camera to:</p>
+                <h3>5. Images: Private vs. Community Catalog</h3>
+                <p>Hobby Armory supports two image categories:</p>
                 <ul>
-                    <li>Allow you to take photos of your miniatures for collection documentation</li>
-                    <li>Enable barcode scanning for product identification</li>
+                    <li><strong>Private images:</strong> Photos you upload for your personal collection. These are intended to be visible only to you.</li>
+                    <li><strong>Community catalog images:</strong> Photos you voluntarily submit for the public catalog. Submissions are reviewed by an admin. Only approved images become publicly visible to all users.</li>
                 </ul>
-                <p><strong>Important:</strong> Camera access is only used when you actively initiate photo capture or barcode scanning. Photos are only uploaded when you explicitly choose to save them to your collection. You maintain full control over what is photographed and uploaded.</p>
+                <p><strong>Image processing:</strong> Uploaded images may be automatically resized and optimized for storage and delivery.</p>
                 
-                <h3>6. Barcode Scanning</h3>
-                <p>The barcode scanning feature:</p>
+                <h3>6. Email Communications</h3>
+                <p>We send emails only when necessary for the service, especially for the community image submission process (approval/rejection notifications including admin feedback).</p>
                 <ul>
-                    <li>Scans product barcodes locally on your device</li>
-                    <li>Uses the data to identify Warhammer products and retrieve product information</li>
-                    <li>Does not send raw barcode data to external servers unless you explicitly save the scanned item to your collection</li>
+                    <li><strong>Reply-to:</strong> support@hobbyarmory.de</li>
+                    <li><strong>No marketing:</strong> No marketing emails are sent unless you explicitly opt in.</li>
                 </ul>
                 
                 <h3>7. Data Sharing and Third Parties</h3>
-                <p>Your personal data is <strong>not sold or shared with third parties</strong>, except:</p>
+                <p>Your personal data is <strong>not sold</strong>. Data is processed by our infrastructure providers (processors) to operate the App:</p>
                 <ul>
-                    <li><strong>Google:</strong> Authentication data (email) is shared with Google when you use Google Sign-In</li>
-                    <li><strong>Apple:</strong> Authentication data is shared with Apple when you use Apple Sign-In</li>
-                    <li><strong>Legal Requirements:</strong> Data may be disclosed if required by law or court order</li>
+                    <li><strong>Google (Firebase / Google Cloud):</strong> authentication, database, and email delivery infrastructure</li>
+                    <li><strong>Cloudflare:</strong> image storage (R2), CDN delivery, and Workers processing</li>
                 </ul>
-                <p>Your collection data and photos are stored with our cloud providers (Google Firebase and Cloudflare R2) to enable app functionality and synchronization across devices.</p>
+                <p><strong>International transfers:</strong> While data is configured to be stored in EU data centers, the service providers are US-based companies. Where required, GDPR safeguards (e.g., Data Processing Agreements and Standard Contractual Clauses) are used.</p>
                 
                 <h3>8. Data Retention</h3>
-                <p>Your data is retained as long as you actively use the app. Account deletion:</p>
+                <p>We store personal data only as long as necessary for the purposes described:</p>
                 <ul>
-                    <li>You can delete your account at any time in the app settings</li>
-                    <li>After deletion, all your data is permanently and irreversibly removed from our systems</li>
-                    <li>After 6 months of inactivity, accounts may be automatically deleted (you will receive an email notification before this happens)</li>
+                    <li><strong>Account data:</strong> stored until you delete your account or after 1 year of inactivity (with notice where feasible)</li>
+                    <li><strong>Collection/activity/achievement data:</strong> stored while your account is active and needed for app functionality</li>
+                    <li><strong>Private images:</strong> stored until you delete them</li>
+                    <li><strong>Community submissions (rejected):</strong> deleted after rejection</li>
+                    <li><strong>Community catalog images (approved):</strong> stored as a public community resource until you request removal / withdraw consent</li>
                 </ul>
                 
                 <h3>9. Your GDPR Rights</h3>
-                <p>You have the following rights under GDPR:</p>
+                <p>You have the following rights under GDPR (Articles 15-22):</p>
                 <ul>
-                    <li><strong>Right of Access:</strong> Request a copy of your personal data</li>
-                    <li><strong>Right to Rectification:</strong> Correct inaccurate personal data</li>
-                    <li><strong>Right to Erasure:</strong> Request deletion of your data (&quot;right to be forgotten&quot;)</li>
-                    <li><strong>Right to Restrict Processing:</strong> Limit how your data is used</li>
-                    <li><strong>Right to Portability:</strong> Receive your data in a machine-readable format</li>
-                    <li><strong>Right to Object:</strong> Object to certain types of data processing</li>
+                    <li><strong>Right of access:</strong> request a copy of your personal data</li>
+                    <li><strong>Right to rectification:</strong> correct inaccurate personal data</li>
+                    <li><strong>Right to erasure:</strong> request deletion of your data (“right to be forgotten”)</li>
+                    <li><strong>Right to restrict processing:</strong> limit how your data is used in certain cases</li>
+                    <li><strong>Right to portability:</strong> receive your data in a machine-readable format (e.g., JSON export)</li>
+                    <li><strong>Right to object:</strong> object to processing based on legitimate interests</li>
+                    <li><strong>Right to withdraw consent:</strong> withdraw consent for community catalog submissions at any time</li>
                 </ul>
-                <p>To exercise these rights, contact us at: [your-email]@[domain].com</p>
+                <p>To exercise these rights, contact us at: support@hobbyarmory.de</p>
                 
                 <h3>10. Data Security</h3>
-                <p>We implement industry-standard security measures:</p>
+                <p>We implement appropriate technical and organizational measures, including:</p>
                 <ul>
-                    <li>End-to-end encryption for sensitive data in transit</li>
-                    <li>Encryption at rest for data stored in Firebase and R2</li>
-                    <li>Secure authentication via OAuth 2.0 (Google, Apple, Email)</li>
-                    <li>Regular security updates and maintenance</li>
-                    <li>No storage of passwords in plain text</li>
+                    <li>Encryption in transit (TLS/HTTPS)</li>
+                    <li>Encryption at rest by our infrastructure providers (Firebase / Cloudflare)</li>
+                    <li>Access control and authentication via Google Sign-In</li>
+                    <li>Principle of least privilege for administrative access</li>
                 </ul>
+                <p><strong>Note:</strong> No system can be guaranteed 100% secure. If a data breach occurs, notifications are handled in line with GDPR requirements (including the 72-hour rule where applicable).</p>
                 
                 <h3>11. Data Protection Authority</h3>
-                <p>If you have concerns about our data protection practices, you have the right to lodge a complaint with a data protection authority:</p>
+                <p>If you have concerns about our data protection practices, you have the right to lodge a complaint with a supervisory authority:</p>
                 <p>
                     <strong>Independent Data Protection Center of Saarland (Unabhängiges Datenschutzzentrum Saarland):</strong><br>
                     Fritz-Dobisch-Straße 12<br>
@@ -284,14 +291,14 @@
                 </p>
                 
                 <h3>12. Updates to This Policy</h3>
-                <p>We reserve the right to modify this privacy policy as needed. Significant changes will be communicated to you via the app and/or email.</p>
+                <p>We may update this privacy policy as needed (e.g., to reflect changes in features or legal requirements). Significant changes will be communicated in the app and/or by email where appropriate.</p>
                 
                 <h3>13. Contact</h3>
                 <p>For questions about data protection and this privacy policy, please contact:</p>
-                <p><strong>Email:</strong> [your-email]@[domain].com</p>
+                <p><strong>Email:</strong> support@hobbyarmory.de</p>
                 
                 <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
-                    <em>Hobby Armory - Beta Version 1.0</em><br>
+                    <em>Hobby Armory</em><br>
                     <em>Last updated: January 2026</em>
                 </p>
             </div>
@@ -302,98 +309,106 @@
                 <p><strong>Stand:</strong> Januar 2026</p>
                 
                 <h3>1. Verantwortlicher für die Datenverarbeitung</h3>
+                <p>Verantwortlich (Art. 4 Nr. 7 DSGVO):</p>
                 <p>
-                    [Dein vollständiger Name]<br>
-                    [Straße und Hausnummer]<br>
-                    [PLZ] [Ort], Deutschland<br>
-                    E-Mail: [deine-email]@[domain].com
+                    Tim Paulus<br>
+                    c/o Postflex #10266<br>
+                    Emsdettener Str. 10<br>
+                    48268 Greven, Deutschland<br>
+                    E-Mail: support@hobbyarmory.de
                 </p>
+                <p><strong>Hinweis:</strong> Keine Pakete oder Päckchen - Annahme wird verweigert!</p>
                 
                 <h3>2. Arten der verarbeiteten Daten</h3>
-                <p>Bei der Nutzung von Hobby Armory werden folgende Daten verarbeitet:</p>
+                <p>Bei der Nutzung von Hobby Armory können insbesondere folgende Daten verarbeitet werden:</p>
                 <ul>
-                    <li><strong>Kontodaten:</strong> E-Mail-Adresse, Benutzername, Registrierungsdatum</li>
-                    <li><strong>Authentifizierungsdaten:</strong> Anmeldedaten (via E-Mail, Google oder Apple)</li>
-                    <li><strong>Sammlungsdaten:</strong> Informationen zu Ihrer Warhammer-Miniaturen-Sammlung, Bestandsdetails, Notizen</li>
-                    <li><strong>Mediendateien:</strong> Fotos von Miniaturen, die Sie hochladen, um Ihre Sammlung zu dokumentieren</li>
-                    <li><strong>Barcode-Daten:</strong> Daten von Barcode-Scans zur Produktidentifikation</li>
-                    <li><strong>Nutzungsdaten:</strong> Nutzungsmuster der App, Funktionszugriffsprotokolle (anonymisiert)</li>
-                    <li><strong>Gerätedaten:</strong> Gerätekennung, App-Version, Betriebssystem (für Absturzberichte)</li>
+                    <li><strong>Authentifizierungsdaten:</strong> E-Mail-Adresse (über Google Sign-In) und eine eindeutige Nutzerkennung (Firebase UID)</li>
+                    <li><strong>Sammlungsdaten:</strong> Besitzte Miniaturen/Sets, Kaufdaten, Malfortschritt, Notizen</li>
+                    <li><strong>Aktivitätsverlauf:</strong> Hobby-Aktivitäten (Datum) zur Streak-/Serien-Berechnung</li>
+                    <li><strong>Erfolge / Meilensteine:</strong> Fortschrittsdaten zu Achievements und Zielen</li>
+                    <li><strong>Ziele & Einstellungen:</strong> Monatsziele und Präferenzen</li>
+                    <li><strong>Bilder (Uploads):</strong> Von Ihnen hochgeladene Fotos bemalter Miniaturen</li>
+                    <li><strong>Technische-/Nutzungsdaten:</strong> App-Version, Geräte-/OS-Informationen und Diagnosedaten zur Stabilität und Crash-Analyse</li>
                 </ul>
                 
                 <h3>3. Rechtsgrundlage für die Datenverarbeitung</h3>
-                <p>Die Datenverarbeitung basiert auf:</p>
+                <p>Die Verarbeitung erfolgt auf Basis folgender Rechtsgrundlagen (Art. 6 DSGVO):</p>
                 <ul>
-                    <li>Ihrer ausdrücklichen Zustimmung (Artikel 6 Abs. 1 lit. a DSGVO)</li>
-                    <li>Erfüllung des Nutzungsvertrags (Artikel 6 Abs. 1 lit. b DSGVO)</li>
-                    <li>Unseren berechtigten Interessen an App-Verbesserung und Sicherheit (Artikel 6 Abs. 1 lit. f DSGVO)</li>
+                    <li><strong>Vertragserfüllung</strong> (Art. 6 Abs. 1 lit. b DSGVO): für Kernfunktionen (Account, Sammlung, Fortschritt)</li>
+                    <li><strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a DSGVO): für Einsendungen in den öffentlichen Community-Katalog und Entscheidungs-E-Mails</li>
+                    <li><strong>Berechtigtes Interesse</strong> (Art. 6 Abs. 1 lit. f DSGVO): Betrugsprävention, Sicherheit, Serviceverbesserung und Crash-Reporting (soweit anwendbar)</li>
                 </ul>
                 
                 <h3>4. Speicherorte und Datenverarbeiter</h3>
                 
                 <div class="info-box">
-                    <strong>Google Firebase (Google Cloud Platform):</strong> Ihre Kontodaten, Sammlungsinformationen und Benutzereinstellungen werden in Google Firebase gespeichert. Firebase erfüllt die DSGVO-Anforderungen und bietet EU-Serverstandorte. Daten sind bei Transport und Speicherung verschlüsselt.
+                    <strong>Google Firebase (Google Cloud Platform):</strong> Authentifizierung (Google Sign-In), Nutzerprofil, Sammlungsdaten, Aktivitätsverlauf, Erfolge sowie Einstellungen werden über Firebase-Dienste (Region EU) verarbeitet. Daten werden bei Transport und Speicherung verschlüsselt.
                     <br><br>
-                    <strong>Cloudflare R2:</strong> Fotos und Mediendateien, die Sie hochladen, werden im Cloudflare R2 Objektspeicher gespeichert. Cloudflare bietet DSGVO-konformen Speicher mit Rechenzentren in der EU. Dateien sind verschlüsselt und nur über Ihre authentifizierte Sitzung zugänglich.
+                    <strong>Cloudflare R2 (EU):</strong> Bilddateien, die Sie hochladen, werden in Cloudflare R2 (EU) gespeichert und ggf. über ein CDN ausgeliefert.
+                    <br><br>
+                    <strong>Cloudflare Workers:</strong> Verarbeitungsschritte rund um Bild-Upload/-Löschung (z. B. Resize/Optimierung Workflows).
+                    <br><br>
+                    <strong>Transaktions-E-Mails:</strong> Benachrichtigungen (z. B. Annahme/Ablehnung von Community-Einsendungen) werden über Firebase/Google-E-Mail-Infrastruktur versendet. Keine Marketing-E-Mails ohne Opt-in.
                 </div>
                 
-                <h3>5. Kamera und Fotofreigabe</h3>
-                <p>Die App fordert Zugriff auf Ihre Gerätekamera an, um:</p>
+                <h3>5. Bilder: Privat vs. Community-Katalog</h3>
+                <p>Hobby Armory kennt zwei Bild-Kategorien:</p>
                 <ul>
-                    <li>Sie Fotos Ihrer Miniaturen zur Dokumentation Ihrer Sammlung aufnehmen zu lassen</li>
-                    <li>Barcode-Scans zur Produktidentifikation zu ermöglichen</li>
+                    <li><strong>Private Bilder:</strong> Fotos für Ihre persönliche Sammlung (nur für Sie vorgesehen).</li>
+                    <li><strong>Community-Katalog Bilder:</strong> Freiwillige Einsendungen für den öffentlichen Katalog. Einsendungen werden manuell geprüft; nur genehmigte Bilder sind für alle Nutzer sichtbar.</li>
                 </ul>
-                <p><strong>Wichtig:</strong> Der Kamerazugriff wird nur verwendet, wenn Sie aktiv einen Fotoaufnahme- oder Barcode-Scan initiieren. Fotos werden nur hochgeladen, wenn Sie sie explizit in Ihrer Sammlung speichern. Sie haben volle Kontrolle darüber, was fotografiert und hochgeladen wird.</p>
+                <p><strong>Bildverarbeitung:</strong> Hochgeladene Bilder können automatisch skaliert und optimiert werden.</p>
                 
-                <h3>6. Barcode-Scanning</h3>
-                <p>Die Barcode-Scanning-Funktion:</p>
+                <h3>6. E-Mail-Kommunikation</h3>
+                <p>Wir versenden E-Mails nur, wenn es für die Nutzung erforderlich ist, insbesondere im Zusammenhang mit Community-Bild-Einsendungen (Annahme/Ablehnung inkl. Feedback).</p>
                 <ul>
-                    <li>Scannt Produktbarcodes lokal auf Ihrem Gerät</li>
-                    <li>Verwendet die Daten zur Identifikation von Warhammer-Produkten und zum Abrufen von Produktinformationen</li>
-                    <li>Sendet Barcode-Rohdaten nicht an externe Server, es sei denn, Sie speichern das gescannte Artikel explizit in Ihrer Sammlung</li>
+                    <li><strong>Reply-to:</strong> support@hobbyarmory.de</li>
+                    <li><strong>Kein Marketing:</strong> Es werden keine Marketing-E-Mails versendet, sofern Sie nicht ausdrücklich zugestimmt haben.</li>
                 </ul>
                 
                 <h3>7. Datenweitergabe und Dritte</h3>
-                <p>Ihre personenbezogenen Daten werden <strong>nicht an Dritte verkauft oder weitergegeben</strong>, außer:</p>
+                <p>Ihre personenbezogenen Daten werden <strong>nicht verkauft</strong>. Zur Bereitstellung der App werden Daten durch unsere Auftragsverarbeiter verarbeitet:</p>
                 <ul>
-                    <li><strong>Google:</strong> Authentifizierungsdaten (E-Mail) werden bei Google Sign-In an Google weitergegeben</li>
-                    <li><strong>Apple:</strong> Authentifizierungsdaten werden bei Apple Sign-In an Apple weitergegeben</li>
-                    <li><strong>Gesetzliche Anforderungen:</strong> Daten können offengelegt werden, wenn dies gesetzlich vorgeschrieben oder per Gerichtsbeschluss angefordert wird</li>
+                    <li><strong>Google (Firebase / Google Cloud):</strong> Authentifizierung, Datenbank, E-Mail-Infrastruktur</li>
+                    <li><strong>Cloudflare:</strong> Bildspeicherung (R2), CDN-Auslieferung, Workers-Verarbeitung</li>
                 </ul>
-                <p>Ihre Sammlungsdaten und Fotos werden bei unseren Cloud-Anbietern (Google Firebase und Cloudflare R2) gespeichert, um die App-Funktionalität und Synchronisierung zwischen Geräten zu ermöglichen.</p>
+                <p><strong>Internationale Datenübermittlungen:</strong> Auch wenn die Speicherung in EU-Rechenzentren konfiguriert ist, werden die Dienste von US-Unternehmen betrieben. Soweit erforderlich werden DSGVO-Schutzmechanismen (z. B. Auftragsverarbeitungsverträge und Standardvertragsklauseln) eingesetzt.</p>
                 
                 <h3>8. Datenspeicherung</h3>
-                <p>Ihre Daten werden solange gespeichert, wie Sie die App aktiv nutzen. Kontolöschung:</p>
+                <p>Wir speichern personenbezogene Daten nur so lange wie erforderlich:</p>
                 <ul>
-                    <li>Sie können Ihr Konto jederzeit in den App-Einstellungen löschen</li>
-                    <li>Nach der Löschung werden alle Ihre Daten dauerhaft und unwiderruflich aus unseren Systemen entfernt</li>
-                    <li>Nach 6 Monaten Inaktivität können Konten automatisch gelöscht werden (Sie erhalten vorher eine E-Mail-Benachrichtigung)</li>
+                    <li><strong>Account-Daten:</strong> bis zur Kontolöschung oder nach 3 Jahren Inaktivität (mit Benachrichtigung, soweit möglich)</li>
+                    <li><strong>Sammlungs-/Aktivitäts-/Erfolgsdaten:</strong> solange Ihr Konto aktiv ist bzw. für die App-Funktionen benötigt wird</li>
+                    <li><strong>Private Bilder:</strong> bis Sie diese löschen</li>
+                    <li><strong>Abgelehnte Community-Einsendungen:</strong> Löschung nach Ablehnung</li>
+                    <li><strong>Genehmigte Katalogbilder:</strong> als öffentliche Community-Ressource bis zu Ihrem Entfernen/Widerruf der Einwilligung</li>
                 </ul>
                 
                 <h3>9. Ihre DSGVO-Rechte</h3>
-                <p>Sie haben folgende Rechte gemäß DSGVO:</p>
+                <p>Sie haben insbesondere folgende Rechte (Art. 15-22 DSGVO):</p>
                 <ul>
-                    <li><strong>Auskunftsrecht:</strong> Fordern Sie eine Kopie Ihrer personenbezogenen Daten an</li>
-                    <li><strong>Recht auf Berichtigung:</strong> Korrigieren Sie ungenaue personenbezogene Daten</li>
-                    <li><strong>Recht auf Löschung:</strong> Fordern Sie die Löschung Ihrer Daten an (&quot;Recht auf Vergessenwerden&quot;)</li>
-                    <li><strong>Recht auf Einschränkung der Verarbeitung:</strong> Beschränken Sie, wie Ihre Daten verwendet werden</li>
-                    <li><strong>Recht auf Datenportabilität:</strong> Erhalten Sie Ihre Daten in einem maschinenlesbaren Format</li>
-                    <li><strong>Widerspruchsrecht:</strong> Widersprechen Sie bestimmten Arten der Datenverarbeitung</li>
+                    <li><strong>Auskunft:</strong> Kopie Ihrer personenbezogenen Daten</li>
+                    <li><strong>Berichtigung:</strong> Korrektur unrichtiger Daten</li>
+                    <li><strong>Löschung:</strong> Löschung Ihrer Daten („Recht auf Vergessenwerden“)</li>
+                    <li><strong>Einschränkung:</strong> Einschränkung der Verarbeitung in bestimmten Fällen</li>
+                    <li><strong>Datenübertragbarkeit:</strong> Bereitstellung Ihrer Daten in einem maschinenlesbaren Format (z. B. JSON Export)</li>
+                    <li><strong>Widerspruch:</strong> Widerspruch gegen Verarbeitung auf Basis berechtigter Interessen</li>
+                    <li><strong>Widerruf Einwilligung:</strong> Widerruf der Einwilligung für Community-Katalog-Einsendungen jederzeit möglich</li>
                 </ul>
-                <p>Um diese Rechte geltend zu machen, kontaktieren Sie uns unter: [deine-email]@[domain].com</p>
+                <p>Zur Ausübung Ihrer Rechte: support@hobbyarmory.de</p>
                 
                 <h3>10. Datensicherheit</h3>
-                <p>Wir implementieren branchenübliche Sicherheitsmaßnahmen:</p>
+                <p>Wir setzen angemessene technische und organisatorische Maßnahmen ein, z. B.:</p>
                 <ul>
-                    <li>Ende-zu-Ende-Verschlüsselung für sensible Daten während des Transports</li>
-                    <li>Verschlüsselung im Ruhezustand für Daten, die in Firebase und R2 gespeichert werden</li>
-                    <li>Sichere Authentifizierung über OAuth 2.0 (Google, Apple, E-Mail)</li>
-                    <li>Regelmäßige Sicherheitsupdates und Wartung</li>
-                    <li>Keine Speicherung von Passwörtern im Klartext</li>
+                    <li>Verschlüsselung bei der Übertragung (TLS/HTTPS)</li>
+                    <li>Verschlüsselung im Ruhezustand durch die Infrastruktur-Anbieter (Firebase / Cloudflare)</li>
+                    <li>Zugriffsschutz und Authentifizierung über Google Sign-In</li>
+                    <li>Minimierung administrativer Zugriffe (Need-to-know)</li>
                 </ul>
+                <p><strong>Hinweis:</strong> Absolute Sicherheit ist nicht möglich. Bei Datenschutzvorfällen erfolgt eine Benachrichtigung im Rahmen der DSGVO (u. a. 72-Stunden-Regel, soweit anwendbar).</p>
                 
                 <h3>11. Datenschutz-Aufsichtsbehörde</h3>
-                <p>Wenn Sie Bedenken bezüglich unserer Datenschutzpraktiken haben, haben Sie das Recht, eine Beschwerde bei einer Datenschutz-Aufsichtsbehörde einzureichen:</p>
+                <p>Sie haben das Recht, eine Beschwerde bei einer Datenschutz-Aufsichtsbehörde einzureichen, z. B.:</p>
                 <p>
                     <strong>Unabhängiges Datenschutzzentrum Saarland:</strong><br>
                     Fritz-Dobisch-Straße 12<br>
@@ -404,14 +419,14 @@
                 </p>
                 
                 <h3>12. Aktualisierungen dieser Richtlinie</h3>
-                <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu ändern. Wesentliche Änderungen werden Ihnen über die App und/oder E-Mail mitgeteilt.</p>
+                <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen (z. B. bei Feature-Änderungen oder rechtlichen Anforderungen). Wesentliche Änderungen teilen wir Ihnen über die App und/oder per E-Mail mit, soweit angemessen.</p>
                 
                 <h3>13. Kontakt</h3>
                 <p>Bei Fragen zum Datenschutz und dieser Datenschutzerklärung kontaktieren Sie uns bitte unter:</p>
-                <p><strong>E-Mail:</strong> [deine-email]@[domain].com</p>
+                <p><strong>E-Mail:</strong> support@hobbyarmory.de</p>
                 
                 <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
-                    <em>Hobby Armory - Beta Version 1.0</em><br>
+                    <em>Hobby Armory</em><br>
                     <em>Zuletzt aktualisiert: Januar 2026</em>
                 </p>
             </div>
