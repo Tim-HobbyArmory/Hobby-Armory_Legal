@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Armory - Delete Account</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #000000 0%, #0d9488 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #000000 0%, #0d9488 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .language-toggle {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .toggle-btn {
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border: 2px solid white;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .toggle-btn.active {
+            background: white;
+            color: #0d9488;
+        }
+
+        .toggle-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        h2 {
+            color: #0d9488;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: #000;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ol, ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background: #f0fdfa;
+            border-left: 4px solid #0d9488;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+
+        .contact-box {
+            background: #1a1a1a;
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-box a {
+            color: #0d9488;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .warning {
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+
+        .footer {
+            background: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        strong {
+            color: #0d9488;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗑️ Delete Your Account</h1>
+            <p>Hobby Armory - Account Deletion</p>
+            <div class="language-toggle">
+                <button class="toggle-btn active" onclick="switchLang('en')">English</button>
+                <button class="toggle-btn" onclick="switchLang('de')">Deutsch</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- ENGLISH VERSION -->
+            <div id="en" class="lang-section active">
+                <h2>Delete Your Hobby Armory Account</h2>
+                <p><strong>Updated:</strong> January 2026</p>
+
+                <h3>Option 1: Delete Account In-App (Recommended)</h3>
+                <div class="highlight-box">
+                    <p><strong>If you still have the app installed, follow these steps:</strong></p>
+                    <ol>
+                        <li>Open the <strong>Hobby Armory</strong> app on your device</li>
+                        <li>Navigate to <strong>Settings</strong> (⚙️ icon)</li>
+                        <li>Go to your <strong>Profile</strong> section</li>
+                        <li>Scroll down and tap <strong>"Delete Account"</strong></li>
+                        <li>Confirm the deletion by following the on-screen prompts</li>
+                    </ol>
+                </div>
+
+                <div class="warning">
+                    <p><strong>⚠️ Important:</strong> Account deletion is permanent and cannot be undone. All your data, including:</p>
+                    <ul>
+                        <li>Your miniature collection data</li>
+                        <li>Custom entries and notes</li>
+                        <li>Account settings and preferences</li>
+                        <li>Any associated purchases or subscriptions</li>
+                    </ul>
+                    <p>...will be permanently deleted and cannot be recovered.</p>
+                </div>
+
+                <h3>Option 2: Request Deletion via Email</h3>
+                <p>If you have already uninstalled the app or cannot access your account, you can request account deletion by contacting us directly.</p>
+
+                <div class="contact-box">
+                    <p><strong>Email us at:</strong></p>
+                    <a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a>
+                    <p style="margin-top: 15px; font-size: 0.95em;">
+                        <strong>Subject:</strong> Account Deletion Request<br>
+                        <strong>Include:</strong> Your registered email address
+                    </p>
+                </div>
+
+                <p>We will process your deletion request within <strong>30 days</strong> and send you a confirmation email once completed.</p>
+
+                <h3>What Gets Deleted?</h3>
+                <p>When you delete your account, the following data is permanently removed:</p>
+                <ul>
+                    <li><strong>Account information:</strong> Email address, username, authentication data</li>
+                    <li><strong>Collection data:</strong> All miniature sets, custom entries, and collection statistics</li>
+                    <li><strong>User preferences:</strong> App settings, theme choices, and customizations</li>
+                    <li><strong>Activity data:</strong> Usage history and analytics</li>
+                </ul>
+
+                <h3>Questions?</h3>
+                <p>If you have any questions about account deletion or data privacy, please contact us at <a href="mailto:support@hobbyarmory.de" style="color: #0d9488;">support@hobbyarmory.de</a></p>
+            </div>
+
+            <!-- GERMAN VERSION -->
+            <div id="de" class="lang-section">
+                <h2>Lösche dein Hobby Armory Konto</h2>
+                <p><strong>Aktualisiert:</strong> Januar 2026</p>
+
+                <h3>Option 1: Konto in der App löschen (Empfohlen)</h3>
+                <div class="highlight-box">
+                    <p><strong>Wenn du die App noch installiert hast, folge diesen Schritten:</strong></p>
+                    <ol>
+                        <li>Öffne die <strong>Hobby Armory</strong> App auf deinem Gerät</li>
+                        <li>Navigiere zu den <strong>Einstellungen</strong> (⚙️ Symbol)</li>
+                        <li>Gehe zum <strong>Profil</strong>-Bereich</li>
+                        <li>Scrolle nach unten und tippe auf <strong>"Konto löschen"</strong></li>
+                        <li>Bestätige die Löschung durch Befolgen der Anweisungen auf dem Bildschirm</li>
+                    </ol>
+                </div>
+
+                <div class="warning">
+                    <p><strong>⚠️ Wichtig:</strong> Die Kontolöschung ist endgültig und kann nicht rückgängig gemacht werden. Alle deine Daten, einschließlich:</p>
+                    <ul>
+                        <li>Deine Miniaturen-Sammlungsdaten</li>
+                        <li>Benutzerdefinierte Einträge und Notizen</li>
+                        <li>Kontoeinstellungen und Präferenzen</li>
+                        <li>Alle zugehörigen Käufe oder Abonnements</li>
+                    </ul>
+                    <p>...werden dauerhaft gelöscht und können nicht wiederhergestellt werden.</p>
+                </div>
+
+                <h3>Option 2: Löschung per E-Mail anfordern</h3>
+                <p>Wenn du die App bereits deinstalliert hast oder nicht auf dein Konto zugreifen kannst, kannst du die Kontolöschung beantragen, indem du uns direkt kontaktierst.</p>
+
+                <div class="contact-box">
+                    <p><strong>Schreibe uns an:</strong></p>
+                    <a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a>
+                    <p style="margin-top: 15px; font-size: 0.95em;">
+                        <strong>Betreff:</strong> Kontolöschung<br>
+                        <strong>Angeben:</strong> Deine registrierte E-Mail-Adresse
+                    </p>
+                </div>
+
+                <p>Wir werden deine Löschanfrage innerhalb von <strong>30 Tagen</strong> bearbeiten und dir eine Bestätigungs-E-Mail senden, sobald die Löschung abgeschlossen ist.</p>
+
+                <h3>Was wird gelöscht?</h3>
+                <p>Wenn du dein Konto löschst, werden folgende Daten dauerhaft entfernt:</p>
+                <ul>
+                    <li><strong>Kontoinformationen:</strong> E-Mail-Adresse, Benutzername, Authentifizierungsdaten</li>
+                    <li><strong>Sammlungsdaten:</strong> Alle Miniaturen-Sets, benutzerdefinierte Einträge und Sammlungsstatistiken</li>
+                    <li><strong>Benutzereinstellungen:</strong> App-Einstellungen, Theme-Auswahl und Anpassungen</li>
+                    <li><strong>Aktivitätsdaten:</strong> Nutzungsverlauf und Analyse-Daten</li>
+                </ul>
+
+                <h3>Fragen?</h3>
+                <p>Wenn du Fragen zur Kontolöschung oder zum Datenschutz hast, kontaktiere uns bitte unter <a href="mailto:support@hobbyarmory.de" style="color: #0d9488;">support@hobbyarmory.de</a></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Hobby Armory - Version 1.0</p>
+            <p>Last updated: January 2026 | Zuletzt aktualisiert: Januar 2026</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Hide all language sections
+            document.querySelectorAll('.lang-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.toggle-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected language
+            document.getElementById(lang).classList.add('active');
+
+            // Mark button as active
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
