@@ -120,6 +120,14 @@
             border-radius: 6px;
         }
 
+        .info-box {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+
         .contact-box {
             background: #1a1a1a;
             color: white;
@@ -148,6 +156,11 @@
             border-radius: 6px;
         }
 
+        .warning a {
+            color: #b91c1c;
+            text-decoration: underline;
+        }
+
         .footer {
             background: #f8f8f8;
             padding: 20px;
@@ -158,6 +171,10 @@
 
         strong {
             color: #0d9488;
+        }
+
+        .warning strong {
+            color: #b91c1c;
         }
     </style>
 </head>
@@ -176,7 +193,7 @@
             <!-- ENGLISH VERSION -->
             <div id="en" class="lang-section active">
                 <h2>Delete Your Hobby Armory Account</h2>
-                <p><strong>Updated:</strong> January 2026</p>
+                <p><strong>Updated:</strong> April 2026</p>
 
                 <h3>Option 1: Delete Account In-App (Recommended)</h3>
                 <div class="highlight-box">
@@ -191,14 +208,22 @@
                 </div>
 
                 <div class="warning">
-                    <p><strong>⚠️ Important:</strong> Account deletion is permanent and cannot be undone. All your data, including:</p>
+                    <p><strong>⚠️ Active Subscriptions — Important:</strong> Deleting your Hobby Armory account does <strong>NOT</strong> automatically cancel your subscription. Your subscription is managed by the Apple App Store or Google Play. You must <strong>cancel your subscription separately</strong> before or after deleting your account to stop future billing. Access to premium features will end immediately upon account deletion.</p>
+                    <p><strong>How to cancel your subscription:</strong></p>
                     <ul>
-                        <li>Your miniature collection data</li>
-                        <li>Custom entries and notes</li>
-                        <li>Account settings and preferences</li>
-                        <li>Any associated purchases or subscriptions</li>
+                        <li><strong>Apple App Store (iOS):</strong> Settings &gt; [Your Name] &gt; Subscriptions &gt; Hobby Armory &gt; Cancel Subscription. See <a href="https://support.apple.com/en-us/HT202039" target="_blank" rel="noopener noreferrer">support.apple.com/en-us/HT202039</a>.</li>
+                        <li><strong>Google Play (Android):</strong> Open the Play Store &gt; Profile icon &gt; Payments &amp; subscriptions &gt; Subscriptions &gt; Hobby Armory &gt; Cancel subscription. See <a href="https://support.google.com/googleplay/answer/7018481" target="_blank" rel="noopener noreferrer">support.google.com/googleplay/answer/7018481</a>.</li>
                     </ul>
-                    <p>...will be permanently deleted and cannot be recovered.</p>
+                </div>
+
+                <div class="info-box">
+                    <p><strong>🍎 Sign in with Apple:</strong> If you signed in with Apple, deleting your account will revoke your Sign in with Apple authorization for Hobby Armory. You can manage Sign in with Apple permissions at any time in your Apple ID settings:</p>
+                    <p><em>Settings &gt; [Your Name] &gt; Sign in &amp; Security &gt; Sign in with Apple</em> (on older iOS versions: <em>Settings &gt; [Your Name] &gt; Password &amp; Security &gt; Apps Using Apple ID</em>).</p>
+                    <p>If you used Apple's "Hide My Email" relay address, the relay will be deactivated automatically once you remove the Hobby Armory authorization on your Apple device.</p>
+                </div>
+
+                <div class="warning">
+                    <p><strong>⚠️ Permanent Deletion:</strong> Account deletion is permanent and cannot be undone. All your data — including your collection, custom entries, settings, photos, achievements, and any associated entitlements — will be permanently removed and cannot be recovered.</p>
                 </div>
 
                 <h3>Option 2: Request Deletion via Email</h3>
@@ -209,29 +234,42 @@
                     <a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a>
                     <p style="margin-top: 15px; font-size: 0.95em;">
                         <strong>Subject:</strong> Account Deletion Request<br>
-                        <strong>Include:</strong> Your registered email address
+                        <strong>Include:</strong> Your registered email address<br>
+                        (or, for Apple Sign-In users, the relay email or Apple ID used)
                     </p>
                 </div>
 
-                <p>We will process your deletion request within <strong>30 days</strong> and send you a confirmation email once completed.</p>
+                <p>We will process your deletion request within <strong>30 days</strong> and send you a confirmation email once completed. Please remember to cancel any active subscription separately via the App Store or Google Play (see above).</p>
 
                 <h3>What Gets Deleted?</h3>
-                <p>When you delete your account, the following data is permanently removed:</p>
+                <p>When you delete your account, the following data is permanently removed from our systems:</p>
                 <ul>
-                    <li><strong>Account information:</strong> Email address, username, authentication data</li>
-                    <li><strong>Collection data:</strong> All miniature sets, custom entries, and collection statistics</li>
-                    <li><strong>User preferences:</strong> App settings, theme choices, and customizations</li>
-                    <li><strong>Activity data:</strong> Usage history and analytics</li>
+                    <li><strong>Account information:</strong> Email address, Firebase UID, Apple User ID and authentication data</li>
+                    <li><strong>Apple Sign-In authorization:</strong> the link between your Apple ID and Hobby Armory</li>
+                    <li><strong>Collection data:</strong> All miniature sets, custom entries, painting progress and notes</li>
+                    <li><strong>Activity, streaks &amp; achievements:</strong> Hobby activity history, streaks, milestones and goals</li>
+                    <li><strong>User preferences:</strong> App settings, theme choices and customizations</li>
+                    <li><strong>Images:</strong> Private images stored in your account; community catalog images you submitted (approved or pending) will be removed from the public catalog</li>
+                    <li><strong>Push notification tokens:</strong> All device tokens linked to your account</li>
+                    <li><strong>Subscription status / entitlements:</strong> Your local access to premium features ends immediately. Note: actual billing records are managed by Apple or Google and remain subject to their retention policies.</li>
+                    <li><strong>Diagnostic data:</strong> Pseudonymous analytics and crash data linked to your account is removed in accordance with the providers' standard retention.</li>
+                </ul>
+
+                <h3>What Is NOT Deleted by Us</h3>
+                <ul>
+                    <li><strong>App Store / Google Play purchase history</strong> — managed by Apple and Google according to their policies.</li>
+                    <li><strong>Active subscriptions</strong> — must be cancelled separately (see warning above).</li>
+                    <li><strong>Information held by third-party providers</strong> beyond our control (e.g., Apple, Google, RevenueCat) is subject to their respective privacy policies.</li>
                 </ul>
 
                 <h3>Questions?</h3>
-                <p>If you have any questions about account deletion or data privacy, please contact us at <a href="mailto:support@hobbyarmory.de" style="color: #0d9488;">support@hobbyarmory.de</a></p>
+                <p>If you have any questions about account deletion or data privacy, please contact us at <a href="mailto:support@hobbyarmory.de" style="color: #0d9488;">support@hobbyarmory.de</a>.</p>
             </div>
 
             <!-- GERMAN VERSION -->
             <div id="de" class="lang-section">
                 <h2>Lösche dein Hobby Armory Konto</h2>
-                <p><strong>Aktualisiert:</strong> Januar 2026</p>
+                <p><strong>Aktualisiert:</strong> April 2026</p>
 
                 <h3>Option 1: Konto in der App löschen (Empfohlen)</h3>
                 <div class="highlight-box">
@@ -240,20 +278,28 @@
                         <li>Öffne die <strong>Hobby Armory</strong> App auf deinem Gerät</li>
                         <li>Navigiere zu den <strong>Einstellungen</strong> (⚙️ Symbol)</li>
                         <li>Gehe zum <strong>Profil</strong>-Bereich</li>
-                        <li>Scrolle nach unten und tippe auf <strong>"Konto löschen"</strong></li>
-                        <li>Bestätige die Löschung durch Befolgen der Anweisungen auf dem Bildschirm</li>
+                        <li>Scrolle nach unten und tippe auf <strong>„Konto löschen"</strong></li>
+                        <li>Bestätige die Löschung gemäß den Anweisungen auf dem Bildschirm</li>
                     </ol>
                 </div>
 
                 <div class="warning">
-                    <p><strong>⚠️ Wichtig:</strong> Die Kontolöschung ist endgültig und kann nicht rückgängig gemacht werden. Alle deine Daten, einschließlich:</p>
+                    <p><strong>⚠️ Aktive Abonnements — Wichtig:</strong> Das Löschen deines Hobby-Armory-Kontos kündigt dein Abonnement <strong>NICHT</strong> automatisch. Dein Abonnement wird über den Apple App Store oder Google Play verwaltet. Du musst dein Abonnement <strong>separat kündigen</strong>, vor oder nach der Kontolöschung, um zukünftige Abbuchungen zu stoppen. Der Zugriff auf Premium-Funktionen endet sofort mit der Kontolöschung.</p>
+                    <p><strong>So kündigst du dein Abonnement:</strong></p>
                     <ul>
-                        <li>Deine Miniaturen-Sammlungsdaten</li>
-                        <li>Benutzerdefinierte Einträge und Notizen</li>
-                        <li>Kontoeinstellungen und Präferenzen</li>
-                        <li>Alle zugehörigen Käufe oder Abonnements</li>
+                        <li><strong>Apple App Store (iOS):</strong> Einstellungen &gt; [Dein Name] &gt; Abonnements &gt; Hobby Armory &gt; Abonnement kündigen. Siehe <a href="https://support.apple.com/de-de/HT202039" target="_blank" rel="noopener noreferrer">support.apple.com/de-de/HT202039</a>.</li>
+                        <li><strong>Google Play (Android):</strong> Play Store öffnen &gt; Profil-Symbol &gt; Zahlungen &amp; Abos &gt; Abos &gt; Hobby Armory &gt; Abo kündigen. Siehe <a href="https://support.google.com/googleplay/answer/7018481?hl=de" target="_blank" rel="noopener noreferrer">support.google.com/googleplay/answer/7018481</a>.</li>
                     </ul>
-                    <p>...werden dauerhaft gelöscht und können nicht wiederhergestellt werden.</p>
+                </div>
+
+                <div class="info-box">
+                    <p><strong>🍎 Anmelden mit Apple:</strong> Wenn du dich mit Apple angemeldet hast, wird mit der Kontolöschung auch deine Anmelde-Berechtigung für Hobby Armory widerrufen. Du kannst die „Anmelden mit Apple"-Berechtigungen jederzeit in deinen Apple-ID-Einstellungen verwalten:</p>
+                    <p><em>Einstellungen &gt; [Dein Name] &gt; Anmelden &amp; Sicherheit &gt; Mit Apple anmelden</em> (auf älteren iOS-Versionen: <em>Einstellungen &gt; [Dein Name] &gt; Passwort &amp; Sicherheit &gt; Apps mit Apple-ID</em>).</p>
+                    <p>Wenn du Apples „Meine E-Mail-Adresse verbergen"-Relay-Adresse verwendet hast, wird das Relay automatisch deaktiviert, sobald du die Berechtigung für Hobby Armory auf deinem Apple-Gerät entfernst.</p>
+                </div>
+
+                <div class="warning">
+                    <p><strong>⚠️ Endgültige Löschung:</strong> Die Kontolöschung ist endgültig und kann nicht rückgängig gemacht werden. Alle deine Daten – einschließlich deiner Sammlung, benutzerdefinierter Einträge, Einstellungen, Fotos, Erfolge und zugehöriger Berechtigungen – werden dauerhaft entfernt und können nicht wiederhergestellt werden.</p>
                 </div>
 
                 <h3>Option 2: Löschung per E-Mail anfordern</h3>
@@ -264,29 +310,42 @@
                     <a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a>
                     <p style="margin-top: 15px; font-size: 0.95em;">
                         <strong>Betreff:</strong> Kontolöschung<br>
-                        <strong>Angeben:</strong> Deine registrierte E-Mail-Adresse
+                        <strong>Angeben:</strong> Deine registrierte E-Mail-Adresse<br>
+                        (bzw. bei Apple-Anmeldung die verwendete Relay-E-Mail bzw. Apple-ID)
                     </p>
                 </div>
 
-                <p>Wir werden deine Löschanfrage innerhalb von <strong>30 Tagen</strong> bearbeiten und dir eine Bestätigungs-E-Mail senden, sobald die Löschung abgeschlossen ist.</p>
+                <p>Wir werden deine Löschanfrage innerhalb von <strong>30 Tagen</strong> bearbeiten und dir eine Bestätigungs-E-Mail senden, sobald die Löschung abgeschlossen ist. Bitte denke daran, ein aktives Abonnement separat über den App Store oder Google Play zu kündigen (siehe oben).</p>
 
                 <h3>Was wird gelöscht?</h3>
-                <p>Wenn du dein Konto löschst, werden folgende Daten dauerhaft entfernt:</p>
+                <p>Wenn du dein Konto löschst, werden folgende Daten dauerhaft aus unseren Systemen entfernt:</p>
                 <ul>
-                    <li><strong>Kontoinformationen:</strong> E-Mail-Adresse, Benutzername, Authentifizierungsdaten</li>
-                    <li><strong>Sammlungsdaten:</strong> Alle Miniaturen-Sets, benutzerdefinierte Einträge und Sammlungsstatistiken</li>
+                    <li><strong>Kontoinformationen:</strong> E-Mail-Adresse, Firebase UID, Apple User ID und Authentifizierungsdaten</li>
+                    <li><strong>Apple-Anmelde-Berechtigung:</strong> die Verknüpfung zwischen deiner Apple-ID und Hobby Armory</li>
+                    <li><strong>Sammlungsdaten:</strong> Alle Miniaturen-Sets, benutzerdefinierte Einträge, Malfortschritt und Notizen</li>
+                    <li><strong>Aktivitäten, Streaks &amp; Erfolge:</strong> Hobby-Aktivitätsverlauf, Streaks, Meilensteine und Ziele</li>
                     <li><strong>Benutzereinstellungen:</strong> App-Einstellungen, Theme-Auswahl und Anpassungen</li>
-                    <li><strong>Aktivitätsdaten:</strong> Nutzungsverlauf und Analyse-Daten</li>
+                    <li><strong>Bilder:</strong> Private Bilder in deinem Konto; eingereichte Community-Katalog-Bilder (genehmigt oder ausstehend) werden aus dem öffentlichen Katalog entfernt</li>
+                    <li><strong>Push-Token:</strong> Alle mit deinem Konto verknüpften Geräte-Token</li>
+                    <li><strong>Abonnement-Status / Berechtigungen:</strong> Dein lokaler Zugang zu Premium-Funktionen endet sofort. Hinweis: Die eigentlichen Abrechnungsdaten werden von Apple bzw. Google verwaltet und unterliegen deren Aufbewahrungsfristen.</li>
+                    <li><strong>Diagnose-Daten:</strong> Pseudonymisierte Analyse- und Crash-Daten zu deinem Konto werden gemäß den Standardvorgaben der Anbieter entfernt.</li>
+                </ul>
+
+                <h3>Was wird NICHT von uns gelöscht</h3>
+                <ul>
+                    <li><strong>App-Store-/Google-Play-Kaufhistorie</strong> – wird von Apple und Google nach deren Richtlinien verwaltet.</li>
+                    <li><strong>Aktive Abonnements</strong> – müssen separat gekündigt werden (siehe Hinweis oben).</li>
+                    <li><strong>Daten, die bei Drittanbietern gespeichert sind</strong> und außerhalb unserer Kontrolle liegen (z. B. Apple, Google, RevenueCat), unterliegen den jeweiligen Datenschutzrichtlinien dieser Anbieter.</li>
                 </ul>
 
                 <h3>Fragen?</h3>
-                <p>Wenn du Fragen zur Kontolöschung oder zum Datenschutz hast, kontaktiere uns bitte unter <a href="mailto:support@hobbyarmory.de" style="color: #0d9488;">support@hobbyarmory.de</a></p>
+                <p>Wenn du Fragen zur Kontolöschung oder zum Datenschutz hast, kontaktiere uns bitte unter <a href="mailto:support@hobbyarmory.de" style="color: #0d9488;">support@hobbyarmory.de</a>.</p>
             </div>
         </div>
 
         <div class="footer">
-            <p>Hobby Armory - Version 1.0</p>
-            <p>Last updated: January 2026 | Zuletzt aktualisiert: Januar 2026</p>
+            <p>Hobby Armory</p>
+            <p>Last updated: April 2026 &nbsp;|&nbsp; Zuletzt aktualisiert: April 2026</p>
         </div>
     </div>
 
