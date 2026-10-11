@@ -1,428 +1,253 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby Armory - AGB / Terms of Service</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #000000 0%, #0d9488 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #000000 0%, #0d9488 100%);
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .header p {
-            font-size: 1.1em;
-            opacity: 0.95;
-        }
-        
-        .language-toggle {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        
-        .toggle-btn {
-            padding: 8px 16px;
-            background: rgba(255,255,255,0.2);
-            border: 2px solid white;
-            color: white;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-weight: bold;
-        }
-        
-        .toggle-btn.active {
-            background: white;
-            color: #0d9488;
-        }
-        
-        .toggle-btn:hover {
-            background: rgba(255,255,255,0.3);
-        }
-        
-        .content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            padding: 40px;
-        }
-        
-        .section {
-            display: none;
-        }
-        
-        .section.active {
-            display: block;
-        }
-        
-        .section h2 {
-            color: #0d9488;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-            border-bottom: 3px solid #0d9488;
-            padding-bottom: 10px;
-        }
-        
-        .section h2:first-child {
-            margin-top: 0;
-        }
-        
-        .section h3 {
-            color: #0f766e;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-        
-        .section p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        
-        .section ul {
-            margin-left: 25px;
-            margin-bottom: 15px;
-        }
-        
-        .section li {
-            margin-bottom: 8px;
-        }
-        
-        .contact-info {
-            background: #e8f5f0;
-            border-left: 4px solid #0d9488;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 4px;
-            font-style: italic;
-        }
-        
-        .contact-info strong {
-            color: #0f766e;
-            font-style: normal;
-        }
-        
-        .important {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        
-        .important strong {
-            color: #856404;
-        }
-        
-        a {
-            color: #0d9488;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        @media (max-width: 1024px) {
-            .content {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-        }
-        
-        .footer {
-            background: #f8f9fa;
-            padding: 20px 40px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #666;
-            border-top: 1px solid #ddd;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allgemeine Geschäftsbedingungen / Terms of Service · Hobby Armory</title>
+<meta name="title-de" content="Allgemeine Geschäftsbedingungen · Hobby Armory">
+<meta name="title-en" content="Terms of Service · Hobby Armory">
+<meta name="description" content="Nutzungsbedingungen von Hobby Armory, einschließlich der Rechte an Community-Fotos. Terms of service for Hobby Armory, including the licence for community photos.">
+<link rel="canonical" href="https://legal.hobbyarmory.de/agb">
+<meta name="theme-color" content="#060B12">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/legal.css">
+<script>(function(){var d=document.documentElement,l=null;try{l=new URLSearchParams(location.search).get('lang')}catch(e){}if(!l)try{l=localStorage.getItem('legal-lang')}catch(e){}if(l!=='de'&&l!=='en')l=/^de\b/i.test(navigator.language||'')?'de':'en';d.classList.remove('no-js');d.classList.add('show-'+l);d.lang=l})();</script>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Hobby Armory</h1>
-            <p>Terms of Service / Allgemeine Geschäftsbedingungen</p>
-            <div class="language-toggle">
-                <button class="toggle-btn active" onclick="showLanguage('english')">📄 English</button>
-                <button class="toggle-btn" onclick="showLanguage('german')">📋 Deutsch</button>
-            </div>
-        </div>
-        
-        <div class="content">
-            <!-- ENGLISH VERSION -->
-            <div id="english" class="section active">
-                <h2>Terms of Service</h2>
-                <p><strong>Status:</strong> April 2026</p>
-                
-                <h3>1. Provider and Contact Information</h3>
-                <div class="contact-info">
-                    Tim Paulus<br>
-                    c/o Postflex #10266<br>
-                    Emsdettener Str. 10<br>
-                    48268 Greven, Germany<br>
-                    <br>
-                    <strong>Email:</strong> support@hobbyarmory.de<br>
-                    <strong>Notice:</strong> No packages or parcels - acceptance will be refused!
-                </div>
-                <p>Hobby Armory is currently operated by Tim Paulus as a private person. Upon commencement of commercial activity, a German business registration (Gewerbeanmeldung) will be completed and these Terms updated accordingly.</p>
-                
-                <h3>2. Scope and Contracting Parties</h3>
-                <p>These Terms of Service ("Terms") govern the use of the mobile application Hobby Armory ("App"), a tool for managing tabletop miniature collections, including features such as set tracking, painting progress, streaks, achievements, and a community image catalog.</p>
-                <ul>
-                    <li><strong>Provider:</strong> Tim Paulus</li>
-                    <li><strong>User:</strong> Any natural person using the App</li>
-                </ul>
-                <p>Use of the App is conditional upon acceptance of these Terms. By registering and using the App, you agree to these Terms.</p>
-                
-                <h3>3. Account Creation, Authentication and Age Requirements</h3>
-                <p>Use of the App requires creation of a user account via one of the following authentication methods:</p>
-                <ul>
-                    <li><strong>Sign in with Google</strong> (Google OAuth)</li>
-                    <li><strong>Sign in with Apple</strong> (Apple ID; Apple's "Hide My Email" relay address is supported and treated like any other email address)</li>
-                </ul>
-                <p>You are responsible for the security of your account credentials. The App is intended for users aged <strong>13 and older</strong>. Users under the age of 16 require the consent of a parent or legal guardian for the processing of personal data in accordance with Art. 8 GDPR. Paid subscriptions (see §8) require an age of <strong>18 years or older</strong>, or the express consent of a parent or legal guardian.</p>
+<header class="top"><div class="top-in">
+<a class="brand" href="https://www.hobbyarmory.com/"><img src="/assets/logo.png" alt="" width="30" height="30">Hobby Armory</a>
+<span class="spacer"></span>
+<div class="langs" role="group" aria-label="Sprache / Language"><button type="button" data-lang="de" lang="de">DE</button><button type="button" data-lang="en" lang="en">EN</button></div>
+</div></header>
+<nav class="docs" aria-label="Rechtliches / Legal"><ul><li><a href="/impressum"><span class="l-de">Impressum</span><span class="l-en">Legal Notice</span></a></li><li><a href="/datenschutz"><span class="l-de">Datenschutz</span><span class="l-en">Privacy</span></a></li><li><a href="/agb" aria-current="page"><span class="l-de">AGB</span><span class="l-en">Terms</span></a></li><li><a href="/disclaimer"><span class="l-de">Haftungsausschluss</span><span class="l-en">Disclaimer</span></a></li><li><a href="/delete-account"><span class="l-de">Konto löschen</span><span class="l-en">Delete account</span></a></li></ul></nav>
+<main>
+<div class="doc has-toc">
+<div><nav class="toc l-de" data-for="art-de" aria-label="Inhalt"></nav><nav class="toc l-en" data-for="art-en" aria-label="Contents"></nav></div>
+<div>
+<article id="art-de" class="l-de" lang="de">
+<p class="eyebrow">Rechtliches</p>
+<h1>Allgemeine Geschäftsbedingungen</h1>
+<p class="meta">Stand: 11. Oktober 2026</p>
+<p class="lead">Diese Bedingungen regeln die Nutzung von Hobby Armory. Mit der Registrierung erklären Sie sich damit einverstanden.</p>
 
-                <h3>4. User-Generated Content and Image Licenses</h3>
-                <p><strong>4.1 Private Images:</strong> Photos stored in your private gallery remain visible only to you. You retain sole ownership.</p>
-                
-                <p><strong>4.2 Community Catalog:</strong> If you voluntarily submit images to the public community catalog and they are approved, you grant the operator a <strong>worldwide, non-exclusive, royalty-free license</strong> to:</p>
-                <ul>
-                    <li>Display your image in the App and associated services.</li>
-                    <li>Process, resize, and optimize the image.</li>
-                    <li>Store and deliver the image via Cloudflare R2 and CDN.</li>
-                </ul>
-                <p>You retain copyright to the original photograph. Rejected images are immediately deleted from our servers. You may withdraw your consent at any time by requesting removal of your approved community images.</p>
+<h2>1. Anbieter</h2>
+<div class="card">
+<address>Tim Paulus<br>c/o Postflex #10266<br>Emsdettener Str. 10<br>48268 Greven<br>Deutschland</address>
+<p style="margin-top:10px">E-Mail: <a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a></p>
+</div>
+<p>Hobby Armory wird von Tim Paulus als Privatperson betrieben (im Folgenden „Anbieter“, „wir“).</p>
 
-                <h3>5. Content Guidelines and Moderation</h3>
-                <p>The App accepts photos of miniature models and hobby-related content. The following are prohibited:</p>
-                <ul>
-                    <li>Content that infringes third-party copyrights or other intellectual property rights.</li>
-                    <li>Hate speech, violence, harassment, or discrimination.</li>
-                    <li>Nudity, sexual, or otherwise inappropriate content.</li>
-                    <li>Misleading, illegal, or commercial content unrelated to the hobby.</li>
-                </ul>
-                <p>The operator reserves the right to reject submissions or remove approved content that violates these guidelines. Repeated or serious violations may result in account suspension or termination.</p>
+<h2>2. Geltungsbereich und Leistungen</h2>
+<p>Diese AGB gelten für die Nutzung der App Hobby Armory für iOS, Android und das Web sowie der damit verbundenen Dienste (zusammen „App“). Nutzer ist jede natürliche Person, die ein Konto anlegt.</p>
+<p>Die App ist ein Werkzeug für das Tabletop-Hobby. Sie umfasst insbesondere die Verwaltung einer Miniaturensammlung samt Bau- und Bemalfortschritt, Malrezepte und ein Farbregal, einen Armeelisten-Editor, Hilfen für laufende Partien, einen Bereich für Spiele mit anderen Nutzern, einen Community-Fotokatalog und einen News-Bereich mit Links zu externen Artikeln. Ein Anspruch auf bestimmte Funktionen besteht nicht. Wir können die App jederzeit ändern, Funktionen einschränken oder entfernen und das Angebot ganz oder teilweise einstellen.</p>
 
-                <h3>6. Trademarks and Intellectual Property</h3>
-                <div class="important">
-                    <strong>Important Notice:</strong> Hobby Armory is an unofficial fan project and is not affiliated with, endorsed by, or officially connected to Games Workshop Ltd. Warhammer, Warhammer 40,000, Age of Sigmar, Citadel, and all associated trademarks are the property of Games Workshop Ltd.
-                </div>
-                <p>All rights to Games Workshop intellectual property are exclusively held by Games Workshop Ltd. Where the App in the future references products from other tabletop miniature manufacturers, all respective trademarks, product names, logos, and intellectual property remain the property of their respective owners. Hobby Armory is developed independently and is not affiliated with, endorsed by, or officially connected to any tabletop game publisher.</p>
+<h2>3. Konto, Anmeldung und Alter</h2>
+<p>Die Nutzung erfordert ein Konto. Sie können sich mit Google, mit Apple (auch mit der Relay-Adresse aus „E-Mail-Adresse verbergen“) oder mit E-Mail-Adresse und Passwort anmelden. Ein Konto mit E-Mail und Passwort wird erst nach Bestätigung der E-Mail-Adresse aktiv; nicht bestätigte Konten löschen wir nach 7 Tagen.</p>
+<p>Sie sind für die Geheimhaltung Ihrer Zugangsdaten verantwortlich. Ihr Nutzername darf keine Rechte Dritter verletzen und nicht beleidigend oder irreführend sein.</p>
+<p>Die App richtet sich an Personen ab 13 Jahren. Wer jünger als 16 Jahre ist, benötigt die Zustimmung eines Elternteils oder einer erziehungsberechtigten Person. Kostenpflichtige Angebote (Abschnitt 11) setzen Volljährigkeit oder diese Zustimmung voraus.</p>
 
-                <h3>7. Service Availability</h3>
-                <p>The App is provided "as is" and on an "as available" basis. The operator makes <strong>no warranties</strong> regarding uptime, uninterrupted access, error-free operation, or preservation of data. Liability for data loss or technical errors is excluded except in cases of intent or gross negligence, or for damages resulting from injury to life, body or health, or breach of essential contractual obligations.</p>
+<h2>4. Ihre Inhalte</h2>
+<p>Inhalte, die Sie in der App anlegen (Sammlung, Fotos, Notizen, Rezepte, Armeelisten und Ähnliches), gehören Ihnen. Sie räumen uns daran nur die Rechte ein, die nötig sind, um sie für Sie zu speichern, zu synchronisieren, technisch aufzubereiten und Ihnen anzuzeigen.</p>
+<ul>
+<li><strong>Private Fotos und Inhalte</strong> sind nur für Sie sichtbar.</li>
+<li><strong>Teilen per Link:</strong> Teilen Sie eine Armeeliste oder ein Rezept per Link, kann jeder mit dem Link diesen Inhalt sehen und eine Kopie davon übernehmen.</li>
+<li><strong>Gemeinsame Partien:</strong> In einer Partie mit anderen Nutzern sehen alle Teilnehmer Ihren Nutzernamen, Ihre Armeeliste und den Spielstand. Das Ergebnis wird auch in der Spielhistorie Ihrer Mitspieler gespeichert.</li>
+</ul>
+<p>Für Meldungen, Korrekturen, Set-Anfragen, Farbmeldungen, Kartennamen und sonstige Vorschläge, die Sie uns schicken, räumen Sie uns ein unentgeltliches, nicht ausschließliches, räumlich und zeitlich unbeschränktes Recht ein, sie zu verwenden, zu bearbeiten und in die App und ihre Kataloge zu übernehmen. Ein Anspruch auf Umsetzung oder Vergütung besteht nicht.</p>
+<p>Sie versichern, dass Sie an allem, was Sie hochladen oder teilen, die nötigen Rechte besitzen und dass es keine Rechte Dritter verletzt. Werden wir wegen einer von Ihnen zu vertretenden Rechtsverletzung durch Ihre Inhalte von Dritten in Anspruch genommen, stellen Sie uns von diesen Ansprüchen einschließlich der angemessenen Kosten der Rechtsverteidigung frei.</p>
 
-                <h3>8. Subscriptions and Pricing</h3>
-                <p>Hobby Armory may offer paid subscriptions ("Premium"). The following provisions apply:</p>
-                <ul>
-                    <li><strong>Subscription types:</strong> Monthly subscriptions are offered at launch; yearly subscriptions may be added later. The operator reserves the right to introduce additional plans, including a free tier and/or an ad-supported tier.</li>
-                    <li><strong>Pricing:</strong> The current prices, billing periods and features are displayed in the App and on the App Store / Google Play at the time of purchase.</li>
-                    <li><strong>Auto-renewal:</strong> Subscriptions automatically renew at the end of each billing period unless cancelled at least 24 hours before the end of the current period, in accordance with the rules of the Apple App Store and Google Play.</li>
-                    <li><strong>Cancellation:</strong> Cancellation must be performed via the subscription management settings of the Apple App Store or Google Play. The operator cannot cancel subscriptions on the user's behalf.</li>
-                    <li><strong>Billing entity / merchant of record:</strong> Subscriptions are sold and billed by Apple Inc. (App Store) and Google LLC (Google Play). These companies are the merchants of record. The operator only receives anonymized subscription status information (via RevenueCat).</li>
-                    <li><strong>Small business regulation:</strong> The operator currently makes use of the small business regulation pursuant to § 19 UStG (Kleinunternehmerregelung); accordingly, no German VAT is charged separately by the operator. Apple and Google may apply local taxes in accordance with their own terms.</li>
-                    <li><strong>Advertising (optional, future):</strong> An ad-supported tier (e.g., via Google AdMob) may be introduced in the future. Where required, separate user consent will be obtained before activating any advertising SDK.</li>
-                </ul>
+<h2>5. Community-Fotos und Nutzungsrechte</h2>
+<p>Über den Schalter „Auch mit der Community teilen“ können Sie Fotos Ihrer Miniaturen für den öffentlichen Katalog einreichen. Die Einreichung ist freiwillig und unentgeltlich. Wir prüfen jede Einsendung und entscheiden frei über die Freigabe; ein Anspruch auf Veröffentlichung besteht nicht.</p>
+<p><strong>(1) Umfang.</strong> Mit der Einreichung räumen Sie dem Anbieter für den Fall der Freigabe ein einfaches (nicht ausschließliches), räumlich und zeitlich unbeschränktes, unentgeltliches Recht ein, das Foto selbst oder durch beauftragte Dienstleister</p>
+<ol type="a">
+<li>in der App und den zugehörigen Diensten allen Nutzern öffentlich zugänglich zu machen,</li>
+<li>technisch zu bearbeiten (etwa skalieren, komprimieren, in andere Formate umwandeln) und über unsere Dienstleister zu speichern und auszuliefern,</li>
+<li>zur Bewerbung von Hobby Armory zu verwenden, insbesondere auf unserer Website, in Einträgen in App Stores, in sozialen Netzwerken und Community-Plattformen (zum Beispiel Instagram, Discord, Reddit, YouTube, TikTok), in Newslettern, Präsentationen und Pressematerial sowie in gedruckten Materialien wie Flyern, Postern oder Bannern, jeweils auch für künftige Versionen und Angebote von Hobby Armory.</li>
+</ol>
+<p><strong>(2) Bearbeitung.</strong> Für diese Zwecke dürfen wir das Foto zuschneiden, in Größe, Helligkeit und Farbe anpassen und mit Text, Logos, App-Screenshots oder anderen Bildern kombinieren. Ihre bemalte Miniatur selbst stellen wir nicht entstellt dar.</p>
+<p><strong>(3) Plattformen.</strong> Das Recht umfasst die Befugnis, Betreibern von Plattformen die Rechte einzuräumen, die für eine Veröffentlichung auf der jeweiligen Plattform erforderlich sind. Das Recht ist auf einen Rechtsnachfolger übertragbar, der Hobby Armory fortführt. Darüber hinaus verkaufen wir Ihr Foto nicht.</p>
+<p><strong>(4) Namensnennung.</strong> Fotos werden in der App ohne Ihren Namen angezeigt. Auch bei Werbung sind wir nicht verpflichtet, Sie als Urheber zu nennen; insoweit verzichten Sie auf die Urheberbenennung, soweit das gesetzlich zulässig ist.</p>
+<p><strong>(5) Entfernung.</strong> Sie können jederzeit per E-Mail an support@hobbyarmory.de verlangen, dass wir ein Foto aus der App entfernen und nicht mehr für neue Werbung verwenden. Wir setzen das in angemessener Frist um. Bereits veröffentlichte Beiträge, erstellte Materialien und Inhalte, die Dritte weiterverbreitet haben, sind davon nicht erfasst. Mit der Löschung Ihres Kontos wird ein freigegebenes Foto nicht automatisch entfernt.</p>
+<p><strong>(6) Ihre Rechte bleiben.</strong> Das Urheberrecht an Ihrem Foto bleibt bei Ihnen. Sie dürfen es weiterhin uneingeschränkt selbst nutzen und anderen Lizenzen daran einräumen.</p>
+<p><strong>(7) Ihre Zusicherung.</strong> Sie versichern, dass Sie das Foto selbst aufgenommen haben oder über die nötigen Rechte verfügen, dass es Ihre eigene oder eine von Ihnen bemalte Miniatur zeigt und dass darauf keine Personen erkennbar sind. Offizielle Bilder, Box-Artworks und anderes Material von Games Workshop oder anderen Herstellern werden nicht angenommen.</p>
+<p><strong>(8) Rezepte.</strong> Hängen Sie ein Malrezept an ein Community-Foto, gelten (1) bis (6) für eine unveränderliche Kopie dieses Rezepts entsprechend. Andere Nutzer können diese Kopie in ihr eigenes Rezeptbuch übernehmen.</p>
+<p><strong>(9) Übergang.</strong> Die Nutzung zu Werbezwecken nach (1) c) gilt für Fotos, die ab dem 11. Oktober 2026 eingereicht werden. Für zuvor eingereichte Fotos bleibt es bei (1) a) und b), sofern Sie der Werbenutzung nicht gesondert zustimmen.</p>
 
-                <h3>9. Right of Withdrawal (Consumers)</h3>
-                <p>Consumers within the European Union generally have a 14-day right of withdrawal for distance contracts (§§ 312g, 355 BGB).</p>
-                <p><strong>Digital subscriptions:</strong> For paid digital content / subscription services, the right of withdrawal expires before the end of the withdrawal period if the user (i) expressly consents to immediate execution of the contract and (ii) acknowledges that this consent results in the loss of the right of withdrawal upon commencement of performance (§ 356 (5) BGB). When subscribing in-app, you will be asked to provide such consent.</p>
-                <p>The terms and conditions of Apple (App Store) and Google (Google Play) apply additionally; refunds for purchases made through these stores are processed by Apple or Google directly and according to their refund policies.</p>
+<h2>6. Inhaltsrichtlinien und Moderation</h2>
+<p>Nicht erlaubt sind insbesondere Inhalte, die</p>
+<ul>
+<li>Urheber-, Marken- oder andere Rechte Dritter verletzen,</li>
+<li>Hass, Gewalt, Belästigung oder Diskriminierung enthalten oder dazu aufrufen,</li>
+<li>Nacktheit oder sexuelle Inhalte zeigen,</li>
+<li>rechtswidrig, irreführend oder Werbung ohne Bezug zum Hobby sind.</li>
+</ul>
+<p>Wir können Einsendungen nach eigenem Ermessen ablehnen und Inhalte, die gegen diese Regeln verstoßen, ohne Ankündigung entfernen. Bei schweren oder wiederholten Verstößen können wir ein Konto sperren oder löschen. Rechtswidrige Inhalte können Sie uns jederzeit an support@hobbyarmory.de melden.</p>
 
-                <h3>10. Third-Party Services</h3>
-                <ul>
-                    <li><strong>Google Firebase:</strong> Authentication, database, push notifications, analytics, and crash reporting (EU region).</li>
-                    <li><strong>Cloudflare R2 / Workers (EU):</strong> Image storage, image processing, and CDN delivery.</li>
-                    <li><strong>Apple Inc.:</strong> Sign in with Apple and App Store payments.</li>
-                    <li><strong>Google LLC / Google Play:</strong> Google Sign-In, Google Play Billing, and (optional, future) Google AdMob.</li>
-                    <li><strong>RevenueCat Inc.:</strong> Subscription management and entitlement verification.</li>
-                </ul>
+<h2>7. Spieldaten und Regeln</h2>
+<p>Punktwerte, Datenblätter, Regeln, Missionen und Setinhalte in der App stammen aus öffentlich zugänglichen Quellen und Community-Projekten und werden ohne Gewähr bereitgestellt. Sie können unvollständig, veraltet oder fehlerhaft sein. Maßgeblich sind immer die offiziellen Veröffentlichungen des jeweiligen Herstellers. Prüfen Sie Armeelisten vor Turnieren und anderen offiziellen Veranstaltungen anhand dieser Quellen.</p>
 
-                <h3>11. Changes to These Terms</h3>
-                <p>The operator may amend these Terms where necessary, in particular to reflect new features, changes to third-party services, or legal requirements. Material changes will be communicated with reasonable notice via in-app notification and/or email to the address associated with your account. If you do not agree with the updated Terms, you may stop using the App and delete your account.</p>
+<h2>8. Marken und geistiges Eigentum</h2>
+<div class="card warn">
+<p><strong>Inoffizielles Fanprojekt.</strong> Hobby Armory steht in keiner Verbindung zu Games Workshop Limited und wird von Games Workshop weder unterstützt noch gebilligt. Warhammer und alle zugehörigen Namen und Marken sind Eigentum von Games Workshop Limited. Einzelheiten im <a href="/disclaimer">Haftungsausschluss</a>.</p>
+</div>
+<p>Marken, Produktnamen und Logos anderer Hersteller, etwa von Farben, gehören ihren jeweiligen Inhabern. Die App selbst, ihr Design und ihre Texte sind urheberrechtlich geschützt.</p>
 
-                <h3>12. Termination</h3>
-                <p>You may terminate your use of the App at any time by deleting your account in the App or by contacting support. The operator may suspend or terminate accounts in cases of serious or repeated violations of these Terms. Active subscriptions must be cancelled separately via the App Store or Google Play.</p>
+<h2>9. Beta-Phase und Verfügbarkeit</h2>
+<p>Die App befindet sich in der Beta-Phase. Funktionen können sich ändern, wegfallen oder zeitweise nicht erreichbar sein. Wir schulden weder eine bestimmte Verfügbarkeit noch den dauerhaften Erhalt Ihrer Daten. Für die Sicherung Ihrer Daten sind Sie selbst verantwortlich, etwa über <strong>Einstellungen &gt; Export My Data</strong>.</p>
 
-                <h3>13. Governing Law and Jurisdiction</h3>
-                <p>These Terms are governed by the laws of the Federal Republic of Germany, excluding the UN Convention on Contracts for the International Sale of Goods. Mandatory consumer protection provisions of the country in which the user has their habitual residence remain unaffected. To the extent legally permissible, exclusive jurisdiction is <strong>Saarland, Germany</strong>.</p>
+<h2>10. Haftung</h2>
+<ol>
+<li>Wir haften unbeschränkt bei Vorsatz und grober Fahrlässigkeit, bei Verletzung von Leben, Körper oder Gesundheit, nach dem Produkthaftungsgesetz und im Umfang einer übernommenen Garantie.</li>
+<li>Solange Sie die App unentgeltlich nutzen, ist die Haftung im Übrigen ausgeschlossen.</li>
+<li>Bei kostenpflichtigen Angeboten haften wir für leichte Fahrlässigkeit nur bei Verletzung einer wesentlichen Vertragspflicht, also einer Pflicht, deren Erfüllung die ordnungsgemäße Durchführung des Vertrags erst ermöglicht und auf deren Einhaltung Sie regelmäßig vertrauen dürfen. In diesem Fall ist die Haftung auf den vorhersehbaren, vertragstypischen Schaden begrenzt.</li>
+<li>Bei Datenverlust haften wir nur für den Aufwand, der bei regelmäßiger Datensicherung durch Sie zur Wiederherstellung erforderlich gewesen wäre.</li>
+<li>Für Inhalte anderer Nutzer und für verlinkte Angebote Dritter haften wir nicht.</li>
+<li>Diese Beschränkungen gelten auch für Personen, die wir zur Erfüllung einsetzen.</li>
+</ol>
 
-                <h3>14. Severability</h3>
-                <p>Should any provision of these Terms be or become invalid, the validity of the remaining provisions shall not be affected. Any invalid provision shall be replaced by a provision that comes closest to the economic intent of the invalid provision.</p>
-                
-                <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
-                    <em>Hobby Armory</em><br>
-                    <em>Last updated: April 2026</em>
-                </p>
-            </div>
-            
-            <!-- GERMAN VERSION -->
-            <div id="german" class="section">
-                <h2>Allgemeine Geschäftsbedingungen</h2>
-                <p><strong>Stand:</strong> April 2026</p>
-                
-                <h3>1. Anbieter und Kontaktdaten</h3>
-                <div class="contact-info">
-                    Tim Paulus<br>
-                    c/o Postflex #10266<br>
-                    Emsdettener Str. 10<br>
-                    48268 Greven, Deutschland<br>
-                    <br>
-                    <strong>E-Mail:</strong> support@hobbyarmory.de<br>
-                    <strong>Hinweis:</strong> Keine Pakete oder Päckchen - Annahme wird verweigert!
-                </div>
-                <p>Hobby Armory wird derzeit durch Tim Paulus als Privatperson betrieben. Mit Aufnahme der gewerblichen Tätigkeit wird eine Gewerbeanmeldung vorgenommen und diese AGB entsprechend aktualisiert.</p>
-                
-                <h3>2. Geltungsbereich und Vertragspartner</h3>
-                <p>Diese Allgemeinen Geschäftsbedingungen („AGB") regeln die Nutzung der mobilen Anwendung Hobby Armory („App"), einem Werkzeug zur Verwaltung von Tabletop-Miniaturensammlungen mit Funktionen wie Set-Tracking, Malfortschritt, Streaks, Erfolgen und einem Community-Bilderkatalog.</p>
-                <ul>
-                    <li><strong>Anbieter:</strong> Tim Paulus</li>
-                    <li><strong>Nutzer:</strong> Jede natürliche Person, die die App nutzt</li>
-                </ul>
-                <p>Die Nutzung der App setzt die Annahme dieser AGB voraus. Mit der Registrierung und Nutzung der App akzeptieren Sie diese AGB.</p>
-                
-                <h3>3. Kontoerstellung, Authentifizierung und Altersanforderungen</h3>
-                <p>Die Nutzung der App erfordert die Erstellung eines Nutzerkontos über eine der folgenden Authentifizierungsmethoden:</p>
-                <ul>
-                    <li><strong>Anmelden mit Google</strong> (Google OAuth)</li>
-                    <li><strong>Anmelden mit Apple</strong> (Apple ID; die „Meine E-Mail-Adresse verbergen"-Relay-Adresse von Apple wird unterstützt und wie jede andere E-Mail-Adresse behandelt)</li>
-                </ul>
-                <p>Sie sind für die Sicherheit Ihrer Zugangsdaten verantwortlich. Die App ist für Nutzer ab <strong>13 Jahren</strong> freigegeben. Nutzer unter 16 Jahren benötigen für die Verarbeitung personenbezogener Daten die Einwilligung eines Elternteils oder Erziehungsberechtigten gemäß Art. 8 DSGVO. Kostenpflichtige Abonnements (siehe §8) setzen ein Mindestalter von <strong>18 Jahren</strong> oder die ausdrückliche Zustimmung eines Elternteils bzw. Erziehungsberechtigten voraus.</p>
+<h2>11. Kostenpflichtige Angebote</h2>
+<p>Während der Beta-Phase sind alle Funktionen kostenlos. Wir können künftig kostenpflichtige Abonnements („Premium“) anbieten. Dann gilt:</p>
+<ul>
+<li>Preise, Laufzeiten und Leistungen werden vor dem Kauf in der App bzw. im Store angezeigt.</li>
+<li>Käufe in der App werden über Apple (App Store) oder Google (Google Play) abgeschlossen und abgerechnet; diese sind Verkäufer bzw. Zahlungsabwickler, und es gelten zusätzlich deren Bedingungen.</li>
+<li>Abonnements verlängern sich automatisch, wenn sie nicht spätestens 24 Stunden vor Ende des Zeitraums gekündigt werden. Die Kündigung erfolgt in der Abonnementverwaltung des jeweiligen Stores.</li>
+<li>Erstattungen richten sich nach den Richtlinien von Apple bzw. Google.</li>
+<li>Wir können festlegen, welche Funktionen kostenlos bleiben und welche kostenpflichtig werden.</li>
+</ul>
 
-                <h3>4. Benutzergenerierte Inhalte und Bildlizenzen</h3>
-                <p><strong>4.1 Private Bilder:</strong> Fotos in Ihrer privaten Galerie sind ausschließlich für Sie sichtbar. Sie bleiben alleiniger Eigentümer.</p>
-                
-                <p><strong>4.2 Community-Katalog:</strong> Wenn Sie Bilder freiwillig für den öffentlichen Community-Katalog einreichen und diese genehmigt werden, gewähren Sie dem Anbieter eine <strong>weltweite, nicht-exklusive, lizenzgebührenfreie Lizenz</strong> zur:</p>
-                <ul>
-                    <li>Anzeige Ihres Bildes in der App und zugehörigen Diensten.</li>
-                    <li>Verarbeitung, Größenanpassung und Optimierung des Bildes.</li>
-                    <li>Speicherung und Auslieferung über Cloudflare R2 und CDN.</li>
-                </ul>
-                <p>Das Urheberrecht am Originalfoto verbleibt bei Ihnen. Abgelehnte Bilder werden unverzüglich von unseren Servern gelöscht. Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie die Entfernung Ihrer genehmigten Community-Bilder anfordern.</p>
+<h2>12. Widerrufsrecht</h2>
+<p>Verbrauchern steht bei kostenpflichtigen Verträgen im Fernabsatz grundsätzlich ein 14-tägiges Widerrufsrecht zu. Bei digitalen Inhalten und Diensten erlischt es vorzeitig, wenn Sie ausdrücklich zustimmen, dass wir vor Ablauf der Widerrufsfrist mit der Leistung beginnen, und bestätigen, dass Sie dadurch Ihr Widerrufsrecht verlieren (§ 356 Abs. 5 BGB). Für Käufe über Apple oder Google gelten ergänzend deren Regeln.</p>
 
-                <h3>5. Inhaltsrichtlinien und Moderation</h3>
-                <p>Die App akzeptiert Fotos von Miniaturmodellen und hobbybezogenen Inhalten. Untersagt sind insbesondere:</p>
-                <ul>
-                    <li>Inhalte, die Urheberrechte oder andere Schutzrechte Dritter verletzen.</li>
-                    <li>Hassrede, Gewalt, Belästigung oder Diskriminierung.</li>
-                    <li>Nacktheit, sexuelle oder anderweitig unangemessene Inhalte.</li>
-                    <li>Irreführende, rechtswidrige oder kommerzielle Inhalte ohne Bezug zum Hobby.</li>
-                </ul>
-                <p>Der Anbieter behält sich vor, Einsendungen abzulehnen oder genehmigte Inhalte zu entfernen, die gegen diese Richtlinien verstoßen. Wiederholte oder schwere Verstöße können zur Sperrung oder Löschung des Kontos führen.</p>
+<h2>13. Änderungen dieser AGB</h2>
+<p>Wir können diese AGB anpassen, wenn neue Funktionen, Änderungen bei Dienstleistern oder der Rechtslage das erfordern. Wesentliche Änderungen teilen wir mit angemessener Frist in der App oder per E-Mail mit. Nutzen Sie die App danach weiter, gelten die geänderten AGB; darauf weisen wir in der Mitteilung hin. Sind Sie nicht einverstanden, können Sie die Nutzung beenden und Ihr Konto löschen.</p>
 
-                <h3>6. Markenzeichen und Geistiges Eigentum</h3>
-                <div class="important">
-                    <strong>Wichtiger Hinweis:</strong> Hobby Armory ist ein inoffizielles Fan-Projekt und steht in keiner Verbindung zu Games Workshop Ltd., wird von dieser nicht unterstützt und ist nicht offiziell mit ihr verbunden. Warhammer, Warhammer 40.000, Age of Sigmar, Citadel und alle zugehörigen Marken sind Eigentum von Games Workshop Ltd.
-                </div>
-                <p>Alle Rechte am geistigen Eigentum von Games Workshop liegen ausschließlich bei Games Workshop Ltd. Sofern die App künftig Produkte anderer Tabletop-Miniaturenhersteller referenziert, verbleiben sämtliche entsprechenden Marken, Produktnamen, Logos und Schutzrechte bei den jeweiligen Eigentümern. Hobby Armory wird unabhängig entwickelt und steht in keiner Verbindung zu Tabletop-Spieleherstellern, wird von diesen nicht unterstützt und ist nicht offiziell mit ihnen verbunden.</p>
+<h2>14. Kündigung und Kontolöschung</h2>
+<p>Sie können die Nutzung jederzeit beenden, indem Sie Ihr Konto in der App unter <strong>Einstellungen &gt; Delete Account</strong> löschen oder uns schreiben. Was dabei gelöscht wird, steht auf der Seite <a href="/delete-account">Konto löschen</a>. Wir können ein unentgeltlich genutztes Konto mit angemessener Frist ohne Angabe von Gründen kündigen, bei Verstößen gegen diese AGB auch fristlos sperren oder löschen. Aktive Abonnements kündigen Sie gesondert im Store.</p>
 
-                <h3>7. Verfügbarkeit der Dienste</h3>
-                <p>Die App wird „wie besehen" und „je nach Verfügbarkeit" bereitgestellt. Der Anbieter übernimmt <strong>keine Garantie</strong> für Verfügbarkeit, ununterbrochenen Zugriff, fehlerfreien Betrieb oder Datenerhaltung. Die Haftung für Datenverlust oder technische Fehler ist ausgeschlossen, soweit kein Vorsatz oder grobe Fahrlässigkeit vorliegt und keine Schäden aus Verletzung von Leben, Körper oder Gesundheit oder wesentlicher Vertragspflichten entstehen.</p>
+<h2>15. Anwendbares Recht und Gerichtsstand</h2>
+<p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts. Sind Sie Verbraucher, bleiben die zwingenden Verbraucherschutzvorschriften des Staates, in dem Sie Ihren gewöhnlichen Aufenthalt haben, unberührt. Sind Sie Kaufmann oder haben Sie keinen allgemeinen Gerichtsstand in Deutschland, ist Gerichtsstand der Wohnsitz des Anbieters.</p>
+<p>Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 
-                <h3>8. Abonnements und Preise</h3>
-                <p>Hobby Armory kann kostenpflichtige Abonnements („Premium") anbieten. Es gelten folgende Bestimmungen:</p>
-                <ul>
-                    <li><strong>Abonnement-Typen:</strong> Zum Start werden monatliche Abonnements angeboten; jährliche Abonnements können später hinzukommen. Der Anbieter behält sich vor, weitere Tarife einzuführen, einschließlich einer kostenlosen Stufe und/oder einer werbefinanzierten Stufe.</li>
-                    <li><strong>Preise:</strong> Die jeweils aktuellen Preise, Abrechnungszeiträume und Funktionen werden zum Zeitpunkt des Kaufs in der App sowie im App Store / Google Play angezeigt.</li>
-                    <li><strong>Automatische Verlängerung:</strong> Abonnements verlängern sich am Ende des jeweiligen Abrechnungszeitraums automatisch, sofern sie nicht mindestens 24 Stunden vor Ablauf gemäß den Regeln des Apple App Store oder von Google Play gekündigt werden.</li>
-                    <li><strong>Kündigung:</strong> Die Kündigung muss über die Abonnement-Verwaltung des Apple App Store oder von Google Play erfolgen. Der Anbieter kann Abonnements nicht im Auftrag des Nutzers kündigen.</li>
-                    <li><strong>Vertragspartner für Zahlungen / Merchant of Record:</strong> Abonnements werden von Apple Inc. (App Store) und Google LLC (Google Play) verkauft und abgerechnet. Diese Unternehmen sind der Vertragspartner für die Zahlungsabwicklung. Der Anbieter erhält ausschließlich anonymisierte Statusinformationen zum Abonnement (über RevenueCat).</li>
-                    <li><strong>Kleinunternehmerregelung:</strong> Der Anbieter macht derzeit von der Kleinunternehmerregelung gemäß § 19 UStG Gebrauch; entsprechend wird vom Anbieter keine Umsatzsteuer gesondert ausgewiesen. Apple und Google können nach ihren eigenen Bedingungen lokale Steuern erheben.</li>
-                    <li><strong>Werbung (optional, zukünftig):</strong> Künftig kann eine werbefinanzierte Stufe (z. B. via Google AdMob) eingeführt werden. Soweit erforderlich, wird vor der Aktivierung eines Werbe-SDK eine separate Einwilligung des Nutzers eingeholt.</li>
-                </ul>
+<h2>16. Schlussbestimmungen</h2>
+<p>Ist eine Bestimmung dieser AGB unwirksam, bleiben die übrigen wirksam; an die Stelle der unwirksamen Bestimmung tritt die gesetzliche Regelung. Diese AGB liegen auf Deutsch und Englisch vor; bei Abweichungen gilt die deutsche Fassung.</p>
+</article>
+<article id="art-en" class="l-en" lang="en">
+<p class="eyebrow">Legal</p>
+<h1>Terms of Service</h1>
+<p class="meta">Last updated: 11 October 2026</p>
+<p class="lead">These terms govern your use of Hobby Armory. By registering, you agree to them. The German version is legally binding; this translation is provided for convenience.</p>
 
-                <h3>9. Widerrufsrecht (Verbraucher)</h3>
-                <p>Verbrauchern innerhalb der Europäischen Union steht bei Fernabsatzverträgen grundsätzlich ein 14-tägiges Widerrufsrecht zu (§§ 312g, 355 BGB).</p>
-                <p><strong>Digitale Abonnements:</strong> Bei kostenpflichtigen digitalen Inhalten / Abonnement-Diensten erlischt das Widerrufsrecht vor Ablauf der Widerrufsfrist, wenn der Nutzer (i) ausdrücklich zustimmt, dass mit der Ausführung des Vertrags vor Ablauf der Widerrufsfrist begonnen wird, und (ii) bestätigt, dass er durch diese Zustimmung mit Beginn der Ausführung sein Widerrufsrecht verliert (§ 356 Abs. 5 BGB). Beim Abschluss eines Abonnements in der App werden Sie um diese Zustimmung gebeten.</p>
-                <p>Ergänzend gelten die Bedingungen von Apple (App Store) und Google (Google Play); Erstattungen für Käufe über diese Stores werden direkt von Apple oder Google nach deren Erstattungsrichtlinien bearbeitet.</p>
+<h2>1. Provider</h2>
+<div class="card">
+<address>Tim Paulus<br>c/o Postflex #10266<br>Emsdettener Str. 10<br>48268 Greven<br>Germany</address>
+<p style="margin-top:10px">Email: <a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a></p>
+</div>
+<p>Hobby Armory is run by Tim Paulus as a private individual ("provider", "we").</p>
 
-                <h3>10. Drittanbieter-Dienste</h3>
-                <ul>
-                    <li><strong>Google Firebase:</strong> Authentifizierung, Datenbank, Push-Benachrichtigungen, Analyse und Crash-Reporting (Region EU).</li>
-                    <li><strong>Cloudflare R2 / Workers (EU):</strong> Bildspeicherung, Bildverarbeitung und CDN-Auslieferung.</li>
-                    <li><strong>Apple Inc.:</strong> Anmelden mit Apple sowie App-Store-Zahlungen.</li>
-                    <li><strong>Google LLC / Google Play:</strong> Google Sign-In, Google Play Billing sowie (optional, zukünftig) Google AdMob.</li>
-                    <li><strong>RevenueCat Inc.:</strong> Verwaltung von Abonnements und Berechtigungsprüfung.</li>
-                </ul>
+<h2>2. Scope and services</h2>
+<p>These terms apply to the Hobby Armory app for iOS, Android and the web and to the services connected to it (together, the "app"). A user is any natural person who creates an account.</p>
+<p>The app is a tool for the tabletop hobby. In particular it covers managing a miniature collection with build and painting progress, paint recipes and a paint rack, an army list builder, aids for games in progress, an area for playing with other users, a community photo catalogue and a news section linking to external articles. There is no entitlement to any particular feature. We may change the app at any time, limit or remove features, and discontinue the service in whole or in part.</p>
 
-                <h3>11. Änderungen dieser AGB</h3>
-                <p>Der Anbieter kann diese AGB ändern, soweit dies erforderlich ist, insbesondere zur Berücksichtigung neuer Funktionen, Änderungen bei Drittanbieter-Diensten oder rechtlicher Anforderungen. Wesentliche Änderungen werden mit angemessener Vorankündigung über eine In-App-Benachrichtigung und/oder per E-Mail an die mit Ihrem Konto verknüpfte Adresse mitgeteilt. Sind Sie mit den geänderten AGB nicht einverstanden, können Sie die Nutzung der App einstellen und Ihr Konto löschen.</p>
+<h2>3. Account, sign-in and age</h2>
+<p>You need an account to use the app. You can sign in with Google, with Apple (including the relay address from "Hide My Email") or with an email address and password. An email and password account becomes active once the email address is confirmed; unconfirmed accounts are deleted after 7 days.</p>
+<p>You are responsible for keeping your sign-in details secret. Your username must not infringe anyone's rights and must not be offensive or misleading.</p>
+<p>The app is intended for people aged 13 and over. Anyone under 16 needs the consent of a parent or legal guardian. Paid offers (section 11) require you to be an adult or to have that consent.</p>
 
-                <h3>12. Beendigung</h3>
-                <p>Sie können die Nutzung der App jederzeit durch Löschen Ihres Kontos in der App oder durch Kontaktaufnahme mit dem Support beenden. Der Anbieter kann Konten bei schwerwiegenden oder wiederholten Verstößen gegen diese AGB sperren oder löschen. Aktive Abonnements müssen separat über den App Store oder Google Play gekündigt werden.</p>
+<h2>4. Your content</h2>
+<p>Content you create in the app (your collection, photos, notes, recipes, army lists and the like) belongs to you. You grant us only the rights we need to store it for you, sync it, prepare it technically and show it to you.</p>
+<ul>
+<li><strong>Private photos and content</strong> are visible only to you.</li>
+<li><strong>Sharing by link:</strong> when you share an army list or a recipe by link, anyone with the link can view it and take a copy.</li>
+<li><strong>Shared games:</strong> in a game with other users, every participant sees your username, your army list and the game state. The result is also saved in the other players' match history.</li>
+</ul>
+<p>For reports, corrections, set requests, paint colour reports, card names and any other suggestions you send us, you grant us a free, non-exclusive, worldwide and perpetual right to use them, edit them and add them to the app and its catalogues. There is no entitlement to implementation or payment.</p>
+<p>You confirm that you hold the necessary rights to everything you upload or share, and that it does not infringe anyone else's rights. If a third party makes a claim against us because your content infringes their rights through your fault, you indemnify us against that claim, including reasonable legal defence costs.</p>
 
-                <h3>13. Anwendbares Recht und Gerichtsstand</h3>
-                <p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts. Zwingende Verbraucherschutzbestimmungen des Staates, in dem der Nutzer seinen gewöhnlichen Aufenthalt hat, bleiben unberührt. Ausschließlicher Gerichtsstand ist, soweit gesetzlich zulässig, <strong>Saarland, Deutschland</strong>.</p>
+<h2>5. Community photos and licence</h2>
+<p>With the "Also share with the community" switch you can submit photos of your miniatures to the public catalogue. Submitting is voluntary and unpaid. We review every submission and decide freely whether to approve it; there is no right to publication.</p>
+<p><strong>(1) Scope.</strong> By submitting, you grant the provider, if the photo is approved, a non-exclusive, worldwide, perpetual, royalty-free licence, exercisable by us or by service providers we engage, to</p>
+<ol type="a">
+<li>make the photo publicly available to all users in the app and its connected services,</li>
+<li>process it technically (for example resize, compress, convert formats) and store and deliver it through our service providers,</li>
+<li>use it to promote Hobby Armory, in particular on our website, in app store listings, on social networks and community platforms (for example Instagram, Discord, Reddit, YouTube, TikTok), in newsletters, presentations and press material, and in printed material such as flyers, posters or banners, including for future versions and offerings of Hobby Armory.</li>
+</ol>
+<p><strong>(2) Editing.</strong> For these purposes we may crop the photo, adjust its size, brightness and colour, and combine it with text, logos, app screenshots or other images. We will not present your painted miniature itself in a distorted way.</p>
+<p><strong>(3) Platforms.</strong> The licence includes the right to grant platform operators the rights they require to publish the photo on their platform. The licence is transferable to a successor who continues Hobby Armory. Beyond that, we do not sell your photo.</p>
+<p><strong>(4) Credit.</strong> Photos are shown in the app without your name. We are not obliged to credit you as the author in promotion either, and to the extent the law allows, you waive attribution for these uses.</p>
+<p><strong>(5) Removal.</strong> You can ask us at any time, by email to support@hobbyarmory.de, to remove a photo from the app and stop using it in new promotion. We will do so within a reasonable time. Posts already published, material already produced and content others have passed on are not affected. Deleting your account does not automatically remove an approved photo.</p>
+<p><strong>(6) Your rights remain.</strong> You keep the copyright in your photo. You remain free to use it yourself in any way and to license it to others.</p>
+<p><strong>(7) Your assurance.</strong> You confirm that you took the photo yourself or hold the necessary rights, that it shows a miniature you own or painted, and that no person can be identified in it. Official images, box art and other material from Games Workshop or other manufacturers are not accepted.</p>
+<p><strong>(8) Recipes.</strong> If you attach a paint recipe to a community photo, (1) to (6) apply accordingly to an unchangeable copy of that recipe. Other users can save that copy to their own Recipe Book.</p>
+<p><strong>(9) Transition.</strong> Promotional use under (1)(c) applies to photos submitted on or after 11 October 2026. For photos submitted earlier, only (1)(a) and (b) apply unless you separately agree to promotional use.</p>
 
-                <h3>14. Salvatorische Klausel</h3>
-                <p>Sollte eine Bestimmung dieser AGB unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt. Eine unwirksame Bestimmung ist durch eine Regelung zu ersetzen, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung am nächsten kommt.</p>
-                
-                <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
-                    <em>Hobby Armory</em><br>
-                    <em>Zuletzt aktualisiert: April 2026</em>
-                </p>
-            </div>
-        </div>
-        
-        <div class="footer">
-            <p>© 2026 Hobby Armory &nbsp;|&nbsp; Last updated: April 2026 &nbsp;/&nbsp; Zuletzt aktualisiert: April 2026</p>
-        </div>
-    </div>
-    
-    <script>
-        function showLanguage(lang) {
-            // Hide all sections
-            document.getElementById('english').classList.remove('active');
-            document.getElementById('german').classList.remove('active');
-            
-            // Remove active state from all buttons
-            document.querySelectorAll('.toggle-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // Show selected language
-            document.getElementById(lang).classList.add('active');
-            
-            // Activate corresponding button
-            event.target.classList.add('active');
-        }
-    </script>
+<h2>6. Content rules and moderation</h2>
+<p>In particular, content is not allowed if it</p>
+<ul>
+<li>infringes copyright, trademarks or other rights of third parties,</li>
+<li>contains or incites hatred, violence, harassment or discrimination,</li>
+<li>shows nudity or sexual content,</li>
+<li>is unlawful, misleading, or advertising unrelated to the hobby.</li>
+</ul>
+<p>We may reject submissions at our discretion and remove content that breaks these rules without notice. For serious or repeated breaches we may suspend or delete an account. You can report unlawful content to us at any time at support@hobbyarmory.de.</p>
+
+<h2>7. Game data and rules</h2>
+<p>Points values, datasheets, rules, missions and set contents in the app come from publicly available sources and community projects and are provided without warranty. They may be incomplete, out of date or wrong. The manufacturer's official publications always take precedence. Check army lists against those sources before tournaments and other official events.</p>
+
+<h2>8. Trademarks and intellectual property</h2>
+<div class="card warn">
+<p><strong>Unofficial fan project.</strong> Hobby Armory is not affiliated with Games Workshop Limited and is not supported or endorsed by Games Workshop. Warhammer and all associated names and marks are the property of Games Workshop Limited. Details in the <a href="/disclaimer">Disclaimer</a>.</p>
+</div>
+<p>Trademarks, product names and logos of other manufacturers, such as paint ranges, belong to their respective owners. The app itself, its design and its text are protected by copyright.</p>
+
+<h2>9. Beta and availability</h2>
+<p>The app is in beta. Features may change, be removed or be temporarily unavailable. We owe neither any particular availability nor the permanent retention of your data. You are responsible for backing up your data, for example via <strong>Settings &gt; Export My Data</strong>.</p>
+
+<h2>10. Liability</h2>
+<ol>
+<li>We are liable without limitation for intent and gross negligence, for injury to life, body or health, under the German Product Liability Act and to the extent of any guarantee we have given.</li>
+<li>As long as you use the app free of charge, any further liability is excluded.</li>
+<li>For paid offers, we are liable for slight negligence only where we breach an essential contractual obligation, meaning one whose fulfilment makes proper performance of the contract possible in the first place and on which you may regularly rely. In that case liability is limited to the foreseeable damage typical for this kind of contract.</li>
+<li>For loss of data, we are liable only for the effort that restoring it would have required had you backed up your data regularly.</li>
+<li>We are not liable for other users' content or for linked third-party services.</li>
+<li>These limitations also apply to anyone we engage to perform our obligations.</li>
+</ol>
+
+<h2>11. Paid offers</h2>
+<p>During the beta, every feature is free. We may offer paid subscriptions ("Premium") in the future. If we do:</p>
+<ul>
+<li>Prices, terms and features are shown in the app or store before you buy.</li>
+<li>In-app purchases are made and billed through Apple (App Store) or Google (Google Play), who act as seller or payment processor; their terms also apply.</li>
+<li>Subscriptions renew automatically unless cancelled at least 24 hours before the end of the period. You cancel in the store's subscription settings.</li>
+<li>Refunds follow Apple's or Google's policies.</li>
+<li>We decide which features stay free and which become paid.</li>
+</ul>
+
+<h2>12. Right of withdrawal</h2>
+<p>Consumers generally have a 14-day right of withdrawal for paid distance contracts. For digital content and services it expires early if you expressly agree that we may begin before the withdrawal period ends and confirm that you thereby lose your right of withdrawal (§ 356(5) German Civil Code). For purchases through Apple or Google, their rules also apply.</p>
+
+<h2>13. Changes to these terms</h2>
+<p>We may update these terms when new features, changes at our providers or changes in the law require it. We announce significant changes with reasonable notice in the app or by email. If you keep using the app afterwards, the updated terms apply; the announcement will point this out. If you do not agree, you can stop using the app and delete your account.</p>
+
+<h2>14. Termination and account deletion</h2>
+<p>You can stop using the app at any time by deleting your account under <strong>Settings &gt; Delete Account</strong> or by writing to us. What is deleted is listed on the <a href="/delete-account">Delete account</a> page. We may terminate an account used free of charge with reasonable notice and without giving reasons, and may suspend or delete it without notice for breaches of these terms. Cancel any active subscription separately in the store.</p>
+
+<h2>15. Governing law and jurisdiction</h2>
+<p>German law applies, excluding the UN Convention on Contracts for the International Sale of Goods. If you are a consumer, the mandatory consumer protection rules of the country where you habitually live remain unaffected. If you are a merchant or have no general place of jurisdiction in Germany, the place of jurisdiction is the provider's place of residence.</p>
+<p>We are neither obliged nor willing to take part in dispute resolution proceedings before a consumer arbitration board.</p>
+
+<h2>16. Final provisions</h2>
+<p>If any provision of these terms is invalid, the rest remain valid, and the statutory rule takes the place of the invalid provision. These terms exist in German and English; in case of any difference, the German version prevails.</p>
+</article>
+</div>
+</div>
+</main>
+<footer><div class="foot-in">
+<span>© 2026 Hobby Armory</span>
+<span class="spacer"></span>
+<a href="https://www.hobbyarmory.com/">www.hobbyarmory.com</a>
+<a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a>
+</div></footer>
+<script src="/assets/legal.js" defer></script>
 </body>
 </html>

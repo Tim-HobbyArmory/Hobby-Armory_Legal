@@ -1,535 +1,331 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby Armory Datenschutz - Privacy Policy</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #000000 0%, #0d9488 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #000000 0%, #0d9488 100%);
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .header p {
-            font-size: 1.1em;
-            opacity: 0.95;
-        }
-        
-        .language-toggle {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        
-        .toggle-btn {
-            padding: 8px 16px;
-            background: rgba(255,255,255,0.2);
-            border: 2px solid white;
-            color: white;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-weight: bold;
-        }
-        
-        .toggle-btn.active {
-            background: white;
-            color: #0d9488;
-        }
-        
-        .toggle-btn:hover {
-            background: rgba(255,255,255,0.3);
-        }
-        
-        .content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            padding: 40px;
-        }
-        
-        .section {
-            display: none;
-        }
-        
-        .section.active {
-            display: block;
-        }
-        
-        .section h2 {
-            color: #0d9488;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-            border-bottom: 3px solid #0d9488;
-            padding-bottom: 10px;
-        }
-        
-        .section h2:first-child {
-            margin-top: 0;
-        }
-        
-        .section h3 {
-            color: #0f766e;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-        
-        .section p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        
-        .section ul {
-            margin-left: 25px;
-            margin-bottom: 15px;
-        }
-        
-        .section li {
-            margin-bottom: 8px;
-        }
-        
-        .important {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        
-        .important strong {
-            color: #856404;
-        }
-        
-        .info-box {
-            background: #e8f5f0;
-            border-left: 4px solid #0d9488;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 4px;
-        }
-        
-        .info-box strong {
-            color: #0f766e;
-        }
-        
-        @media (max-width: 1024px) {
-            .content {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-        }
-        
-        .footer {
-            background: #f8f9fa;
-            padding: 20px 40px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #666;
-            border-top: 1px solid #ddd;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung / Privacy Policy · Hobby Armory</title>
+<meta name="title-de" content="Datenschutzerklärung · Hobby Armory">
+<meta name="title-en" content="Privacy Policy · Hobby Armory">
+<meta name="description" content="Welche Daten Hobby Armory in App, Website und Rechtsseiten verarbeitet, wofür und welche Rechte Sie haben. Which data Hobby Armory processes in the app, website and legal pages, why, and what your rights are.">
+<link rel="canonical" href="https://legal.hobbyarmory.de/datenschutz">
+<meta name="theme-color" content="#060B12">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/legal.css">
+<script>(function(){var d=document.documentElement,l=null;try{l=new URLSearchParams(location.search).get('lang')}catch(e){}if(!l)try{l=localStorage.getItem('legal-lang')}catch(e){}if(l!=='de'&&l!=='en')l=/^de\b/i.test(navigator.language||'')?'de':'en';d.classList.remove('no-js');d.classList.add('show-'+l);d.lang=l})();</script>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Hobby Armory</h1>
-            <p>Privacy Policy / Datenschutzerklärung</p>
-            <div class="language-toggle">
-                <button class="toggle-btn active" onclick="showLanguage('english')">📄 English</button>
-                <button class="toggle-btn" onclick="showLanguage('german')">📋 Deutsch</button>
-            </div>
-        </div>
-        
-        <div class="content">
-            <!-- ENGLISH VERSION -->
-            <div id="english" class="section active">
-                <h2>Privacy Policy</h2>
-                <p><strong>Status:</strong> April 2026</p>
-                
-                <h3>1. Data Controller</h3>
-                <p>Responsible for data processing (Controller) within the meaning of Art. 4 No. 7 GDPR:</p>
-                <p>
-                    Tim Paulus<br>
-                    c/o Postflex #10266<br>
-                    Emsdettener Str. 10<br>
-                    48268 Greven, Germany<br>
-                    Email: support@hobbyarmory.de
-                </p>
-                <p><strong>Note:</strong> No packages or parcels - acceptance will be refused!</p>
-                
-                <h3>2. Types of Data Processed</h3>
-                <p>When using Hobby Armory, the following data may be processed:</p>
-                <ul>
-                    <li><strong>Authentication data (Google Sign-In):</strong> Email address (provided by Google) and a unique user identifier (Firebase UID).</li>
-                    <li><strong>Authentication data (Sign in with Apple):</strong> Email address — either your real Apple ID email or, if selected, Apple's "Hide My Email" relay address — and a unique Apple User ID; both are stored like any other email address. No name is requested.</li>
-                    <li><strong>Collection data:</strong> Miniature sets owned, purchase dates, painting progress, notes.</li>
-                    <li><strong>Activity history:</strong> Hobby activity dates for streak/series tracking.</li>
-                    <li><strong>Achievements / milestones:</strong> Progress data for achievements and goals.</li>
-                    <li><strong>Goals & preferences:</strong> Monthly goals, app settings, and preferences.</li>
-                    <li><strong>Images (uploads):</strong> Photos of miniatures uploaded by you.</li>
-                    <li><strong>Push notification token:</strong> A device-specific push token (FCM/APNs), processed only if you grant the corresponding permission on your device.</li>
-                    <li><strong>Subscription / purchase status:</strong> Anonymized status of in-app subscriptions and entitlements processed via Apple, Google and RevenueCat. The operator does not store credit card or other payment-instrument data.</li>
-                    <li><strong>Technical / usage data:</strong> App version, device/OS information, language, and diagnostic data for stability and crash reporting (Firebase Analytics / Crashlytics).</li>
-                </ul>
-                
-                <h3>3. Legal Basis for Data Processing</h3>
-                <p>Data processing is based on the following legal bases (Art. 6 GDPR):</p>
-                <ul>
-                    <li><strong>Contract performance</strong> (Art. 6 (1)(b) GDPR): provision of core App functionality (account, collection, progress tracking, subscription delivery).</li>
-                    <li><strong>Consent</strong> (Art. 6 (1)(a) GDPR): submission of images to the public community catalog, decision emails, push notifications (where you have granted system permission), and — in the future — any advertising-related processing.</li>
-                    <li><strong>Legitimate interests</strong> (Art. 6 (1)(f) GDPR): security and fraud prevention, service stability and improvement, analytics and crash reporting on an anonymous/pseudonymous basis. You have the right to object to processing based on legitimate interests at any time.</li>
-                    <li><strong>Legal obligation</strong> (Art. 6 (1)(c) GDPR): retention obligations under tax and commercial law, where applicable.</li>
-                </ul>
-                
-                <h3>4. Data Storage Locations and Processors</h3>
-                
-                <div class="info-box">
-                    <strong>Google Firebase (Google Cloud Platform, EU region):</strong> Authentication (Google Sign-In), user profiles, collection data, activity history, achievements, preferences, push notifications (Firebase Cloud Messaging), analytics (Firebase Analytics) and crash reporting (Crashlytics). Data is encrypted in transit and at rest.
-                    <br><br>
-                    <strong>Cloudflare R2 (EU):</strong> Image files you upload are stored in Cloudflare R2 object storage (EU). Images may be delivered via Cloudflare's CDN for performance.
-                    <br><br>
-                    <strong>Cloudflare Workers (EU):</strong> Used to process image uploads/deletions (e.g., resizing/optimization workflows).
-                    <br><br>
-                    <strong>Apple Inc.:</strong> Sign in with Apple (authentication), App Store payments and subscription management on iOS. Apple processes data under its own privacy policy.
-                    <br><br>
-                    <strong>Google LLC / Google Play:</strong> Google Sign-In, Google Play Billing on Android, and — as a placeholder for a possible future ad-supported tier — Google AdMob. Google processes data under its own privacy policy.
-                    <br><br>
-                    <strong>RevenueCat Inc.:</strong> Subscription management. RevenueCat processes purchase receipts and entitlement data. The operator only receives anonymized subscription status; no payment card data is processed by the operator.
-                    <br><br>
-                    <strong>Transactional email:</strong> Transactional emails (e.g., approval/rejection notifications) are sent via Firebase/Google email infrastructure. No marketing emails are sent unless you explicitly opt in.
-                </div>
-                
-                <h3>5. Images: Private vs. Community Catalog</h3>
-                <p>Hobby Armory supports two image categories:</p>
-                <ul>
-                    <li><strong>Private images:</strong> Photos you upload for your personal collection. These are intended to be visible only to you.</li>
-                    <li><strong>Community catalog images:</strong> Photos you voluntarily submit for the public catalog. Submissions are reviewed by an admin. Only approved images become publicly visible to all users.</li>
-                </ul>
-                <p><strong>Image processing:</strong> Uploaded images may be automatically resized and optimized for storage and delivery.</p>
-                
-                <h3>6. Email Communications</h3>
-                <p>We send emails only when necessary for the service, in particular for the community image submission process (approval/rejection notifications including admin feedback) and important account or service notices.</p>
-                <ul>
-                    <li><strong>Reply-to:</strong> support@hobbyarmory.de</li>
-                    <li><strong>No marketing:</strong> No marketing emails are sent unless you explicitly opt in.</li>
-                </ul>
+<header class="top"><div class="top-in">
+<a class="brand" href="https://www.hobbyarmory.com/"><img src="/assets/logo.png" alt="" width="30" height="30">Hobby Armory</a>
+<span class="spacer"></span>
+<div class="langs" role="group" aria-label="Sprache / Language"><button type="button" data-lang="de" lang="de">DE</button><button type="button" data-lang="en" lang="en">EN</button></div>
+</div></header>
+<nav class="docs" aria-label="Rechtliches / Legal"><ul><li><a href="/impressum"><span class="l-de">Impressum</span><span class="l-en">Legal Notice</span></a></li><li><a href="/datenschutz" aria-current="page"><span class="l-de">Datenschutz</span><span class="l-en">Privacy</span></a></li><li><a href="/agb"><span class="l-de">AGB</span><span class="l-en">Terms</span></a></li><li><a href="/disclaimer"><span class="l-de">Haftungsausschluss</span><span class="l-en">Disclaimer</span></a></li><li><a href="/delete-account"><span class="l-de">Konto löschen</span><span class="l-en">Delete account</span></a></li></ul></nav>
+<main>
+<div class="doc has-toc">
+<div><nav class="toc l-de" data-for="art-de" aria-label="Inhalt"></nav><nav class="toc l-en" data-for="art-en" aria-label="Contents"></nav></div>
+<div>
+<article id="art-de" class="l-de" lang="de">
+<p class="eyebrow">Rechtliches</p>
+<h1>Datenschutzerklärung</h1>
+<p class="meta">Stand: 11. Oktober 2026</p>
+<p class="lead">Diese Erklärung beschreibt, welche personenbezogenen Daten wir verarbeiten, wenn Sie die App Hobby Armory (iOS, Android und Web), die Website www.hobbyarmory.com oder diese Rechtsseiten nutzen, wofür das geschieht und welche Rechte Sie haben.</p>
 
-                <h3>7. Push Notifications</h3>
-                <p>The App may send push notifications (e.g., reminders for hobby activity streaks, community submission decisions, important updates). Push notifications are <strong>optional and consent-based</strong>:</p>
-                <ul>
-                    <li>They are sent only after you have granted the corresponding system permission on your device.</li>
-                    <li>You can revoke this consent at any time via your device's system settings (iOS Settings &gt; Notifications &gt; Hobby Armory or Android settings &gt; Apps &gt; Hobby Armory &gt; Notifications) and/or via in-app preferences.</li>
-                    <li>Technical delivery is provided by Apple Push Notification service (APNs) and Firebase Cloud Messaging (FCM).</li>
-                </ul>
+<h2>1. Verantwortlicher</h2>
+<p>Verantwortlicher im Sinne von Art. 4 Nr. 7 DSGVO:</p>
+<div class="card">
+<address>Tim Paulus<br>c/o Postflex #10266<br>Emsdettener Str. 10<br>48268 Greven<br>Deutschland</address>
+<p style="margin-top:10px">E-Mail: <a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a></p>
+</div>
+<p>Ein Datenschutzbeauftragter ist nicht benannt, da hierzu keine gesetzliche Pflicht besteht. Für alle Fragen zum Datenschutz erreichen Sie uns unter der oben genannten E-Mail-Adresse.</p>
 
-                <h3>8. In-App Purchases / Subscriptions</h3>
-                <p>If you purchase a paid subscription via the Apple App Store or Google Play:</p>
-                <ul>
-                    <li>The actual payment transaction is processed exclusively by Apple Inc. or Google LLC under their own terms and privacy policies. The operator does not receive your payment card or bank account data.</li>
-                    <li>Purchase receipts and entitlement information are processed by <strong>RevenueCat Inc.</strong>, which acts as a processor for the operator.</li>
-                    <li>The operator only receives an <strong>anonymized subscription status</strong> (e.g., active/inactive, plan type, renewal date) needed to grant access to premium features.</li>
-                    <li>For refunds or billing disputes please contact Apple or Google directly.</li>
-                </ul>
+<h2>2. Website www.hobbyarmory.com</h2>
+<h3>Hosting und Server-Logs</h3>
+<p>Die Website wird über Cloudflare Pages (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA) ausgeliefert. Bei jedem Aufruf verarbeitet Cloudflare technisch notwendige Daten: IP-Adresse, Datum und Uhrzeit, aufgerufene Adresse, Referrer, Browser und Betriebssystem. Das dient der Auslieferung der Seiten sowie dem Schutz vor Angriffen und Missbrauch. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse ist ein sicherer und stabiler Betrieb der Website.</p>
+<h3>Reichweitenmessung mit Cloudflare Web Analytics</h3>
+<p>Wir nutzen Cloudflare Web Analytics, um zu verstehen, welche Seiten wie oft aufgerufen werden. Der Dienst setzt keine Cookies, speichert nichts auf Ihrem Gerät und erstellt keine Nutzerprofile. Ein kleines Skript übermittelt beim Seitenaufruf die aufgerufene Adresse, den Referrer, Ladezeiten sowie Browser- und Geräteart an Cloudflare; IP-Adressen werden nach Angabe von Cloudflare nicht zur Wiedererkennung genutzt. Wir sehen nur zusammengefasste Statistiken. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse ist die bedarfsgerechte Gestaltung der Website. Sie können der Messung widersprechen, etwa indem Sie Skripte von <code>static.cloudflareinsights.com</code> in Ihrem Browser blockieren.</p>
+<h3>Keine Cookies, keine eingebetteten Inhalte</h3>
+<p>Die Website setzt keine Cookies. Schriften und Bilder liegen auf unserem eigenen Server; es werden keine Inhalte von Google Fonts, YouTube, Social-Media-Plattformen oder Werbenetzwerken geladen.</p>
+<h3>Links zu anderen Diensten</h3>
+<p>Die Website verlinkt unter anderem auf den Apple App Store, TestFlight, Google Play, Discord und ein Feedback-Formular bei Google Forms. Daten werden an diese Anbieter erst übertragen, wenn Sie einen solchen Link anklicken. Ab dann gilt die Datenschutzerklärung des jeweiligen Anbieters. Angaben, die Sie in das Google-Formular eintragen, verarbeiten wir zur Auswertung Ihres Feedbacks (Art. 6 Abs. 1 lit. f DSGVO).</p>
 
-                <h3>9. Advertising (Future, Placeholder)</h3>
-                <p>Hobby Armory currently does not display advertising. If an ad-supported tier is introduced in the future, advertising will be delivered via <strong>Google AdMob</strong>. AdMob may use device identifiers and similar technologies and typically requires <strong>separate consent under the GDPR / ePrivacy framework</strong> (e.g., via a consent management platform). Users will be informed and asked for consent <strong>before any advertising SDK is activated or any advertising-related processing takes place</strong>.</p>
-                
-                <h3>10. Data Sharing and Third Parties</h3>
-                <p>Your personal data is <strong>not sold</strong>. Data is processed by our infrastructure providers (processors) to operate the App:</p>
-                <ul>
-                    <li><strong>Google (Firebase / Google Cloud, Google Play):</strong> authentication, database, push notifications, analytics, crash reporting, billing, and email infrastructure.</li>
-                    <li><strong>Cloudflare:</strong> image storage (R2), CDN delivery, and Workers processing.</li>
-                    <li><strong>Apple Inc.:</strong> Sign in with Apple and App Store payments.</li>
-                    <li><strong>RevenueCat Inc.:</strong> subscription and entitlement management.</li>
-                </ul>
-                <p><strong>International transfers:</strong> While data is configured to be stored in EU data centers wherever possible, the service providers are US-based companies. Where required, GDPR safeguards (e.g., Data Processing Agreements and Standard Contractual Clauses) are used.</p>
-                
-                <h3>11. Data Retention</h3>
-                <p>We store personal data only as long as necessary for the purposes described:</p>
-                <ul>
-                    <li><strong>Account data:</strong> stored until you delete your account, or after <strong>2 years of inactivity</strong> (with notice where feasible).</li>
-                    <li><strong>Collection / activity / achievement data:</strong> stored while your account is active and needed for App functionality.</li>
-                    <li><strong>Private images:</strong> stored until you delete them or your account.</li>
-                    <li><strong>Community submissions (rejected):</strong> deleted after rejection.</li>
-                    <li><strong>Community catalog images (approved):</strong> stored as a public community resource until you request removal / withdraw consent.</li>
-                    <li><strong>Push notification tokens:</strong> stored while the App is installed and the permission is granted; revoked tokens are deleted.</li>
-                    <li><strong>Subscription / purchase status:</strong> stored for the duration of the subscription and as required by tax/commercial law (typically up to 10 years for related billing records held by Apple/Google).</li>
-                    <li><strong>Diagnostic / crash data:</strong> stored for a limited time according to the providers' default retention (typically up to 90 days for crash reports, up to 14 months for analytics).</li>
-                </ul>
-                
-                <h3>12. Your GDPR Rights</h3>
-                <p>You have the following rights under the GDPR (Articles 15–22):</p>
-                <ul>
-                    <li><strong>Right of access:</strong> request a copy of your personal data.</li>
-                    <li><strong>Right to rectification:</strong> correct inaccurate personal data.</li>
-                    <li><strong>Right to erasure:</strong> request deletion of your data ("right to be forgotten").</li>
-                    <li><strong>Right to restrict processing:</strong> limit how your data is used in certain cases.</li>
-                    <li><strong>Right to data portability:</strong> receive your data in a machine-readable format (e.g., JSON export).</li>
-                    <li><strong>Right to object:</strong> object to processing based on legitimate interests, including analytics and crash reporting.</li>
-                    <li><strong>Right to withdraw consent:</strong> withdraw consent for community catalog submissions, push notifications, or (future) advertising at any time, with effect for the future.</li>
-                </ul>
-                <p>To exercise these rights, contact us at: support@hobbyarmory.de</p>
-                
-                <h3>13. Children's Privacy</h3>
-                <p>The App is intended for users aged <strong>13 and older</strong>. Users <strong>under 16</strong> require the consent of a parent or legal guardian for the processing of their personal data (Art. 8 GDPR). If we learn that we have collected personal data from a child without the required consent, we will delete that data without undue delay.</p>
+<h2>3. Diese Rechtsseiten (legal.hobbyarmory.de)</h2>
+<p>Diese Seiten werden über GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA) bereitgestellt. GitHub verarbeitet beim Aufruf Ihre IP-Adresse und technische Zugriffsdaten, um die Seiten auszuliefern und den Dienst abzusichern. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Eine Reichweitenmessung findet hier nicht statt. Ihre Sprachwahl wird ausschließlich lokal in Ihrem Browser gespeichert (§ 25 Abs. 2 Nr. 2 TDDDG).</p>
 
-                <h3>14. Data Security</h3>
-                <p>We implement appropriate technical and organizational measures, including:</p>
-                <ul>
-                    <li>Encryption in transit (TLS/HTTPS).</li>
-                    <li>Encryption at rest by our infrastructure providers (Firebase / Cloudflare).</li>
-                    <li>Authentication via Google Sign-In and Sign in with Apple.</li>
-                    <li>Principle of least privilege for administrative access.</li>
-                </ul>
-                <p><strong>Note:</strong> No system can be guaranteed 100% secure. In the event of a data breach, notifications are handled in line with GDPR requirements (including the 72-hour notification rule where applicable).</p>
-                
-                <h3>15. Data Protection Authority</h3>
-                <p>If you have concerns about our data protection practices, you have the right to lodge a complaint with a supervisory authority:</p>
-                <p>
-                    <strong>Independent Data Protection Center of Saarland (Unabhängiges Datenschutzzentrum Saarland):</strong><br>
-                    Fritz-Dobisch-Straße 12<br>
-                    66111 Saarbrücken, Germany<br>
-                    Phone: +49 681 94781-0<br>
-                    Email: poststelle@datenschutz.saarland.de<br>
-                    Web: datenschutz.saarland.de
-                </p>
-                
-                <h3>16. Updates to This Policy</h3>
-                <p>We may update this Privacy Policy as needed (e.g., to reflect changes in features or legal requirements). Significant changes will be communicated in the App and/or by email where appropriate.</p>
-                
-                <h3>17. Contact</h3>
-                <p>For questions about data protection and this Privacy Policy, please contact:</p>
-                <p><strong>Email:</strong> support@hobbyarmory.de</p>
-                
-                <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
-                    <em>Hobby Armory</em><br>
-                    <em>Last updated: April 2026</em>
-                </p>
-            </div>
-            
-            <!-- GERMAN VERSION -->
-            <div id="german" class="section">
-                <h2>Datenschutzerklärung</h2>
-                <p><strong>Stand:</strong> April 2026</p>
-                
-                <h3>1. Verantwortlicher für die Datenverarbeitung</h3>
-                <p>Verantwortlicher im Sinne von Art. 4 Nr. 7 DSGVO:</p>
-                <p>
-                    Tim Paulus<br>
-                    c/o Postflex #10266<br>
-                    Emsdettener Str. 10<br>
-                    48268 Greven, Deutschland<br>
-                    E-Mail: support@hobbyarmory.de
-                </p>
-                <p><strong>Hinweis:</strong> Keine Pakete oder Päckchen - Annahme wird verweigert!</p>
-                
-                <h3>2. Arten der verarbeiteten Daten</h3>
-                <p>Bei der Nutzung von Hobby Armory können insbesondere folgende Daten verarbeitet werden:</p>
-                <ul>
-                    <li><strong>Authentifizierungsdaten (Google Sign-In):</strong> E-Mail-Adresse (von Google bereitgestellt) und eine eindeutige Nutzerkennung (Firebase UID).</li>
-                    <li><strong>Authentifizierungsdaten (Anmelden mit Apple):</strong> E-Mail-Adresse – entweder Ihre tatsächliche Apple-ID-E-Mail oder, falls gewählt, die Relay-Adresse aus „Meine E-Mail-Adresse verbergen" – sowie eine eindeutige Apple User ID; beide werden wie jede andere E-Mail-Adresse gespeichert. Es wird kein Name angefordert.</li>
-                    <li><strong>Sammlungsdaten:</strong> Besessene Miniaturen/Sets, Kaufdaten, Malfortschritt, Notizen.</li>
-                    <li><strong>Aktivitätsverlauf:</strong> Hobby-Aktivitäten (Datum) zur Streak-/Serien-Berechnung.</li>
-                    <li><strong>Erfolge / Meilensteine:</strong> Fortschrittsdaten zu Achievements und Zielen.</li>
-                    <li><strong>Ziele & Einstellungen:</strong> Monatsziele, App-Einstellungen und Präferenzen.</li>
-                    <li><strong>Bilder (Uploads):</strong> Von Ihnen hochgeladene Fotos von Miniaturen.</li>
-                    <li><strong>Push-Token:</strong> Ein gerätespezifisches Push-Token (FCM/APNs), das nur verarbeitet wird, wenn Sie die entsprechende Berechtigung auf Ihrem Gerät erteilen.</li>
-                    <li><strong>Abonnement-/Kaufstatus:</strong> Anonymisierter Status zu In-App-Abonnements und Berechtigungen, der über Apple, Google und RevenueCat verarbeitet wird. Der Anbieter speichert keine Kreditkarten- oder sonstigen Zahlungsmitteldaten.</li>
-                    <li><strong>Technische-/Nutzungsdaten:</strong> App-Version, Geräte-/OS-Informationen, Sprache und Diagnosedaten zur Stabilität und Crash-Analyse (Firebase Analytics / Crashlytics).</li>
-                </ul>
-                
-                <h3>3. Rechtsgrundlage für die Datenverarbeitung</h3>
-                <p>Die Verarbeitung erfolgt auf Basis folgender Rechtsgrundlagen (Art. 6 DSGVO):</p>
-                <ul>
-                    <li><strong>Vertragserfüllung</strong> (Art. 6 Abs. 1 lit. b DSGVO): Bereitstellung der Kernfunktionen der App (Account, Sammlung, Fortschritt, Abonnement-Bereitstellung).</li>
-                    <li><strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a DSGVO): Einsendungen in den öffentlichen Community-Katalog, Entscheidungs-E-Mails, Push-Benachrichtigungen (sofern Systemberechtigung erteilt) sowie – zukünftig – jegliche werbebezogene Verarbeitung.</li>
-                    <li><strong>Berechtigtes Interesse</strong> (Art. 6 Abs. 1 lit. f DSGVO): Sicherheit und Betrugsprävention, Stabilität und Verbesserung des Dienstes, Analyse und Crash-Reporting auf anonymisierter/pseudonymisierter Basis. Sie haben jederzeit das Recht, der Verarbeitung auf Basis berechtigter Interessen zu widersprechen.</li>
-                    <li><strong>Rechtliche Verpflichtung</strong> (Art. 6 Abs. 1 lit. c DSGVO): Aufbewahrungspflichten nach Steuer- und Handelsrecht, soweit anwendbar.</li>
-                </ul>
-                
-                <h3>4. Speicherorte und Auftragsverarbeiter</h3>
-                
-                <div class="info-box">
-                    <strong>Google Firebase (Google Cloud Platform, Region EU):</strong> Authentifizierung (Google Sign-In), Nutzerprofil, Sammlungsdaten, Aktivitätsverlauf, Erfolge, Einstellungen, Push-Benachrichtigungen (Firebase Cloud Messaging), Analyse (Firebase Analytics) und Crash-Reporting (Crashlytics). Daten werden bei Übertragung und Speicherung verschlüsselt.
-                    <br><br>
-                    <strong>Cloudflare R2 (EU):</strong> Hochgeladene Bilddateien werden in Cloudflare R2 (EU) gespeichert und ggf. über das Cloudflare-CDN ausgeliefert.
-                    <br><br>
-                    <strong>Cloudflare Workers (EU):</strong> Verarbeitung im Zusammenhang mit Bild-Upload/-Löschung (z. B. Resize/Optimierung).
-                    <br><br>
-                    <strong>Apple Inc.:</strong> Anmelden mit Apple (Authentifizierung), Zahlungen und Abonnement-Verwaltung im App Store unter iOS. Apple verarbeitet Daten gemäß seiner eigenen Datenschutzerklärung.
-                    <br><br>
-                    <strong>Google LLC / Google Play:</strong> Google Sign-In, Google Play Billing unter Android sowie – als Platzhalter für eine mögliche zukünftige werbefinanzierte Stufe – Google AdMob. Google verarbeitet Daten gemäß seiner eigenen Datenschutzerklärung.
-                    <br><br>
-                    <strong>RevenueCat Inc.:</strong> Verwaltung von Abonnements. RevenueCat verarbeitet Kaufbelege und Berechtigungsdaten. Der Anbieter erhält ausschließlich anonymisierten Abonnement-Status; Zahlungsmitteldaten werden vom Anbieter nicht verarbeitet.
-                    <br><br>
-                    <strong>Transaktions-E-Mails:</strong> Transaktionale Benachrichtigungen (z. B. Annahme/Ablehnung von Community-Einsendungen) werden über Firebase/Google-E-Mail-Infrastruktur versendet. Es werden keine Marketing-E-Mails ohne Opt-in versendet.
-                </div>
-                
-                <h3>5. Bilder: Privat vs. Community-Katalog</h3>
-                <p>Hobby Armory unterscheidet zwei Bild-Kategorien:</p>
-                <ul>
-                    <li><strong>Private Bilder:</strong> Fotos für Ihre persönliche Sammlung – nur für Sie sichtbar.</li>
-                    <li><strong>Community-Katalog-Bilder:</strong> Freiwillige Einsendungen für den öffentlichen Katalog. Einsendungen werden manuell geprüft; nur genehmigte Bilder werden für alle Nutzer öffentlich sichtbar.</li>
-                </ul>
-                <p><strong>Bildverarbeitung:</strong> Hochgeladene Bilder können automatisch skaliert und optimiert werden.</p>
-                
-                <h3>6. E-Mail-Kommunikation</h3>
-                <p>Wir versenden E-Mails nur, soweit dies für den Dienst erforderlich ist, insbesondere im Zusammenhang mit Community-Bild-Einsendungen (Annahme/Ablehnung inkl. Feedback) sowie wichtigen Account- oder Service-Hinweisen.</p>
-                <ul>
-                    <li><strong>Reply-to:</strong> support@hobbyarmory.de</li>
-                    <li><strong>Kein Marketing:</strong> Es werden keine Marketing-E-Mails versendet, sofern Sie nicht ausdrücklich zugestimmt haben.</li>
-                </ul>
+<h2>4. Welche Daten die App verarbeitet</h2>
+<h3>Konto und Anmeldung</h3>
+<ul>
+<li><strong>Anmeldung mit Google:</strong> E-Mail-Adresse und eine eindeutige Nutzerkennung (Firebase UID).</li>
+<li><strong>Anmeldung mit Apple:</strong> E-Mail-Adresse (Ihre echte Apple-ID-Adresse oder die Relay-Adresse aus „E-Mail-Adresse verbergen“) und eine eindeutige Apple-Nutzerkennung. Ein Name wird nicht abgefragt.</li>
+<li><strong>Anmeldung mit E-Mail und Passwort:</strong> E-Mail-Adresse und Passwort. Das Passwort wird ausschließlich von Firebase Authentication als Hash gespeichert; wir können es nicht einsehen.</li>
+<li><strong>Nutzername:</strong> Ein von Ihnen gewählter Nutzername. Er ist für andere Nutzer sichtbar, wenn Sie mit ihnen interagieren, etwa in einer gemeinsamen Partie.</li>
+</ul>
+<h3>Inhalte, die Sie in der App anlegen</h3>
+<ul>
+<li><strong>Sammlung:</strong> Sets und Miniaturen, Kaufdaten, Bemal- und Baufortschritt, Daten der einzelnen Schritte, Werkbank, Tags, Notizen, Armeen, eigene Spielsysteme und Wunschliste.</li>
+<li><strong>Hobby:</strong> Malrezepte, Farbregal, Malsitzungen und deren Dauer.</li>
+<li><strong>Spiele:</strong> Armeelisten, Spielvorlagen, Spielverläufe, Spielhistorie und gespeicherte Gegnerlisten.</li>
+<li><strong>Fortschritt:</strong> Aktivitätstage für die Serien-Anzeige (Streak), Erfolge, Meilensteine und Monatsziele.</li>
+<li><strong>Fotos:</strong> Bilder Ihrer Miniaturen. Vor dem Hochladen werden sie komprimiert; dabei werden eingebettete Metadaten wie Standort und Kameradaten entfernt.</li>
+<li><strong>Einstellungen:</strong> etwa Datumsformat, ausgeblendete Spielsysteme und Filter.</li>
+</ul>
+<h3>Was Sie uns schicken</h3>
+<p>Wenn Sie in der App einen Fehler melden, ein fehlendes Set oder eine falsche Farbe melden oder einen Kartennamen einreichen, speichern wir Ihren Text zusammen mit Ihrer Nutzerkennung, um die Meldung zu bearbeiten und Ihnen zu antworten. Schreiben Sie uns eine E-Mail, verarbeiten wir Ihre Adresse und Ihre Nachricht zur Beantwortung.</p>
+<h3>Technische Daten</h3>
+<ul>
+<li><strong>Nutzungsanalyse (Firebase Analytics):</strong> pseudonyme Nutzungsereignisse, App-Version, Gerätetyp, Betriebssystem, Sprache und ungefähres Land.</li>
+<li><strong>Absturzberichte (Firebase Crashlytics):</strong> Fehlerprotokolle mit Gerätetyp, App-Version und Ihrer Nutzerkennung, damit wir Fehler nachvollziehen können.</li>
+<li><strong>Leistungsmessung (Firebase Performance Monitoring):</strong> Lade- und Antwortzeiten, ohne Inhalte.</li>
+<li><strong>Missbrauchsschutz (Firebase App Check):</strong> Die App weist über Apple App Attest/DeviceCheck bzw. Google Play Integrity nach, dass Anfragen von einer echten App-Installation stammen. Dabei werden Geräte- und Integritätssignale an Apple bzw. Google übermittelt.</li>
+<li><strong>Push-Token:</strong> ein gerätespezifisches Token (FCM/APNs), nur wenn Sie Mitteilungen erlauben.</li>
+</ul>
+<h3>Daten auf Ihrem Gerät</h3>
+<p>Die App speichert Einstellungen, Filter, einen Zwischenspeicher des Katalogs und ähnliche Angaben lokal auf Ihrem Gerät. Das ist für die Funktion der App unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG); diese Daten verlassen Ihr Gerät nicht, soweit sie nicht ohnehin mit Ihrem Konto synchronisiert werden.</p>
 
-                <h3>7. Push-Benachrichtigungen</h3>
-                <p>Die App kann Push-Benachrichtigungen versenden (z. B. Erinnerungen an Hobby-Aktivitäts-Streaks, Entscheidungen zu Community-Einsendungen, wichtige Updates). Push-Benachrichtigungen sind <strong>optional und einwilligungsbasiert</strong>:</p>
-                <ul>
-                    <li>Sie werden nur versendet, wenn Sie auf Ihrem Gerät die entsprechende Systemberechtigung erteilt haben.</li>
-                    <li>Sie können diese Einwilligung jederzeit über die Systemeinstellungen Ihres Geräts widerrufen (iOS: Einstellungen &gt; Mitteilungen &gt; Hobby Armory; Android: Einstellungen &gt; Apps &gt; Hobby Armory &gt; Benachrichtigungen) und/oder über die In-App-Einstellungen.</li>
-                    <li>Die technische Zustellung erfolgt über den Apple Push Notification service (APNs) und Firebase Cloud Messaging (FCM).</li>
-                </ul>
+<h2>5. Zwecke und Rechtsgrundlagen</h2>
+<ul>
+<li><strong>Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO):</strong> Konto, Veröffentlichung und Nutzung von Community-Fotos und -Rezepten nach § 5 der AGB, Speicherung und Synchronisierung Ihrer Inhalte, Spiele mit anderen Nutzern, Teilen per Link, Datenexport und Kontolöschung, gegebenenfalls Bereitstellung von Abonnements.</li>
+<li><strong>Einwilligung (Art. 6 Abs. 1 lit. a DSGVO):</strong> Push-Mitteilungen sowie künftig eine etwaige werbebezogene Verarbeitung. Eine Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen.</li>
+<li><strong>Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO):</strong> Sicherheit und Missbrauchsschutz, Stabilität, Fehleranalyse, Verbesserung der App und Bearbeitung Ihrer Meldungen. Sie können dieser Verarbeitung jederzeit widersprechen (Abschnitt 13).</li>
+<li><strong>Rechtliche Pflicht (Art. 6 Abs. 1 lit. c DSGVO):</strong> gesetzliche Aufbewahrungspflichten, soweit sie anwendbar sind.</li>
+</ul>
 
-                <h3>8. In-App-Käufe / Abonnements</h3>
-                <p>Wenn Sie ein kostenpflichtiges Abonnement über den Apple App Store oder Google Play abschließen:</p>
-                <ul>
-                    <li>Die eigentliche Zahlungstransaktion wird ausschließlich von Apple Inc. oder Google LLC nach deren eigenen Bedingungen und Datenschutzerklärungen abgewickelt. Der Anbieter erhält keine Karten- oder Bankdaten.</li>
-                    <li>Kaufbelege und Berechtigungsinformationen werden durch <strong>RevenueCat Inc.</strong> als Auftragsverarbeiter des Anbieters verarbeitet.</li>
-                    <li>Der Anbieter erhält lediglich einen <strong>anonymisierten Abonnement-Status</strong> (z. B. aktiv/inaktiv, Plan, Verlängerungsdatum), der zur Freischaltung von Premium-Funktionen erforderlich ist.</li>
-                    <li>Erstattungen oder Abrechnungsfragen wenden Sie sich bitte direkt an Apple oder Google.</li>
-                </ul>
+<h2>6. Fotos: privat und Community</h2>
+<p><strong>Private Fotos</strong> speichern wir in Ihrem Konto. Sie sind nur für Sie sichtbar.</p>
+<p><strong>Community-Fotos</strong> sind Fotos, die Sie über den Schalter „Auch mit der Community teilen“ ausdrücklich einreichen. Wir prüfen jede Einsendung von Hand. Abgelehnte Einsendungen werden gelöscht. Freigegebene Fotos werden in der App allen Nutzern bei der jeweiligen Miniatur oder dem Set angezeigt, ohne Ihren Namen oder Nutzernamen. Für Fotos, die ab dem 11. Oktober 2026 eingereicht werden, dürfen wir sie außerdem zur Bewerbung von Hobby Armory verwenden, etwa auf unserer Website, in den App Stores und in sozialen Netzwerken. Den Umfang regelt § 5 der <a href="/agb">AGB</a>. Fotos zeigen in der Regel nur bemalte Miniaturen; bitte reichen Sie keine Bilder ein, auf denen Personen erkennbar sind.</p>
+<p>An ein Community-Foto können Sie ein Malrezept anhängen. Wir speichern davon eine unveränderliche Kopie ohne Ihren Namen, Ihre Sets und Ihre privaten Fotos.</p>
+<p>Community-Fotos bleiben auch nach einer Kontolöschung im Katalog, weil andere Nutzer sie sehen und sie nicht mehr Ihrer Person zugeordnet angezeigt werden. Sie können jederzeit per E-Mail verlangen, dass wir ein Foto entfernen; siehe Abschnitt 11.</p>
 
-                <h3>9. Werbung (zukünftig, Platzhalter)</h3>
-                <p>Hobby Armory zeigt derzeit keine Werbung an. Sollte zukünftig eine werbefinanzierte Stufe eingeführt werden, erfolgt die Werbeauslieferung über <strong>Google AdMob</strong>. AdMob kann Geräte-Identifikatoren und vergleichbare Technologien einsetzen und erfordert in der Regel eine <strong>separate Einwilligung nach DSGVO/ePrivacy</strong> (z. B. über eine Consent-Management-Plattform). Nutzer werden informiert und um Einwilligung gebeten, <strong>bevor ein Werbe-SDK aktiviert oder eine werbebezogene Verarbeitung erfolgt</strong>.</p>
-                
-                <h3>10. Datenweitergabe und Dritte</h3>
-                <p>Ihre personenbezogenen Daten werden <strong>nicht verkauft</strong>. Zur Bereitstellung der App werden Daten durch unsere Auftragsverarbeiter verarbeitet:</p>
-                <ul>
-                    <li><strong>Google (Firebase / Google Cloud, Google Play):</strong> Authentifizierung, Datenbank, Push-Benachrichtigungen, Analyse, Crash-Reporting, Abrechnung, E-Mail-Infrastruktur.</li>
-                    <li><strong>Cloudflare:</strong> Bildspeicherung (R2), CDN-Auslieferung und Workers-Verarbeitung.</li>
-                    <li><strong>Apple Inc.:</strong> Anmelden mit Apple und App-Store-Zahlungen.</li>
-                    <li><strong>RevenueCat Inc.:</strong> Verwaltung von Abonnements und Berechtigungen.</li>
-                </ul>
-                <p><strong>Internationale Datenübermittlungen:</strong> Auch wenn die Speicherung soweit möglich in EU-Rechenzentren konfiguriert ist, werden die Dienste von US-Unternehmen betrieben. Soweit erforderlich, werden DSGVO-Schutzmechanismen (z. B. Auftragsverarbeitungsverträge und Standardvertragsklauseln) eingesetzt.</p>
-                
-                <h3>11. Datenspeicherdauer</h3>
-                <p>Wir speichern personenbezogene Daten nur so lange wie für die jeweiligen Zwecke erforderlich:</p>
-                <ul>
-                    <li><strong>Account-Daten:</strong> bis zur Kontolöschung oder nach <strong>2 Jahren Inaktivität</strong> (mit Benachrichtigung, soweit möglich).</li>
-                    <li><strong>Sammlungs-/Aktivitäts-/Erfolgsdaten:</strong> solange Ihr Konto aktiv ist bzw. für die App-Funktionen benötigt wird.</li>
-                    <li><strong>Private Bilder:</strong> bis Sie diese oder Ihr Konto löschen.</li>
-                    <li><strong>Abgelehnte Community-Einsendungen:</strong> Löschung nach Ablehnung.</li>
-                    <li><strong>Genehmigte Katalogbilder:</strong> als öffentliche Community-Ressource bis zu Ihrem Entfernen / Widerruf der Einwilligung.</li>
-                    <li><strong>Push-Token:</strong> solange die App installiert ist und die Berechtigung erteilt ist; widerrufene Token werden gelöscht.</li>
-                    <li><strong>Abonnement-/Kaufstatus:</strong> für die Dauer des Abonnements und entsprechend steuer-/handelsrechtlicher Pflichten (typischerweise bis zu 10 Jahre für die zugehörigen Belege bei Apple/Google).</li>
-                    <li><strong>Diagnose-/Crash-Daten:</strong> begrenzt nach den Standardvorgaben der Anbieter (typischerweise bis zu 90 Tage für Crash-Reports, bis zu 14 Monate für Analytics).</li>
-                </ul>
-                
-                <h3>12. Ihre DSGVO-Rechte</h3>
-                <p>Sie haben insbesondere folgende Rechte (Art. 15–22 DSGVO):</p>
-                <ul>
-                    <li><strong>Auskunft:</strong> Kopie Ihrer personenbezogenen Daten.</li>
-                    <li><strong>Berichtigung:</strong> Korrektur unrichtiger Daten.</li>
-                    <li><strong>Löschung:</strong> Löschung Ihrer Daten („Recht auf Vergessenwerden").</li>
-                    <li><strong>Einschränkung:</strong> Einschränkung der Verarbeitung in bestimmten Fällen.</li>
-                    <li><strong>Datenübertragbarkeit:</strong> Bereitstellung Ihrer Daten in einem maschinenlesbaren Format (z. B. JSON-Export).</li>
-                    <li><strong>Widerspruch:</strong> Widerspruch gegen Verarbeitung auf Basis berechtigter Interessen, einschließlich Analyse und Crash-Reporting.</li>
-                    <li><strong>Widerruf der Einwilligung:</strong> Jederzeitiger Widerruf der Einwilligung für Community-Einsendungen, Push-Benachrichtigungen oder (zukünftige) Werbung mit Wirkung für die Zukunft.</li>
-                </ul>
-                <p>Zur Ausübung Ihrer Rechte: support@hobbyarmory.de</p>
+<h2>7. Spielen und Teilen mit anderen</h2>
+<ul>
+<li><strong>Gemeinsame Partien:</strong> Treten Sie einer Partie per Code bei, sehen alle Teilnehmer Ihren Nutzernamen, Ihre Armeeliste und den Spielstand. Nach der Partie wird das Ergebnis mit Ihrem Nutzernamen in der Spielhistorie Ihres Gegners gespeichert.</li>
+<li><strong>Teilen per Link:</strong> Teilen Sie eine Armeeliste oder ein Rezept, kann jeder mit dem Link den geteilten Inhalt sehen. Der Link enthält keine weiteren Kontodaten.</li>
+</ul>
 
-                <h3>13. Datenschutz für Kinder</h3>
-                <p>Die App ist für Nutzer ab <strong>13 Jahren</strong> bestimmt. Nutzer <strong>unter 16 Jahren</strong> benötigen für die Verarbeitung ihrer personenbezogenen Daten die Einwilligung eines Elternteils oder Erziehungsberechtigten (Art. 8 DSGVO). Erlangen wir Kenntnis davon, dass wir personenbezogene Daten eines Kindes ohne erforderliche Einwilligung erhoben haben, löschen wir diese Daten unverzüglich.</p>
-                
-                <h3>14. Datensicherheit</h3>
-                <p>Wir setzen angemessene technische und organisatorische Maßnahmen ein, z. B.:</p>
-                <ul>
-                    <li>Verschlüsselung bei der Übertragung (TLS/HTTPS).</li>
-                    <li>Verschlüsselung im Ruhezustand durch die Infrastruktur-Anbieter (Firebase / Cloudflare).</li>
-                    <li>Authentifizierung über Google Sign-In und Anmelden mit Apple.</li>
-                    <li>Minimierung administrativer Zugriffe (Need-to-know-Prinzip).</li>
-                </ul>
-                <p><strong>Hinweis:</strong> Absolute Sicherheit ist nicht möglich. Bei Datenschutzvorfällen erfolgt eine Benachrichtigung gemäß den DSGVO-Anforderungen (u. a. 72-Stunden-Regel, soweit anwendbar).</p>
-                
-                <h3>15. Datenschutz-Aufsichtsbehörde</h3>
-                <p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, z. B.:</p>
-                <p>
-                    <strong>Unabhängiges Datenschutzzentrum Saarland:</strong><br>
-                    Fritz-Dobisch-Straße 12<br>
-                    66111 Saarbrücken, Deutschland<br>
-                    Telefon: 0681 94781-0<br>
-                    E-Mail: poststelle@datenschutz.saarland.de<br>
-                    Web: datenschutz.saarland.de
-                </p>
-                
-                <h3>16. Aktualisierungen dieser Erklärung</h3>
-                <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen (z. B. bei Feature-Änderungen oder neuen rechtlichen Anforderungen). Wesentliche Änderungen werden über die App und/oder per E-Mail mitgeteilt, soweit angemessen.</p>
-                
-                <h3>17. Kontakt</h3>
-                <p>Bei Fragen zum Datenschutz und zu dieser Datenschutzerklärung kontaktieren Sie uns bitte unter:</p>
-                <p><strong>E-Mail:</strong> support@hobbyarmory.de</p>
-                
-                <p style="margin-top: 30px; font-size: 0.95em; color: #666;">
-                    <em>Hobby Armory</em><br>
-                    <em>Zuletzt aktualisiert: April 2026</em>
-                </p>
-            </div>
-        </div>
-        
-        <div class="footer">
-            <p>© 2026 Hobby Armory &nbsp;|&nbsp; Last updated: April 2026 &nbsp;/&nbsp; Zuletzt aktualisiert: April 2026</p>
-        </div>
-    </div>
-    
-    <script>
-        function showLanguage(lang) {
-            // Hide all sections
-            document.getElementById('english').classList.remove('active');
-            document.getElementById('german').classList.remove('active');
-            
-            // Remove active state from all buttons
-            document.querySelectorAll('.toggle-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // Show selected language
-            document.getElementById(lang).classList.add('active');
-            
-            // Activate corresponding button
-            event.target.classList.add('active');
-        }
-    </script>
+<h2>8. News</h2>
+<p>Der News-Bereich zeigt Überschriften und Vorschaubilder von Artikeln auf warhammer-community.com. Die Liste kommt von unserem Server; die Vorschaubilder werden jedoch direkt von den Servern von Games Workshop geladen, wodurch Games Workshop Ihre IP-Adresse erhält. Tippen Sie auf einen Artikel, öffnet er sich im In-App-Browser auf der Website von Games Workshop; dort gilt deren Datenschutzerklärung. Wir übermitteln Games Workshop keine Daten über Sie. Das Lesen von News fließt in keine Statistik ein.</p>
+
+<h2>9. E-Mails und Push-Mitteilungen</h2>
+<p>Wir versenden nur E-Mails, die für den Dienst nötig sind: Bestätigung Ihrer E-Mail-Adresse, Zurücksetzen des Passworts, Entscheidungen über Community-Einsendungen und wichtige Hinweise zu Ihrem Konto. Der Versand erfolgt über Brevo (Sendinblue SAS, Frankreich) und ersatzweise über Resend (Resend, Inc., USA). Werbe-E-Mails versenden wir nur mit Ihrer ausdrücklichen Einwilligung.</p>
+<p>Push-Mitteilungen erhalten Sie nur, wenn Sie sie in den Systemeinstellungen erlauben. Sie können das jederzeit dort widerrufen (iOS: Einstellungen &gt; Mitteilungen &gt; Hobby Armory; Android: Einstellungen &gt; Apps &gt; Hobby Armory &gt; Benachrichtigungen). Die Zustellung erfolgt über Apple Push Notification Service und Firebase Cloud Messaging.</p>
+
+<h2>10. Käufe, Abonnements und Werbung</h2>
+<p>Während der Beta-Phase sind alle Funktionen kostenlos. Sollten kostenpflichtige Abonnements eingeführt werden, wickeln Apple (App Store) bzw. Google (Google Play) die Zahlung ab; wir erhalten keine Zahlungsdaten. Kaufbelege und Berechtigungen verarbeitet RevenueCat, Inc. als unser Auftragsverarbeiter. Wir erhalten nur den Status Ihres Abonnements (zum Beispiel aktiv, Tarif, Verlängerungsdatum).</p>
+<p>Hobby Armory zeigt keine Werbung. Sollte sich das ändern, aktualisieren wir diese Erklärung vorher und holen, soweit erforderlich, Ihre Einwilligung ein, bevor eine werbebezogene Verarbeitung beginnt.</p>
+
+<h2>11. Speicherdauer</h2>
+<ul>
+<li><strong>Konto und Inhalte:</strong> bis Sie Ihr Konto löschen. Einzelne Inhalte können Sie jederzeit selbst löschen.</li>
+<li><strong>Nicht bestätigte Konten:</strong> werden automatisch gelöscht, wenn die E-Mail-Adresse nicht innerhalb von 7 Tagen bestätigt wird.</li>
+<li><strong>Abgelehnte Community-Einsendungen:</strong> werden nach der Ablehnung gelöscht.</li>
+<li><strong>Freigegebene Community-Fotos:</strong> bleiben als Teil des öffentlichen Katalogs, bis Sie die Entfernung verlangen. Bereits veröffentlichte Beiträge und erstellte Materialien sind davon nicht erfasst (§ 5 der AGB).</li>
+<li><strong>Spielergebnisse bei anderen Nutzern:</strong> Nach Ihrer Kontolöschung bleibt das Ergebnis in der Historie Ihres Gegners erhalten, Ihr Name wird dort jedoch anonymisiert.</li>
+<li><strong>Push-Token:</strong> solange die App installiert und die Berechtigung erteilt ist.</li>
+<li><strong>Analyse- und Absturzdaten:</strong> nach den Standardfristen von Google, in der Regel bis zu 90 Tage für Absturzberichte und bis zu 14 Monate für Analysedaten.</li>
+<li><strong>Server-Logs von Website und Rechtsseiten:</strong> nach den Fristen von Cloudflare bzw. GitHub, in der Regel wenige Tage bis Wochen.</li>
+</ul>
+
+<h2>12. Empfänger und Auftragsverarbeiter</h2>
+<p>Wir verkaufen Ihre Daten nicht. Damit Hobby Armory funktioniert, setzen wir folgende Dienstleister ein, mit denen, soweit erforderlich, Verträge zur Auftragsverarbeitung bestehen:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Anbieter</th><th>Zweck</th><th>Ort</th></tr></thead>
+<tbody>
+<tr><td>Google (Firebase, Google Cloud)</td><td>Anmeldung, Datenbank, Funktionen, Push, Analyse, Absturzberichte, Leistungsmessung, App Check</td><td>EU-Region, Anbieter in den USA</td></tr>
+<tr><td>Cloudflare (R2, Workers, Pages, Web Analytics)</td><td>Speicherung und Auslieferung von Fotos, Website, Reichweitenmessung</td><td>Fotos in der EU, Anbieter in den USA</td></tr>
+<tr><td>Brevo (Sendinblue SAS)</td><td>Versand von E-Mails</td><td>EU</td></tr>
+<tr><td>Resend, Inc.</td><td>Ersatzweiser Versand von E-Mails</td><td>USA</td></tr>
+<tr><td>GitHub, Inc.</td><td>Bereitstellung dieser Rechtsseiten</td><td>USA</td></tr>
+<tr><td>Apple, Google Play</td><td>Anmeldung, App-Vertrieb, App Check, gegebenenfalls Zahlungen</td><td>USA/Irland</td></tr>
+<tr><td>RevenueCat, Inc.</td><td>Verwaltung von Abonnements, sobald angeboten</td><td>USA</td></tr>
+</tbody></table></div>
+<p><strong>Übermittlung in Drittländer:</strong> Einige Anbieter haben ihren Sitz in den USA. Die Übermittlung stützt sich auf den Angemessenheitsbeschluss der EU-Kommission zum EU-US Data Privacy Framework, soweit der Anbieter danach zertifiziert ist, und andernfalls auf die Standardvertragsklauseln der EU-Kommission (Art. 46 Abs. 2 lit. c DSGVO).</p>
+
+<h2>13. Ihre Rechte</h2>
+<p>Sie haben nach der DSGVO das Recht auf:</p>
+<ul>
+<li>Auskunft über Ihre gespeicherten Daten (Art. 15),</li>
+<li>Berichtigung unrichtiger Daten (Art. 16),</li>
+<li>Löschung (Art. 17),</li>
+<li>Einschränkung der Verarbeitung (Art. 18),</li>
+<li>Datenübertragbarkeit (Art. 20),</li>
+<li>Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft (Art. 7 Abs. 3).</li>
+</ul>
+<div class="card note">
+<p><strong>Widerspruchsrecht (Art. 21 DSGVO):</strong> Verarbeiten wir Daten auf Grundlage berechtigter Interessen, können Sie dem aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit widersprechen. Eine E-Mail an support@hobbyarmory.de genügt.</p>
+</div>
+<p>Vieles können Sie direkt in der App erledigen: Unter <strong>Einstellungen &gt; Export My Data</strong> erhalten Sie eine Kopie Ihrer Daten als JSON-Datei, unter <strong>Einstellungen &gt; Delete Account</strong> löschen Sie Ihr Konto. Mehr dazu auf der Seite <a href="/delete-account">Konto löschen</a>. Für alles Weitere schreiben Sie uns an <a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a>.</p>
+
+<h2>14. Beschwerderecht</h2>
+<p>Sie können sich bei jeder Datenschutz-Aufsichtsbehörde beschweren, insbesondere in dem Mitgliedstaat Ihres Aufenthaltsorts. Für uns zuständig ist:</p>
+<div class="card">
+<address><strong>Unabhängiges Datenschutzzentrum Saarland</strong><br>Fritz-Dobisch-Straße 12<br>66111 Saarbrücken</address>
+<p style="margin-top:10px">Telefon: 0681 94781-0<br>E-Mail: poststelle@datenschutz.saarland.de<br>Web: <a href="https://www.datenschutz.saarland.de" rel="noopener">datenschutz.saarland.de</a></p>
+</div>
+
+<h2>15. Kinder und Jugendliche</h2>
+<p>Hobby Armory richtet sich an Personen ab 13 Jahren. Wer jünger als 16 Jahre ist, benötigt für die Nutzung die Zustimmung eines Elternteils oder einer erziehungsberechtigten Person (Art. 8 DSGVO). Erfahren wir, dass Daten eines Kindes ohne diese Zustimmung verarbeitet wurden, löschen wir sie unverzüglich.</p>
+
+<h2>16. Datensicherheit</h2>
+<p>Alle Verbindungen sind per TLS verschlüsselt, die Daten werden bei unseren Anbietern verschlüsselt gespeichert. Zugriffe auf die Datenbank sind durch Sicherheitsregeln auf das eigene Konto beschränkt, und administrative Zugänge sind auf das Nötigste begrenzt. Absolute Sicherheit gibt es nicht; im Fall einer Datenschutzverletzung informieren wir die Behörde und gegebenenfalls Sie nach Art. 33 und 34 DSGVO.</p>
+
+<h2>17. Änderungen dieser Erklärung</h2>
+<p>Wir passen diese Erklärung an, wenn sich die App, unsere Dienstleister oder die Rechtslage ändern. Es gilt die jeweils hier veröffentlichte Fassung.</p>
+</article>
+<article id="art-en" class="l-en" lang="en">
+<p class="eyebrow">Legal</p>
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: 11 October 2026</p>
+<p class="lead">This policy explains which personal data we process when you use the Hobby Armory app (iOS, Android and web), the website www.hobbyarmory.com or these legal pages, why we process it, and what rights you have. The German version is legally binding; this translation is provided for convenience.</p>
+
+<h2>1. Controller</h2>
+<p>Controller within the meaning of Art. 4(7) GDPR:</p>
+<div class="card">
+<address>Tim Paulus<br>c/o Postflex #10266<br>Emsdettener Str. 10<br>48268 Greven<br>Germany</address>
+<p style="margin-top:10px">Email: <a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a></p>
+</div>
+<p>No data protection officer has been appointed, as there is no legal obligation to do so. For any privacy question, contact us at the email address above.</p>
+
+<h2>2. The website www.hobbyarmory.com</h2>
+<h3>Hosting and server logs</h3>
+<p>The website is delivered through Cloudflare Pages (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA). For every request, Cloudflare processes technically necessary data: IP address, date and time, the address requested, referrer, browser and operating system. This is used to deliver the pages and to protect against attacks and abuse. The legal basis is Art. 6(1)(f) GDPR; our legitimate interest is running the website securely and reliably.</p>
+<h3>Audience measurement with Cloudflare Web Analytics</h3>
+<p>We use Cloudflare Web Analytics to understand which pages are visited and how often. The service sets no cookies, stores nothing on your device and builds no user profiles. When a page loads, a small script sends the address visited, the referrer, load times and the type of browser and device to Cloudflare; according to Cloudflare, IP addresses are not used to recognise visitors. We only see aggregated statistics. The legal basis is Art. 6(1)(f) GDPR; our legitimate interest is shaping the website around what visitors need. You can object, for example by blocking scripts from <code>static.cloudflareinsights.com</code> in your browser.</p>
+<h3>No cookies, no embedded content</h3>
+<p>The website sets no cookies. Fonts and images are served from our own server; nothing is loaded from Google Fonts, YouTube, social networks or advertising networks.</p>
+<h3>Links to other services</h3>
+<p>The website links to the Apple App Store, TestFlight, Google Play, Discord and a feedback form on Google Forms, among others. No data reaches these providers until you click such a link; from then on, that provider's privacy policy applies. We use whatever you enter into the Google form to evaluate your feedback (Art. 6(1)(f) GDPR).</p>
+
+<h2>3. These legal pages (legal.hobbyarmory.de)</h2>
+<p>These pages are served by GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA). GitHub processes your IP address and technical access data to deliver the pages and secure the service. The legal basis is Art. 6(1)(f) GDPR. No audience measurement runs here. Your language choice is stored only locally in your browser (§ 25(2) no. 2 TDDDG).</p>
+
+<h2>4. What the app processes</h2>
+<h3>Account and sign-in</h3>
+<ul>
+<li><strong>Sign in with Google:</strong> email address and a unique user identifier (Firebase UID).</li>
+<li><strong>Sign in with Apple:</strong> email address (your real Apple ID address or the relay address from "Hide My Email") and a unique Apple user identifier. No name is requested.</li>
+<li><strong>Email and password:</strong> email address and password. The password is stored only as a hash by Firebase Authentication; we cannot see it.</li>
+<li><strong>Username:</strong> a username you choose. Other users can see it when you interact with them, for example in a shared game.</li>
+</ul>
+<h3>Content you create in the app</h3>
+<ul>
+<li><strong>Collection:</strong> sets and miniatures, purchase dates, build and painting progress, the date of each step, the workbench, tags, notes, armies, custom game systems and your wish list.</li>
+<li><strong>Hobby:</strong> paint recipes, your paint rack, painting sessions and their length.</li>
+<li><strong>Games:</strong> army lists, game templates, game sessions, match history and saved opponent lists.</li>
+<li><strong>Progress:</strong> active days for your streak, achievements, milestones and monthly goals.</li>
+<li><strong>Photos:</strong> pictures of your miniatures. They are compressed before upload, which removes embedded metadata such as location and camera details.</li>
+<li><strong>Settings:</strong> such as date format, hidden game systems and filters.</li>
+</ul>
+<h3>What you send us</h3>
+<p>When you report a bug, a missing set or a wrong paint colour, or submit a card name in the app, we store your text with your user identifier so we can handle it and reply. When you email us, we process your address and message to answer you.</p>
+<h3>Technical data</h3>
+<ul>
+<li><strong>Usage analytics (Firebase Analytics):</strong> pseudonymous usage events, app version, device type, operating system, language and approximate country.</li>
+<li><strong>Crash reports (Firebase Crashlytics):</strong> error logs with device type, app version and your user identifier, so we can trace faults.</li>
+<li><strong>Performance monitoring (Firebase Performance Monitoring):</strong> load and response times, without content.</li>
+<li><strong>Abuse protection (Firebase App Check):</strong> the app uses Apple App Attest/DeviceCheck or Google Play Integrity to prove that requests come from a genuine installation. Device and integrity signals are sent to Apple or Google for this.</li>
+<li><strong>Push token:</strong> a device-specific token (FCM/APNs), only if you allow notifications.</li>
+</ul>
+<h3>Data on your device</h3>
+<p>The app stores settings, filters, a catalogue cache and similar data locally on your device. This is strictly necessary for the app to work (§ 25(2) no. 2 TDDDG); this data does not leave your device unless it is synced with your account anyway.</p>
+
+<h2>5. Purposes and legal bases</h2>
+<ul>
+<li><strong>Performance of a contract (Art. 6(1)(b) GDPR):</strong> your account, publishing and using community photos and recipes under section 5 of the Terms, storing and syncing your content, games with other users, sharing by link, data export and account deletion, and subscriptions where offered.</li>
+<li><strong>Consent (Art. 6(1)(a) GDPR):</strong> push notifications, and any future advertising-related processing. You can withdraw consent at any time with effect for the future.</li>
+<li><strong>Legitimate interests (Art. 6(1)(f) GDPR):</strong> security and abuse protection, stability, fault analysis, improving the app and handling your reports. You can object at any time (section 13).</li>
+<li><strong>Legal obligation (Art. 6(1)(c) GDPR):</strong> statutory retention duties where they apply.</li>
+</ul>
+
+<h2>6. Photos: private and community</h2>
+<p><strong>Private photos</strong> are stored in your account and visible only to you.</p>
+<p><strong>Community photos</strong> are photos you deliberately submit with the "Also share with the community" switch. We review every submission by hand. Rejected submissions are deleted. Approved photos are shown to all users next to that miniature or set, without your name or username. For photos submitted on or after 11 October 2026, we may also use them to promote Hobby Armory, for example on our website, in the app stores and on social media. The scope is set out in section 5 of the <a href="/agb">Terms of Service</a>. Photos usually show only painted miniatures; please do not submit pictures in which people can be identified.</p>
+<p>You can attach a paint recipe to a community photo. We store an unchangeable copy of it without your name, your sets or your private photos.</p>
+<p>Community photos stay in the catalogue after you delete your account, because other users see them and they are no longer shown as linked to you. You can ask us by email to remove a photo at any time; see section 11.</p>
+
+<h2>7. Playing and sharing with others</h2>
+<ul>
+<li><strong>Shared games:</strong> when you join a game by code, every participant sees your username, your army list and the game state. After the game, the result is saved with your username in your opponent's match history.</li>
+<li><strong>Sharing by link:</strong> when you share an army list or a recipe, anyone with the link can see what you shared. The link carries no other account data.</li>
+</ul>
+
+<h2>8. News</h2>
+<p>The News tab shows headlines and preview images of articles on warhammer-community.com. The list comes from our server, but the preview images load directly from Games Workshop's servers, which gives Games Workshop your IP address. Tapping an article opens it in the in-app browser on Games Workshop's website, where their privacy policy applies. We send Games Workshop no data about you. Reading news feeds no statistic.</p>
+
+<h2>9. Emails and push notifications</h2>
+<p>We only send emails the service needs: confirming your email address, resetting your password, decisions on community submissions and important notices about your account. They are sent through Brevo (Sendinblue SAS, France), with Resend (Resend, Inc., USA) as a fallback. We send marketing emails only with your explicit consent.</p>
+<p>You receive push notifications only if you allow them in your system settings, and you can withdraw that there at any time (iOS: Settings &gt; Notifications &gt; Hobby Armory; Android: Settings &gt; Apps &gt; Hobby Armory &gt; Notifications). Delivery runs through Apple Push Notification service and Firebase Cloud Messaging.</p>
+
+<h2>10. Purchases, subscriptions and advertising</h2>
+<p>During the beta, every feature is free. If paid subscriptions are introduced, Apple (App Store) or Google (Google Play) will process the payment; we receive no payment details. Receipts and entitlements are processed by RevenueCat, Inc. as our processor. We only receive your subscription status (for example active, plan, renewal date).</p>
+<p>Hobby Armory shows no advertising. If that changes, we will update this policy first and, where required, ask for your consent before any advertising-related processing begins.</p>
+
+<h2>11. How long we keep data</h2>
+<ul>
+<li><strong>Account and content:</strong> until you delete your account. You can delete individual items yourself at any time.</li>
+<li><strong>Unconfirmed accounts:</strong> deleted automatically if the email address is not confirmed within 7 days.</li>
+<li><strong>Rejected community submissions:</strong> deleted after rejection.</li>
+<li><strong>Approved community photos:</strong> kept as part of the public catalogue until you ask us to remove them. Posts already published and material already produced are not affected (section 5 of the Terms).</li>
+<li><strong>Results held by other users:</strong> after you delete your account, the result stays in your opponent's history, but your name there is anonymised.</li>
+<li><strong>Push tokens:</strong> while the app is installed and permission is granted.</li>
+<li><strong>Analytics and crash data:</strong> per Google's default periods, usually up to 90 days for crash reports and up to 14 months for analytics.</li>
+<li><strong>Server logs of the website and legal pages:</strong> per Cloudflare's or GitHub's periods, usually a few days to weeks.</li>
+</ul>
+
+<h2>12. Recipients and processors</h2>
+<p>We do not sell your data. To run Hobby Armory we use the following providers, with data processing agreements in place where required:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Provider</th><th>Purpose</th><th>Location</th></tr></thead>
+<tbody>
+<tr><td>Google (Firebase, Google Cloud)</td><td>Sign-in, database, functions, push, analytics, crash reports, performance, App Check</td><td>EU region, provider in the USA</td></tr>
+<tr><td>Cloudflare (R2, Workers, Pages, Web Analytics)</td><td>Storing and delivering photos, website, audience measurement</td><td>Photos in the EU, provider in the USA</td></tr>
+<tr><td>Brevo (Sendinblue SAS)</td><td>Sending email</td><td>EU</td></tr>
+<tr><td>Resend, Inc.</td><td>Fallback email sending</td><td>USA</td></tr>
+<tr><td>GitHub, Inc.</td><td>Hosting these legal pages</td><td>USA</td></tr>
+<tr><td>Apple, Google Play</td><td>Sign-in, app distribution, App Check, payments where offered</td><td>USA/Ireland</td></tr>
+<tr><td>RevenueCat, Inc.</td><td>Subscription management, once offered</td><td>USA</td></tr>
+</tbody></table></div>
+<p><strong>Transfers outside the EU:</strong> some providers are based in the USA. Transfers rely on the European Commission's adequacy decision for the EU-US Data Privacy Framework where the provider is certified under it, and otherwise on the Commission's Standard Contractual Clauses (Art. 46(2)(c) GDPR).</p>
+
+<h2>13. Your rights</h2>
+<p>Under the GDPR you have the right to:</p>
+<ul>
+<li>access the data we hold about you (Art. 15),</li>
+<li>have inaccurate data corrected (Art. 16),</li>
+<li>erasure (Art. 17),</li>
+<li>restriction of processing (Art. 18),</li>
+<li>data portability (Art. 20),</li>
+<li>withdraw consent with effect for the future (Art. 7(3)).</li>
+</ul>
+<div class="card note">
+<p><strong>Right to object (Art. 21 GDPR):</strong> where we process data based on legitimate interests, you may object at any time on grounds relating to your particular situation. An email to support@hobbyarmory.de is enough.</p>
+</div>
+<p>Much of this you can do in the app: <strong>Settings &gt; Export My Data</strong> gives you a copy of your data as a JSON file, and <strong>Settings &gt; Delete Account</strong> deletes your account. See <a href="/delete-account">Delete account</a> for details. For anything else, email <a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a>.</p>
+
+<h2>14. Right to lodge a complaint</h2>
+<p>You may complain to any data protection supervisory authority, in particular in the member state where you live. The authority responsible for us is:</p>
+<div class="card">
+<address><strong>Unabhängiges Datenschutzzentrum Saarland</strong><br>Fritz-Dobisch-Straße 12<br>66111 Saarbrücken, Germany</address>
+<p style="margin-top:10px">Phone: +49 681 94781-0<br>Email: poststelle@datenschutz.saarland.de<br>Web: <a href="https://www.datenschutz.saarland.de" rel="noopener">datenschutz.saarland.de</a></p>
+</div>
+
+<h2>15. Children</h2>
+<p>Hobby Armory is intended for people aged 13 and over. Anyone under 16 needs the consent of a parent or legal guardian to use it (Art. 8 GDPR). If we learn that a child's data has been processed without that consent, we delete it without delay.</p>
+
+<h2>16. Security</h2>
+<p>All connections are encrypted with TLS, and our providers store data encrypted. Security rules limit database access to your own account, and administrative access is kept to the minimum. No system is perfectly secure; in the event of a data breach we will notify the authority and, where required, you, under Art. 33 and 34 GDPR.</p>
+
+<h2>17. Changes to this policy</h2>
+<p>We update this policy when the app, our providers or the law change. The version published here applies.</p>
+</article>
+</div>
+</div>
+</main>
+<footer><div class="foot-in">
+<span>© 2026 Hobby Armory</span>
+<span class="spacer"></span>
+<a href="https://www.hobbyarmory.com/">www.hobbyarmory.com</a>
+<a href="mailto:support@hobbyarmory.de">support@hobbyarmory.de</a>
+</div></footer>
+<script src="/assets/legal.js" defer></script>
 </body>
 </html>
